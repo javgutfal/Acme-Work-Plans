@@ -13,7 +13,7 @@ import acme.framework.services.AbstractService;
 public class AnonymousShoutListService implements AbstractService<Anonymous, Shout>{
 	
 	@Autowired
-	AnonymousShoutListRepository repository;
+	AnonymousShoutRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Shout> request) {
