@@ -22,6 +22,7 @@ public class AnonymousShoutListService implements AbstractListService<Anonymous,
 		assert request != null;
 		
 		return true;
+		
 	}
 
 	@Override
