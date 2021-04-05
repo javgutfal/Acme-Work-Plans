@@ -22,7 +22,7 @@ public class AnonymousShoutController extends AbstractController<Anonymous, Shou
 	
 	@Autowired
 	private AnonymousShoutCreateService createService;
-	
+
 	// Constructors -----------------------------------------------------------
 	
 	@PostConstruct
