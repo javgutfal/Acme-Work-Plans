@@ -354,7 +354,7 @@ Task
       <x>315</x>
       <y>574</y>
       <w>336</w>
-      <h>91</h>
+      <h>105</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 WorkPlan
@@ -363,7 +363,8 @@ WorkPlan
 + initialTime: Date (NotNull, TEMPORAL(TIMESTAMP), FutureOrPresent)
 + finalTime: Date (NotNull, TEMPORAL(TIMESTAMP), Future)
 + workload: Double (NotNull, Digits(10,2))
-+ publicWorkPlan: boolean</panel_attributes>
++ publicWorkPlan: boolean
++ finished: boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
