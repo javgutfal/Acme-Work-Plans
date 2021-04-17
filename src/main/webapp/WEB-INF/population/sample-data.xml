@@ -1,22 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-- sample-data.xml
--
-- Copyright (C) 2012-2021 Rafael Corchuelo.
--
-- In keeping with the traditional purpose of furthering education and research, it is
-- the policy of the copyright owner to permit non-commercial use and redistribution of
-- this software. It has been tested carefully, but it is not guaranteed for any particular
-- purposes.  The copyright owner does not offer any warranties or representations, nor do
-- they accept any liabilities with respect to them.
--->
+<!-- - sample-data.xml - - Copyright (c) 2012-2021 Rafael Corchuelo. - - 
+	In keeping with the traditional purpose of furthering education and research, 
+	it is - the policy of the copyright owner to permit non-commercial use and 
+	redistribution of - this software. It has been tested carefully, but it is 
+	not guaranteed for any particular - purposes. The copyright owner does not 
+	offer any warranties or representations, nor do - they accept any liabilities 
+	with respect to them. -->
 
-<beans 
-	xmlns="http://www.springframework.org/schema/beans" 
+<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>	
+	<import
+		resource="classpath:/WEB-INF/population/conversion-service.xml" />
+
+
+
+
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/01/12 18:30" />
+		<property name="author" value="Laura Castillo" />
+		<property name="text" value="I'm Developer and Tester" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2019/08/10 12:30" />
+		<property name="author" value="Blanca Mauri" />
+		<property name="text" value="I'm Developer and Tester" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+
+
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2019/05/5 19:30" />
+		<property name="author" value="Javier Gutiérrez" />
+		<property name="text" value="I'm Developer and Manager" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/09/15 13:30" />
+		<property name="author" value="Benjamín Crespo" />
+		<property name="text" value="I'm Developer and Tester" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+
+	<bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/12/01 10:30" />
+		<property name="author" value="Diego Gil" />
+		<property name="text" value="I'm Developer and Tester" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+
+	<bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/01/23 16:30" />
+		<property name="author" value="Gonzalo Lallena" />
+		<property name="text" value="I'm Developer and Analyst" />
+		<property name="info">
+			<null />
+		</property>
+	</bean>
+
+	<bean name="employer1Employer"
+		class="acme.entities.roles.Consumer">
+		<property name="company" value="Employer 1, Inc." />
+		<property name="sector" value="Sector 1" />
+		<property name="userAccount" ref="employer1UserAccount" />
+	</bean>
+
+	<bean name="employer1Authenticated"
+		class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="employer1UserAccount" />
+	</bean>
+
+	<bean name="employer2Employer"
+		class="acme.entities.roles.Provider">
+		<property name="company" value="Employer 2, Inc." />
+		<property name="sector" value="Sector 2" />
+		<property name="userAccount" ref="employer2UserAccount" />
+	</bean>
+
+	<bean name="employer2Authenticated"
+		class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="employer2UserAccount" />
+	</bean>
+
+	<bean name="employer1UserAccount"
+		class="acme.framework.entities.UserAccount">
+		<property name="username" value="Benji" />
+		<property name="password" value="employer1" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Benjamin" />
+				<property name="surname" value="Crespo" />
+				<property name="email" value="Benji1@gmail.com" />
+			</bean>
+		</property>
+		<property name="enabled" value="true" />
+		<property name="roles">
+			<list>
+				<ref bean="employer1Employer" />
+				<ref bean="employer1Authenticated" />
+			</list>
+		</property>
+	</bean>
+	<bean name="employer2UserAccount"
+		class="acme.framework.entities.UserAccount">
+		<property name="username" value="LauriC" />
+		<property name="password" value="employer2" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Laura" />
+				<property name="surname" value="Castillo" />
+				<property name="email" value="LauC2@gmail.com" />
+			</bean>
+		</property>
+		<property name="enabled" value="true" />
+		<property name="roles">
+			<list>
+				<ref bean="employer2Employer" />
+				<ref bean="employer2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
 
 </beans>
