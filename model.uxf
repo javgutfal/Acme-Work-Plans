@@ -345,7 +345,8 @@ Task
 + workload: Double (NotNull, Digits(10,2))
 + description: String (NotBlank, Length(1,500))
 + link: String (URL)
-+ publicTask: boolean</panel_attributes>
++ publicTask: boolean
++ finished: boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
