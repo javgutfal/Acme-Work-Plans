@@ -2,7 +2,7 @@ package acme.features.anonymous.shout;
 
 
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +29,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void bind(final Request<Shout> request,final Shout entity,final Errors errors) {
-		// TODO Auto-generated method stub
 		assert request!= null;
 		assert entity!= null;
 		assert errors!= null;
@@ -39,7 +38,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void unbind(final Request<Shout> request,final Shout entity,final Model model) {
-		// TODO Auto-generated method stub
 		assert request!= null;
 		assert entity!= null;
 		assert model!= null;
@@ -50,7 +48,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public Shout instantiate(final Request<Shout> request) {
-		// TODO Auto-generated method stub
 		assert request!= null;
 		Shout result;
 		Date moment;
@@ -68,7 +65,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void validate(final Request<Shout> request,final Shout entity,final Errors errors) {
-		// TODO Auto-generated method stub
 		assert request!= null;
 		assert entity!= null;
 		assert errors!= null;
@@ -76,7 +72,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Override
 	public void create(final Request<Shout> request,final Shout entity) {
-		// TODO Auto-generated method stub
 		assert request!= null;
 		assert entity!= null;
 		

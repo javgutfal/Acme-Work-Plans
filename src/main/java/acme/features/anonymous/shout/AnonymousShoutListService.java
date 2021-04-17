@@ -38,8 +38,7 @@ public class AnonymousShoutListService implements AbstractListService<Anonymous,
 	public Collection<Shout> findMany(final Request<Shout> request) {
 		assert request != null;
 		Collection<Shout> result;
-		result = this.repository.findMany();
-		
+		result = this.repository.findNotOlderMonth();
 		return result;
 	}
 }
