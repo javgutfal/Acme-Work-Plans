@@ -1,4 +1,4 @@
-package acme.features.anonymous.shout;
+package acme.features.anonymous.workPlan;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -7,47 +7,44 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.shouts.Shout;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousShoutListService implements AbstractListService<Anonymous, Shout>{
+public class AnonymousWorkPlanListService implements AbstractListService<Anonymous, WorkPlan> {
 	
 	@Autowired
-	AnonymousShoutRepository repository;
-	
+	protected AnonymousWorkPlanRepository repository;
+
 	@Override
-	public boolean authorise(final Request<Shout> request) {
+	public boolean authorise(final Request<WorkPlan> request) {
 		assert request != null;
 		
 		return true;
-		
 	}
 
 	@Override
-	public void unbind(final Request<Shout> request, final Shout entity, final Model model) {
+	public void unbind(final Request<WorkPlan> request, final WorkPlan entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "author", "text", "moment");
+		request.unbind(entity, model, "initialTime", "finalTime", "publicWorkPlan");
 	}
-	
+
 	@Override
-	public Collection<Shout> findMany(final Request<Shout> request) {
+	public Collection<WorkPlan> findMany(final Request<WorkPlan> request) {
 		assert request != null;
-		Collection<Shout> result;
 		Calendar calendar;
 		Date deadline;
 
 		calendar = Calendar.getInstance();
-		calendar.add(Calendar.MONTH, -1);
 		deadline = calendar.getTime();
 		
-		result = this.repository.findRecentShouts(deadline);
-		return result;
+		return this.repository.findByPublicWorkPlanTrue(deadline);
 	}
+
 }
