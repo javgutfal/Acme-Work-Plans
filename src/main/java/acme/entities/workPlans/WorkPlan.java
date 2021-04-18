@@ -1,16 +1,18 @@
 package acme.entities.workPlans;
 
+import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
+import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -39,8 +41,13 @@ public class WorkPlan extends DomainEntity {
 	
 	@NotNull
 	@Valid
-	@ManyToMany(mappedBy = "workPlan")
-	protected List<Task> tasks;
+	@ManyToMany(mappedBy = "workPlans")
+	protected Collection<Task> tasks;
+	
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	protected Manager manager;
 	
 	public Double workload() {
 		Double result;
@@ -49,6 +56,8 @@ public class WorkPlan extends DomainEntity {
 		return result;
 	}
 	
-	protected boolean publicTask;
+	protected boolean publicWorkPlan;
+	
+	protected boolean finalMode;
 
 }
