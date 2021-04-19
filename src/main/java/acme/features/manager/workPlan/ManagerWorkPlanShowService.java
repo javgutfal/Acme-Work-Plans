@@ -22,7 +22,6 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 
 	@Override
 	public boolean authorise(final Request<WorkPlan> request) {
-		assert request != null;
 
 		boolean result;
 		int workPlanId;
@@ -34,7 +33,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isFinalMode() || !workPlan.isFinalMode() && manager.getUserAccount().getId() == principal.getAccountId();
+		result =  !workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -45,7 +44,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime", "tasks");
+		request.unbind(entity, model, "initialTime", "finalTime", "workload", "tasks");
 	}
 
 	@Override
