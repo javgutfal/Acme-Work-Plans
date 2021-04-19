@@ -32,6 +32,12 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
 
+# master.menu.manager #######################################################
+
+master.menu.manager = Manager
+master.menu.manager.list-workplan = Ver Workplans
+master.menu.manager.create-workplan = Crear un Workplan
+
 
 # master.menu.administrator ###################################################
 
@@ -60,6 +66,8 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.manager = Datos de mánager
+master.menu.user-account.become-manager = Hazte mánager
 
 ﻿# master.footer ###############################################################
 
