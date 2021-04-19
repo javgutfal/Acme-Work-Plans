@@ -5,18 +5,18 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Digits;
-import javax.validation.constraints.Future;
-import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.roles.Manager;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -39,12 +39,10 @@ public class Task extends DomainEntity {
 	protected String title;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@FutureOrPresent
 	@NotNull
 	protected Date initialTime;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
 	@NotNull
 	protected Date finalTime;
 	
@@ -60,6 +58,11 @@ public class Task extends DomainEntity {
 	@Valid
 	@ManyToMany()
 	protected Collection<WorkPlan> workPlans;
+	
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	protected Manager manager;
 	
 	@URL
 	protected String link;

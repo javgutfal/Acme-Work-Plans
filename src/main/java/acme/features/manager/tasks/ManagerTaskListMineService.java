@@ -1,23 +1,27 @@
-package acme.features.administrator.tasks;
+package acme.features.manager.tasks;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Administrator;
-import acme.framework.services.AbstractShowService;
+import acme.framework.entities.Principal;
+import acme.framework.services.AbstractListService;
 
-
-public class AdministratorTaskShowService implements AbstractShowService<Administrator, Task> {
+@Service
+public class ManagerTaskListMineService implements AbstractListService<Manager, Task> {
 	
 	@Autowired
-	protected AdministratorTaskRepository repository;
+	protected ManagerTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
-		
+
 		return true;
 	}
 
@@ -31,10 +35,16 @@ public class AdministratorTaskShowService implements AbstractShowService<Adminis
 	}
 
 	@Override
-	public Task findOne(final Request<Task> request) {
+	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
-		
-		return this.repository.findOneById(request.getModel().getInteger("id"));
+
+		final Collection<Task> result;
+		Principal principal;
+
+		principal = request.getPrincipal();
+		result = this.repository.findManyByManagerId(principal.getActiveRoleId());
+
+		return result;
 	}
 
 }
