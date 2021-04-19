@@ -16,11 +16,6 @@
 			<acme:form-option code="PRIVATE" value="false"/>
 		</acme:form-select>		
 	
-	<acme:form-select code="manager.task.form.label.finished" path="finished">
-			<acme:form-option code="NOT.FINISHED" value="false" selected="true"/>
-			<acme:form-option code="FINISHED" value="true"/>
-		</acme:form-select>		
-	
 	<acme:form-submit code="manager.task.form.button.create" action="/manager/task/create"/>
   	<acme:form-return code="manager.task.form.button.return"/>
 </acme:form>
