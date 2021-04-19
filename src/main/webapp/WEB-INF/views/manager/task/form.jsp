@@ -5,10 +5,21 @@
 
 <acme:form>
 	<acme:form-textbox code="manager.task.form.label.title" path="title"/>
-	<acme:form-textbox code="manager.task.form.label.initialTime" path="initialTime"/>
-	<acme:form-textbox code="manager.task.form.label.finalTime" path="finalTime"/>
-	<acme:form-textbox code="manager.task.form.label.workload" path="workload"/>
+	<acme:form-moment code="manager.task.form.label.initialTime" path="initialTime"/>
+	<acme:form-moment code="manager.task.form.label.finalTime" path="finalTime"/>
+	<acme:form-double code="manager.task.form.label.workload" path="workload"/>
 	<acme:form-textarea code="manager.task.form.label.description" path="description"/>
+	<acme:form-url code="manager.task.form.label.link" path="link"/>
+	
+	<acme:form-select code="manager.task.form.label.publicTask" path="publicTask">
+			<acme:form-option code="PUBLIC" value="true" selected="true"/>
+			<acme:form-option code="PRIVATE" value="false"/>
+		</acme:form-select>		
+	
+	<acme:form-select code="manager.task.form.label.finished" path="finished">
+			<acme:form-option code="NOT.FINISHED" value="false" selected="true"/>
+			<acme:form-option code="FINISHED" value="true"/>
+		</acme:form-select>		
 	
 	<acme:form-submit code="manager.task.form.button.create" action="/manager/task/create"/>
   	<acme:form-return code="manager.task.form.button.return"/>

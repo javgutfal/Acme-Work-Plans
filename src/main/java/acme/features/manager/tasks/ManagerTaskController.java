@@ -1,3 +1,4 @@
+
 package acme.features.manager.tasks;
 
 import javax.annotation.PostConstruct;
@@ -13,18 +14,22 @@ import acme.framework.controllers.AbstractController;
 
 @Controller
 @RequestMapping("/manager/task/")
-public class ManagerTaskController extends AbstractController<Manager, Task>{
-	
-	// Internal state ---------------------------------------------------------
-		@Autowired
-		private ManagerTaskCreateService createService;
+public class ManagerTaskController extends AbstractController<Manager, Task> {
 
-		// Constructors -----------------------------------------------------------
-		
-		@PostConstruct
-		private void initialise() {
-			
-			super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		}
+	// Internal state ---------------------------------------------------------
+	@Autowired
+	private ManagerTaskListMineService	listService;
+
+	@Autowired
+	private ManagerTaskCreateService	createService;
+
+	// Constructors -----------------------------------------------------------
+
+
+	@PostConstruct
+	private void initialise() {
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+	}
 
 }
