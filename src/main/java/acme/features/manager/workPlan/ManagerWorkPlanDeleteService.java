@@ -35,7 +35,7 @@ public class ManagerWorkPlanDeleteService implements AbstractDeleteService<Manag
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isFinalMode() || !workPlan.isFinalMode() && manager.getUserAccount().getId() == principal.getAccountId();
+		result = !workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -55,8 +55,7 @@ public class ManagerWorkPlanDeleteService implements AbstractDeleteService<Manag
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary");
-		request.unbind(entity, model, "score", "moreInfo", "description", "finalMode");
+		request.unbind(entity, model, "initialTime", "finalTime", "tasks", "workload");
 	}
 
 	@Override

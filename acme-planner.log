@@ -593,6 +593,9 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout04 = acme.en
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout05 = acme.entities.shouts.Shout{id=10, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout06 = acme.entities.shouts.Shout{id=11, version=0}
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-QPIOO7RR with PID 25656 (C:\Users\geron\OneDrive\Desktop\Workspace-21.1\Projects\Acme-Planner\target\classes started by geron in C:\Users\geron\OneDrive\Desktop\Workspace-21.1\Projects\Acme-Planner)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 6.047 seconds (JVM running for 6.476)
 ERROR [com.zaxxer.hikari.pool.HikariPool] at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174): Communications link failure
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method): Communications link failure

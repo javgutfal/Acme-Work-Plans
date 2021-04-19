@@ -39,7 +39,6 @@ public class WorkPlan extends DomainEntity {
 	@NotNull
 	protected Date finalTime;
 	
-	@NotNull
 	@Valid
 	@ManyToMany(mappedBy = "workPlans")
 	protected Collection<Task> tasks;
@@ -58,6 +57,5 @@ public class WorkPlan extends DomainEntity {
 	
 	protected boolean publicWorkPlan;
 	
-	protected boolean finalMode;
 
 }
