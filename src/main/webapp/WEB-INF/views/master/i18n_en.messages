@@ -29,6 +29,7 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
+master.menu.anonymous.list-workPlans = View WorkPlans
 
 # master.menu.administrator ###################################################
 
