@@ -1,5 +1,6 @@
 authenticated.task.list.label.title = Title
-authenticated.task.list.label.execution_period = Execution period
+authenticated.task.list.label.initial-time = Initiation time
+authenticated.task.list.label.final-time = Finalization time
 authenticated.task.list.label.workload = Workload
 authenticated.task.list.label.description = Description
 authenticated.task.list.label.link = Link
