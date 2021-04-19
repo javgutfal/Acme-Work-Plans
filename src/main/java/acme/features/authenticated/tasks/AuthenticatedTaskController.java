@@ -1,34 +1,30 @@
-package acme.features.anonymous.task;
+package acme.features.authenticated.tasks;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.entities.tasks.Task;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/anonymous/task/")
-public class AnonymousTaskController extends AbstractController<Anonymous, Task> {
+@RequestMapping("/authenticated/task/")
+public class AuthenticatedTaskController extends AbstractController<Authenticated, Task> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AnonymousTaskListService	listService;
-	
-	@Autowired
-	protected AnonymousTaskCreateService	createService;
+	private AuthenticatedTaskListService listService;
 
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
-	protected void initialise() {
+	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 
 }

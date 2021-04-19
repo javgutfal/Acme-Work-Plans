@@ -1,5 +1,6 @@
 anonymous.task.list.label.title = Título
-anonymous.task.list.label.execution_period = Periodo de ejecución
+anonymous.task.list.label.initial-time = Momento de inicio
+anonymous.task.list.label.final-time = Momento de finalización
 anonymous.task.list.label.workload = Carga de trabajo
 anonymous.task.list.label.description = Descripción
 anonymous.task.list.label.link = Enlace

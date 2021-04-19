@@ -1,0 +1,5 @@
+authenticated.task.list.label.title = Título
+authenticated.task.list.label.execution_period = Periodo de ejecución
+authenticated.task.list.label.workload = Carga de trabajo
+authenticated.task.list.label.description = Descripción
+authenticated.task.list.label.link = Enlace
