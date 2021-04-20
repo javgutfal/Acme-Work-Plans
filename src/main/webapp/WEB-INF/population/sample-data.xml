@@ -133,7 +133,6 @@
 		<property name="finalTime" value="2021/4/25 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
-		<property name="finalMode" value="true" />
 	</bean>
 
 </beans>
