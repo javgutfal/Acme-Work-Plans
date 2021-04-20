@@ -1,0 +1,6 @@
+manager.task.list.label.title = Título
+manager.task.list.label.initial-time = Momento de inicio
+manager.task.list.label.final-time = Momento de finalización
+manager.task.list.label.workload = Carga de trabajo
+manager.task.list.label.description = Descripción
+manager.task.list.label.link = Enlace

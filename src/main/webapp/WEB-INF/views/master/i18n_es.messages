@@ -25,6 +25,7 @@ master.menu.home = Inicio
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
+master.menu.list-tasks = Ver tareas
 
 # master.menu.anonymous #######################################################
 
@@ -51,6 +52,10 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.manager ##########################################################
+
+master.menu.manager = Gestor
 
 # master.menu.user-account ####################################################
 

@@ -106,10 +106,10 @@
 
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear entidad Task" />
-		<property name="initialTime" value="2021/4/01 10:30" />
-		<property name="finalTime" value="2021/4/25 10:30" />
-		<property name="workload" value="10" />
-		<property name="description" value="Un poquito de descripción" />
+		<property name="initialTime" value="2021/4/20 10:30" />
+		<property name="finalTime" value="2021/7/01 10:30" />
+		<property name="workload" value="5" />
+		<property name="description" value="Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola.com" />
 		<property name="publicTask" value="true" />
@@ -118,14 +118,26 @@
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
 		<property name="title" value="Hacer el modelo de dominio" />
-		<property name="initialTime" value="2021/4/26 10:30" />
-		<property name="finalTime" value="2021/10/30 10:30" />
-		<property name="workload" value="5" />
-		<property name="description" value="Un poquito de descripción" />
+		<property name="initialTime" value="2021/1/01 10:30" />
+		<property name="finalTime" value="2021/7/01 10:30" />
+		<property name="workload" value="100" />
+		<property name="description" value="Esta tarea no esta finalizada, es la mas antigua,la que mayor periodo de ejecucion tiene y la que mas workload tiene" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
 		<property name="finished" value="false" />
+	</bean>
+	
+	<bean id="task03" class="acme.entities.tasks.Task">
+		<property name="title" value="Cambiar el banner" />
+		<property name="initialTime" value="2021/1/01 10:30" />
+		<property name="finalTime" value="2021/1/02 10:30" />
+		<property name="workload" value="100" />
+		<property name="description" value="Esta tarea esta finalizada." />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.adios.com" />
+		<property name="publicTask" value="true" />
+		<property name="finished" value="true" />
 	</bean>
 	
 	<bean id="workPlan01" class="acme.entities.workPlans.WorkPlan">
