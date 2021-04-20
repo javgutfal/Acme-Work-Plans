@@ -35,7 +35,7 @@ public interface AdministratorWorkPlanDashboardRepository extends AbstractReposi
 	@Query("select avg(datediff(w.finalTime, w.initialTime)) from WorkPlan w ")
 	Double averageOfExecutionWorkPlanPeriod();
 	
-	@Query("select STDEV(datediff(w.finalTime, w.initialTime)) from WorkPlan w ")
+	@Query("select avg(datediff(w.finalTime, w.initialTime)) from WorkPlan w ")
 	Double deviationOfExecutionWorkPlanPeriod();
 	
 	@Query("select min(datediff(w.finalTime, w.initialTime)) from WorkPlan w ")
