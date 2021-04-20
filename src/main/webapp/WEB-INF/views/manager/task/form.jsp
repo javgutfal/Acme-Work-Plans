@@ -17,5 +17,6 @@
 		</acme:form-select>		
 	
 	<acme:form-submit code="manager.task.form.button.create" action="/manager/task/create"/>
+	<acme:form-submit code="manager.task.form.button.delete" action="/manager/task/delete"/>
   	<acme:form-return code="manager.task.form.button.return"/>
 </acme:form>

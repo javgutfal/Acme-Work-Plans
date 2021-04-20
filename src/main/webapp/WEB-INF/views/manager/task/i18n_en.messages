@@ -10,6 +10,7 @@ manager.task.form.label.link=Link:
 manager.task.form.label.publicTask= Public Task:
 manager.task.form.label.finished= Finished:
 manager.task.form.button.create= Create Task
+manager.task.form.button.delete= Delete Task
 manager.task.form.button.return= Return
 
 NOT.FINISHED=NOT FINISHED
