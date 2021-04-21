@@ -16,5 +16,6 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.work-plan.list.initialTime" path="initialTime" width="20%"/>		
+	<acme:list-column code="anonymous.work-plan.list.initialTime" path="initialTime" width="20%"/>	
+	<acme:list-column code="anonymous.work-plan.list.finalTime" path="finalTime" width="20%"/>		
 </acme:list>

@@ -21,7 +21,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">			
 			<acme:menu-suboption code="master.menu.anonymous.list-shouts" action="/anonymous/shout/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.create-shout" action="/anonymous/shout/create"/>
-			<acme:menu-suboption code="master.menu.anonymous.list-workPlans" action="/anonymous/work-plan/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.list-workPlans" action="/anonymous/workPlans/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

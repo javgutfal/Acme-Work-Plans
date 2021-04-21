@@ -8,4 +8,5 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-anonymous.work-plan.list.initialTime = Hora de inicio
+anonymous.work-plan.list.initialTime = Fecha y hora de inicio
+anonymous.work-plan.list.finalTime = Fecha y hora de finalización
