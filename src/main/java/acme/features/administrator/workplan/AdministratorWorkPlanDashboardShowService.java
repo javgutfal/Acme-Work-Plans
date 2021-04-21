@@ -15,14 +15,14 @@ package acme.features.administrator.workplan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.forms.workplan.Dashboard;
+import acme.forms.WorkPlanDashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorWorkPlanDashboardShowService implements AbstractShowService<Administrator, Dashboard> {
+public class AdministratorWorkPlanDashboardShowService implements AbstractShowService<Administrator, WorkPlanDashboard> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -33,14 +33,14 @@ public class AdministratorWorkPlanDashboardShowService implements AbstractShowSe
 
 
 	@Override
-	public boolean authorise(final Request<Dashboard> request) {
+	public boolean authorise(final Request<WorkPlanDashboard> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Dashboard> request, final Dashboard entity, final Model model) {
+	public void unbind(final Request<WorkPlanDashboard> request, final WorkPlanDashboard entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -55,10 +55,10 @@ public class AdministratorWorkPlanDashboardShowService implements AbstractShowSe
 	}
 
 	@Override
-	public Dashboard findOne(final Request<Dashboard> request) {
+	public WorkPlanDashboard findOne(final Request<WorkPlanDashboard> request) {
 		assert request != null;
 
-		Dashboard result;
+		WorkPlanDashboard result;
 		
 		final Long publicWorkPlanNumber;
 		final Long privateWorkPlanNumber;
@@ -86,7 +86,7 @@ public class AdministratorWorkPlanDashboardShowService implements AbstractShowSe
 		minWorkPlanWorkload = this.repository.minWorkPlanWorkload();
 		maxWorkPlanWorkload = this.repository.maxWorkPlanWorkload();
 
-		result = new Dashboard();
+		result = new WorkPlanDashboard();
 		result.setPublicWorkPlanNumber(publicWorkPlanNumber);
 		result.setPrivateWorkPlanNumber(privateWorkPlanNumber);
 		result.setFinishedWorkPlanNumber(finishedWorkPlanNumber);

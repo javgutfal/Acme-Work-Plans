@@ -17,9 +17,9 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-
-	<definition name="administrator/workplandashboard/form" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/workplandashboard/form.jsp" />
+	
+	<definition name="administrator/work-plan-dashboard/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/work-plan-dashboard/form.jsp" />
 	</definition>
 
 </tiles-definitions>

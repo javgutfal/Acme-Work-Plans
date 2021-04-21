@@ -1,4 +1,4 @@
-package acme.forms.workplan;
+package acme.forms;
 
 import java.io.Serializable;
 
@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Dashboard implements Serializable {
+public class WorkPlanDashboard implements Serializable {
 
 	/**
 	 * 
