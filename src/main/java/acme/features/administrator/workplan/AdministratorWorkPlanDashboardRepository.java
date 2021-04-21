@@ -26,10 +26,10 @@ public interface AdministratorWorkPlanDashboardRepository extends AbstractReposi
 	@Query("select count(w) from WorkPlan w where w.publicWorkPlan = false")
 	Long getPrivateWorkPlanNumber();
 	
-	@Query("select count(w) from WorkPlan w where w.finalTime > current_date()")
+	@Query("select count(w) from WorkPlan w where w.finalTime <= current_date()")
 	Long getFinishedWorkPlanNumber();
 	
-	@Query("select count(w) from WorkPlan w where w.finalTime <= current_date()")
+	@Query("select count(w) from WorkPlan w where w.finalTime > current_date()")
 	Long getNotFinishedWorkPlanNumber();
 	
 	@Query("select avg(datediff(w.finalTime, w.initialTime)) from WorkPlan w ")

@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.forms.WorkPlanDashboard;
+import acme.forms.workplan.Dashboard;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
 @RequestMapping("/administrator/workplandashboard/")
-public class AdministratorWorkPlanDashboardController extends  AbstractController<Administrator, WorkPlanDashboard>{
+public class AdministratorWorkPlanDashboardController extends  AbstractController<Administrator, Dashboard>{
 	// Internal state ---------------------------------------------------------
 
 		@Autowired

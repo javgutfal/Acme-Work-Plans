@@ -19,9 +19,9 @@ administrator.dashboard.form.label.averageOfExecutionWorkPlanPeriod=Media de eje
 administrator.dashboard.form.label.deviationOfExecutionWorkPlanPeriod=Desviación de ejecución del periodo de WorkPlan
 administrator.dashboard.form.label.minExecutionWorkPlanPeriod=Mínimo periodo de ejecución de WorkPlan
 administrator.dashboard.form.label.maxExecutionWorkPlanPeriod=Máximo periodo de ejecución de WorkPlan
-administrator.dashboard.form.label.averageOfExecutionWorkPlanWorkload=Media de la ejecución de carga de trabajo de WorkPlan
-administrator.dashboard.form.label.deviationOfExecutionWorkPlanWorkload=Desviación de ejecución de carga de trabajo de WorkPlan
-administrator.dashboard.form.label.minExecutionWorkPlanWorkload=Mínimo periodo de ejecución de carga de trabajo de WorkPlan
-administrator.dashboard.form.label.maxExecutionWorkPlanWorkload=Máximo periodo de ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.averageOfWorkPlanWorkload=Media de la ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.deviationOfWorkPlanWorkload=Desviación de ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.minWorkPlanWorkload=Mínimo periodo de ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.maxWorkPlanWorkload=Máximo periodo de ejecución de carga de trabajo de WorkPlan
 
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

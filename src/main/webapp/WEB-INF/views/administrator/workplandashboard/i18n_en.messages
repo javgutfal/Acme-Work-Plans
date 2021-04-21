@@ -19,10 +19,10 @@ administrator.dashboard.form.label.averageOfExecutionWorkPlanPeriod=Average of e
 administrator.dashboard.form.label.deviationOfExecutionWorkPlanPeriod=Deviation of execution WorkPlan Period
 administrator.dashboard.form.label.minExecutionWorkPlanPeriod=Minimum execution WorkPlan Period
 administrator.dashboard.form.label.maxExecutionWorkPlanPeriod=Maximum execution WorkPlan Period
-administrator.dashboard.form.label.averageOfExecutionWorkPlanWorkload=Average of execution WorkPlan Workload
-administrator.dashboard.form.label.deviationOfExecutionWorkPlanWorkload=Deviation of execution WorkPlan Workload
-administrator.dashboard.form.label.minExecutionWorkPlanWorkload=Minimum execution WorkPlan Workload
-administrator.dashboard.form.label.maxExecutionWorkPlanWorkload=Maximum execution WorkPlan Workload
+administrator.dashboard.form.label.averageOfWorkPlanWorkload=Average of execution WorkPlan Workload
+administrator.dashboard.form.label.deviationOfWorkPlanWorkload=Deviation of execution WorkPlan Workload
+administrator.dashboard.form.label.minWorkPlanWorkload=Minimum execution WorkPlan Workload
+administrator.dashboard.form.label.maxWorkPlanWorkload=Maximum execution WorkPlan Workload
 
 administrator.dashboard.form.title.application-statuses = Application statuses
 
