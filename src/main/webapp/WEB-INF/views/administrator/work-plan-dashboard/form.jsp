@@ -122,14 +122,55 @@
 	</tr>
 </table>
 
-<h2>
-	<acme:message code="administrator.dashboard.form.title.application-statuses"/>
-</h2>
+<div id="container" class="container"></div>
 
-<div>
-	<canvas id="canvas"></canvas>
-</div>
+<!-- Highcharts JS -->
+	<script type="text/javascript"
+		src="//code.highcharts.com/highcharts.js"></script>
 
 <script type="text/javascript">
-	
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'WorkPlans DashBoard'
+    },
+    xAxis: {
+        categories: [
+            'Public',
+            'Private',
+            'Finished',
+            'Not Finished',
+
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Number of WorkPlans'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y} workplans</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'workplans',
+        data: [<jstl:out value="${publicWorkPlanNumber}"/>,<jstl:out value="${privateWorkPlanNumber}"/>,
+        				<jstl:out value="${finishedWorkPlanNumber}"/>,<jstl:out value="${notFinishedWorkPlanNumber}"/>]
+
+    }]
+});
 </script>

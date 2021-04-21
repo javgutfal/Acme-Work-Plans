@@ -115,19 +115,19 @@
 		<property name="initialTime" value="2021/4/10 10:30" />
 		<property name="finalTime" value="2021/4/25 10:30" />
 		<property name="manager" ref="manager1Manager"/>
-		<property name="publicWorkPlan" value="true" />
+		<property name="publicWorkPlan" value="false" />
 	</bean>
 	
 	<bean id="workPlan03" class="acme.entities.workPlans.WorkPlan">
 		<property name="initialTime" value="2021/4/10 10:30" />
-		<property name="finalTime" value="2021/4/25 10:30" />
+		<property name="finalTime" value="2021/4/20 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
 	</bean>
 	
 	<bean id="workPlan04" class="acme.entities.workPlans.WorkPlan">
 		<property name="initialTime" value="2021/4/10 10:30" />
-		<property name="finalTime" value="2021/4/25 10:30" />
+		<property name="finalTime" value="2021/4/20 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
 	</bean>
