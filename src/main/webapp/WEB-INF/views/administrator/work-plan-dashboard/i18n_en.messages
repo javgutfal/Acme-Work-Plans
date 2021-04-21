@@ -1,0 +1,28 @@
+# i18n_en.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.show = Dashboard
+
+administrator.dashboard.form.title.general-indicators = General indicators
+administrator.dashboard.form.label.publicWorkPlans= Public WorkPlans
+administrator.dashboard.form.label.privateWorkPlans= Private WorkPlans
+administrator.dashboard.form.label.finishedWorkPlan= Finished WorkPlans
+administrator.dashboard.form.label.notFinishedWorkPlan=Not Finished WorkPlans
+administrator.dashboard.form.label.averageOfExecutionWorkPlanPeriod=Average of execution WorkPlan Period
+administrator.dashboard.form.label.deviationOfExecutionWorkPlanPeriod=Deviation of execution WorkPlan Period
+administrator.dashboard.form.label.minExecutionWorkPlanPeriod=Minimum execution WorkPlan Period
+administrator.dashboard.form.label.maxExecutionWorkPlanPeriod=Maximum execution WorkPlan Period
+administrator.dashboard.form.label.averageOfWorkPlanWorkload=Average of execution WorkPlan Workload
+administrator.dashboard.form.label.deviationOfWorkPlanWorkload=Deviation of execution WorkPlan Workload
+administrator.dashboard.form.label.minWorkPlanWorkload=Minimum execution WorkPlan Workload
+administrator.dashboard.form.label.maxWorkPlanWorkload=Maximum execution WorkPlan Workload
+
+administrator.dashboard.form.title.application-statuses = Application statuses
+

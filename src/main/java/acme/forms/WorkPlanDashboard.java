@@ -16,28 +16,28 @@ public class WorkPlanDashboard implements Serializable {
 	
 	// Atributos
 	
-	protected Long publicWorkPlanNumber;
+	Long publicWorkPlanNumber;
 	
-	protected Long privateWorkPlanNumber;
+	Long privateWorkPlanNumber;
 	
-	protected Long finishedWorkPlanNumber;
+	Long finishedWorkPlanNumber;
 	
-	protected Long notFinishedWorkPlanNumber;
+	Long notFinishedWorkPlanNumber;
 	
-	protected Double averageOfExecutionWorkPlanPeriod;
+	Double averageOfExecutionWorkPlanPeriod;
 	
-	protected Double deviationOfExecutionWorkPlanPeriod;
+	Double deviationOfExecutionWorkPlanPeriod;
 	
-	protected Double minExecutionWorkPlanPeriod;
+	Double minExecutionWorkPlanPeriod;
 	
-	protected Double maxExecutionWorkPlanPeriod;
+	Double maxExecutionWorkPlanPeriod;
 	
-	protected Double averageOfWorkPlanWorkload;
+	Double averageOfWorkPlanWorkload;
 	
-	protected Double deviationOfWorkPlanWorkload;
+	Double deviationOfWorkPlanWorkload;
 	
-	protected Double minWorkPlanWorkload;
+	Double minWorkPlanWorkload;
 	
-	protected Double maxWorkPlanWorkload;
+	Double maxWorkPlanWorkload;
 
 }
