@@ -1,4 +1,3 @@
-
 package acme.features.manager.tasks;
 
 import javax.annotation.PostConstruct;
@@ -22,9 +21,9 @@ public class ManagerTaskController extends AbstractController<Manager, Task> {
 
 	@Autowired
 	private ManagerTaskCreateService	createService;
-
+	
 	@Autowired
-	private ManagerTaskShowService		showService;
+	private ManagerTaskShowService	showService;
 
 	@Autowired
 	private ManagerTaskUpdateService	updateService;
