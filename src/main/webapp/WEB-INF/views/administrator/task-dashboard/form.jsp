@@ -25,99 +25,99 @@
 	</caption>	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.publicWorkPlans"/>
+			<acme:message code="administrator.dashboard.form.label.publicTaskNumber"/>
 		</th>
 		<td>
-			<acme:print value="${publicWorkPlanNumber}"/>
+			<acme:print value="${publicTaskNumber}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.privateWorkPlans"/>
+			<acme:message code="administrator.dashboard.form.label.privateTaskNumber"/>
 		</th>
 		<td>
-			<acme:print value="${privateWorkPlanNumber}"/>
+			<acme:print value="${privateTaskNumber}"/>
 		</td>
 	</tr>
 	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.finishedWorkPlan"/>
+			<acme:message code="administrator.dashboard.form.label.finishedTaskNumber"/>
 		</th>
 		<td>
-			<acme:print value="${finishedWorkPlanNumber}"/>
+			<acme:print value="${finishedTaskNumber}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.notFinishedWorkPlan"/>
+			<acme:message code="administrator.dashboard.form.label.notFinishedTaskNumber"/>
 		</th>
 		<td>
-			<acme:print value="${notFinishedWorkPlanNumber}"/>
+			<acme:print value="${notFinishedTaskNumber}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.averageOfExecutionWorkPlanPeriod"/>
+			<acme:message code="administrator.dashboard.form.label.averageOfExecutionTaskPeriod"/>
 		</th>
 		<td>
-			<acme:print value="${averageOfExecutionWorkPlanPeriod}"/>
+			<acme:print value="${averageOfExecutionTaskPeriod}"/>
 		</td>
 	</tr>	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.deviationOfExecutionWorkPlanPeriod"/>
+			<acme:message code="administrator.dashboard.form.label.deviationOfExecutionTaskPeriod"/>
 		</th>
 		<td>
-			<acme:print value="${deviationOfExecutionWorkPlanPeriod}"/>
+			<acme:print value="${deviationOfExecutionTaskPeriod}"/>
 		</td>
 	</tr>	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.minExecutionWorkPlanPeriod"/>
+			<acme:message code="administrator.dashboard.form.label.minExecutionTaskPeriod"/>
 		</th>
 		<td>
-			<acme:print value="${minExecutionWorkPlanPeriod}"/>
+			<acme:print value="${minExecutionTaskPeriod}"/>
 		</td>
 	</tr>	
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.maxExecutionWorkPlanPeriod"/>
+			<acme:message code="administrator.dashboard.form.label.maxExecutionTaskPeriod"/>
 		</th>
 		<td>
-			<acme:print value="${maxExecutionWorkPlanPeriod}"/>
+			<acme:print value="${maxExecutionTaskPeriod}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.averageOfWorkPlanWorkload"/>
+			<acme:message code="administrator.dashboard.form.label.averageOfTaskWorkload"/>
 		</th>
 		<td>
-			<acme:print value="${averageOfWorkPlanWorkload}"/>
+			<acme:print value="${averageOfTaskWorkload}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.deviationOfWorkPlanWorkload"/>
+			<acme:message code="administrator.dashboard.form.label.deviationOfTaskWorkload"/>
 		</th>
 		<td>
-			<acme:print value="${deviationOfWorkPlanWorkload}"/>
+			<acme:print value="${deviationOfTaskWorkload}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.minWorkPlanWorkload"/>
+			<acme:message code="administrator.dashboard.form.label.minTaskWorkload"/>
 		</th>
 		<td>
-			<acme:print value="${minWorkPlanWorkload}"/>
+			<acme:print value="${minTaskWorkload}"/>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.maxWorkPlanWorkload"/>
+			<acme:message code="administrator.dashboard.form.label.maxTaskWorkload"/>
 		</th>
 		<td>
-			<acme:print value="${maxWorkPlanWorkload}"/>
+			<acme:print value="${maxTaskWorkload}"/>
 		</td>
 	</tr>
 </table>
@@ -134,7 +134,7 @@ Highcharts.chart('container', {
         type: 'column'
     },
     title: {
-        text: 'WorkPlans DashBoard'
+        text: 'Task DashBoard'
     },
     xAxis: {
         categories: [
@@ -155,7 +155,7 @@ Highcharts.chart('container', {
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y} workplans</b></td></tr>',
+            '<td style="padding:0"><b>{point.y} tasks</b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
@@ -167,9 +167,9 @@ Highcharts.chart('container', {
         }
     },
     series: [{
-        name: 'workplans',
-        data: [<jstl:out value="${publicWorkPlanNumber}"/>,<jstl:out value="${privateWorkPlanNumber}"/>,
-        				<jstl:out value="${finishedWorkPlanNumber}"/>,<jstl:out value="${notFinishedWorkPlanNumber}"/>]
+        name: 'tasks',
+        data: [<jstl:out value="${publicTaskNumber}"/>,<jstl:out value="${privateTaskNumber}"/>,
+        				<jstl:out value="${finishedTaskNumber}"/>,<jstl:out value="${notFinishedTaskNumber}"/>]
 
     }]
 });

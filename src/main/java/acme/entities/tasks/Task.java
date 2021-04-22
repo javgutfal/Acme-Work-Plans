@@ -66,7 +66,5 @@ public class Task extends DomainEntity {
 	protected String link;
 	
 	protected boolean publicTask;
-	
-	protected boolean finished;
 
 }

@@ -13,7 +13,7 @@ import acme.framework.services.AbstractShowService;
 public class AdministratorTaskDashboardShowService implements AbstractShowService<Administrator, TaskDashboard> {
 	
 	@Autowired
-	protected AdministratorTaskRepository repository;
+	protected AdministratorTaskDashBoardRepository repository;
 
 	@Override
 	public boolean authorise(final Request<TaskDashboard> request) {
@@ -30,56 +30,58 @@ public class AdministratorTaskDashboardShowService implements AbstractShowServic
 
 		request.unbind(entity, model, 
 			"publicTaskNumber", "privateTaskNumber", "finishedTaskNumber", "notFinishedTaskNumber", 
-			"averageNumberOfExecutionPeriod", "deviationNumberOfExecutionPeriod", "minExecutionPeriod", 
-			"maxExecutionPeriod", "averageNumberOfWorkload", "deviationNumberOfWorkload", 
-			"minWorkload", "maxWorkload");
+			"averageOfExecutionTaskPeriod", "deviationOfExecutionTaskPeriod", "minExecutionTaskPeriod", 
+			"maxExecutionTaskPeriod", "averageOfTaskWorkload", "deviationOfTaskWorkload", 
+			"minTaskWorkload", "maxTaskWorkload");
 	}
 
 	@Override
 	public TaskDashboard findOne(final Request<TaskDashboard> request) {
 		assert request != null;
-		
+
 		TaskDashboard result;
-		Long publicTaskNumber;
-		Long privateTaskNumber;		
-		Long finishedTaskNumber;		
-		Long notFinishedTaskNumber;		
-//		Double averageNumberOfExecutionPeriod;		
-//		Double deviationNumberOfExecutionPeriod;		
-//		Double minExecutionPeriod;		
-//		Double maxExecutionPeriod;		
-//		Double averageNumberOfWorkload;		
-//		Double deviationNumberOfWorkload;		
-//		Double minWorkload;		
-//		Double maxWorkload;
 		
+		final Long publicTaskNumber;
+		final Long privateTaskNumber;
+		final Long finishedTaskNumber;
+		final Long notFinishedTaskNumber;
+		final Double averageOfExecutionTaskPeriod;
+		final Double deviationOfExecutionTaskPeriod;
+		final Double minExecutionTaskPeriod;
+		final Double maxExecutionTaskPeriod;
+		final Double averageOfTaskWorkload;
+		final Double deviationOfTaskWorkload;
+		final Double minTaskWorkload;
+		final Double maxTaskWorkload;
+
 		publicTaskNumber = this.repository.getPublicTaskNumber();
 		privateTaskNumber = this.repository.getPrivateTaskNumber();
 		finishedTaskNumber = this.repository.getFinishedTaskNumber();
 		notFinishedTaskNumber = this.repository.getNotFinishedTaskNumber();
-//		averageNumberOfExecutionPeriod = this.repository.averageNumberOfExecutionPeriod();
-//		deviationNumberOfExecutionPeriod = this.repository.deviationNumberOfExecutionPeriod();
-//		minExecutionPeriod = this.repository.minExecutionPeriod();
-//		maxExecutionPeriod = this.repository.maxExecutionPeriod();
-//		averageNumberOfWorkload = this.repository.averageNumberOfWorkload();
-//		deviationNumberOfWorkload = this.repository.deviationNumberOfWorkload();
-//		minWorkload = this.repository.minWorkload();
-//		maxWorkload = this.repository.maxWorkload();
-		
+		averageOfExecutionTaskPeriod = this.repository.averageOfExecutionTaskPeriod();
+		deviationOfExecutionTaskPeriod = this.repository.deviationOfExecutionTaskPeriod();
+		minExecutionTaskPeriod = this.repository.minExecutionTaskPeriod();
+		maxExecutionTaskPeriod = this.repository.maxExecutionTaskPeriod();
+    	averageOfTaskWorkload = this.repository.averageOfTaskWorkload();
+		deviationOfTaskWorkload = this.repository.deviationOfTaskWorkload();
+		minTaskWorkload = this.repository.minTaskWorkload();
+		maxTaskWorkload = this.repository.maxTaskWorkload();
+
 		result = new TaskDashboard();
 		result.setPublicTaskNumber(publicTaskNumber);
 		result.setPrivateTaskNumber(privateTaskNumber);
 		result.setFinishedTaskNumber(finishedTaskNumber);
 		result.setNotFinishedTaskNumber(notFinishedTaskNumber);
-//		result.setAverageNumberOfExecutionPeriod(averageNumberOfExecutionPeriod);
-//		result.setDeviationNumberOfExecutionPeriod(deviationNumberOfExecutionPeriod);
-//		result.setMinExecutionPeriod(minExecutionPeriod);
-//		result.setMaxExecutionPeriod(maxExecutionPeriod);
-//		result.setAverageNumberOfWorkload(averageNumberOfWorkload);
-//		result.setDeviationNumberOfWorkload(deviationNumberOfWorkload);
-//		result.setMinWorkload(minWorkload);
-//		result.setMaxWorkload(maxWorkload);
-		
+		result.setAverageOfExecutionTaskPeriod(averageOfExecutionTaskPeriod);
+		result.setDeviationOfExecutionTaskPeriod(deviationOfExecutionTaskPeriod);
+		result.setMinExecutionTaskPeriod(minExecutionTaskPeriod);
+		result.setMaxExecutionTaskPeriod(maxExecutionTaskPeriod);
+		result.setAverageOfTaskWorkload(averageOfTaskWorkload);
+		result.setDeviationOfTaskWorkload(deviationOfTaskWorkload);
+		result.setMinTaskWorkload(minTaskWorkload);
+		result.setMaxTaskWorkload(maxTaskWorkload);
+
+
 		return result;
 	}
 

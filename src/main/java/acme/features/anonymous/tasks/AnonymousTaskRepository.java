@@ -11,10 +11,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousTaskRepository extends AbstractRepository {
 	
-	@Query("select t from Task t where t.publicTask = true and t.finished = false")
+	@Query("select t from Task t where t.publicTask = true and w.finalTime > ?1")
 	List<Task> findByPublicTaskTrueAndFinishedFalse();
 	
-	@Query("select t from Task t where t.id = ?1 and t.publicTask = true and t.finished = false")
+	@Query("select t from Task t where t.id = ?1 and t.publicTask = true and w.finalTime > ?1")
 	Task findByIdAndPublicTaskTrueAndFinishedFalse(int id);
 
 }

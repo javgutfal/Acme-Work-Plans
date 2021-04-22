@@ -45,6 +45,7 @@ master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.workPlanDashboard= WorkPlan Dashboard
+master.menu.administrator.taskDashboard= Task Dashboard
 
 # master.menu.provider ########################################################
 

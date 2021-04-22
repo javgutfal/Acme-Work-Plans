@@ -16,28 +16,28 @@ public class TaskDashboard implements Serializable {
 	
 	// Atributos
 	
-	protected Long publicTaskNumber;
+	Long publicTaskNumber;
 	
-	protected Long privateTaskNumber;
+	Long privateTaskNumber;
 	
-	protected Long finishedTaskNumber;
+	Long finishedTaskNumber;
 	
-	protected Long notFinishedTaskNumber;
+	Long notFinishedTaskNumber;
 	
-	protected Double averageNumberOfExecutionPeriod;
+	Double averageOfExecutionTaskPeriod;
 	
-	protected Double deviationNumberOfExecutionPeriod;
+	Double deviationOfExecutionTaskPeriod;
 	
-	protected Double minExecutionPeriod;
+	Double minExecutionTaskPeriod;
 	
-	protected Double maxExecutionPeriod;
+	Double maxExecutionTaskPeriod;
 	
-	protected Double averageNumberOfWorkload;
+	Double averageOfTaskWorkload;
+		
+	Double deviationOfTaskWorkload;
 	
-	protected Double deviationNumberOfWorkload;
+	Double minTaskWorkload;
 	
-	protected Double minWorkload;
-	
-	protected Double maxWorkload;
+	Double maxTaskWorkload;
 
 }
