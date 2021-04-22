@@ -22,8 +22,6 @@
 		<acme:form-option code="PRIVATE" value="false" />
 	</acme:form-select>
 	<jstl:if test="${command == 'show'}">
-	<acme:form-submit code="manager.task.form.button.create"
-			action="/manager/task/create" />
 	<acme:form-submit code="manager.task.form.button.update"
 			action="/manager/task/update" />
 	<acme:form-submit code="manager.task.form.button.delete" action="/manager/task/delete"/>
