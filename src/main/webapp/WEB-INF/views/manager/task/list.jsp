@@ -6,7 +6,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:list readonly="true">
+<acme:list readonly="false">
 	<acme:list-column code="manager.task.list.label.title" path="title" width="10%"/>
 	<acme:list-column code="manager.task.list.label.initial-time" path="initialTime" width="10%"/>
 	<acme:list-column code="manager.task.list.label.final-time" path="finalTime" width="10%"/>

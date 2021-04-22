@@ -33,6 +33,8 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
 
+# master.menu.authenticated #######################################################
+master.menu.authenticated = Autenticado
 
 # master.menu.administrator ###################################################
 
