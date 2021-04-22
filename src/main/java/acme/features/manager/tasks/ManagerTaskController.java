@@ -1,4 +1,3 @@
-
 package acme.features.manager.tasks;
 
 import javax.annotation.PostConstruct;
@@ -26,6 +25,12 @@ public class ManagerTaskController extends AbstractController<Manager, Task> {
 	@Autowired
 	private ManagerTaskShowService	showService;
 
+	@Autowired
+	private ManagerTaskUpdateService	updateService;
+	
+	@Autowired
+	private ManagerTaskDeleteService	deleteService;
+
 	// Constructors -----------------------------------------------------------
 
 
@@ -33,7 +38,9 @@ public class ManagerTaskController extends AbstractController<Manager, Task> {
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 
 }
