@@ -16,6 +16,7 @@ manager.task.form.label.link=Link:
 manager.task.form.label.publicTask= Tarea Pública:
 manager.task.form.label.finished= Finalizada:
 manager.task.form.button.create= Crear Tarea
+manager.task.form.button.delete= Borrar Tarea
 manager.task.form.button.return= Volver
 
 PUBLIC= PÚBLICO
