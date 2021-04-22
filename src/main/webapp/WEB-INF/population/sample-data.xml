@@ -113,7 +113,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="false" />
 		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
@@ -126,7 +125,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="false" />
 		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
@@ -139,7 +137,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="true" />
 		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
@@ -152,7 +149,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="true" />
 		<property name="workPlans" ref="workPlan02"/>
 	</bean>
 	
@@ -165,7 +161,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="true" />
 		<property name="workPlans" ref="workPlan02"/>
 	</bean>
 	
@@ -178,7 +173,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="finished" value="true" />
 		<property name="workPlans" ref="workPlan03"/>
 	</bean>
 	
