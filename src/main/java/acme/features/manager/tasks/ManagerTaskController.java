@@ -16,15 +16,23 @@ import acme.framework.controllers.AbstractController;
 public class ManagerTaskController extends AbstractController<Manager, Task> {
 
 	// Internal state ---------------------------------------------------------
+	@Autowired
+	private ManagerTaskListMineService	listService;
 
 	@Autowired
-	private ManagerTaskListMineService listService;
+	private ManagerTaskCreateService	createService;
+	
+	@Autowired
+	private ManagerTaskShowService	showService;
 
 	// Constructors -----------------------------------------------------------
+
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 
 }

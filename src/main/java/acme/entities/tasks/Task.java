@@ -53,7 +53,6 @@ public class Task extends DomainEntity {
 	@NotBlank
 	@Length(min = 1, max = 500)
 	protected String description;
-	
 	@Valid
 	@ManyToMany()
 	protected Collection<WorkPlan> workPlans;

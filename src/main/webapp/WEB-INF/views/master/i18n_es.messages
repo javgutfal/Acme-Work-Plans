@@ -53,9 +53,10 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
-# master.menu.manager ##########################################################
+# master.menu.manager #########################################################
 
-master.menu.manager = Gestor
+master.menu.manager= Mánager
+master.menu.manager.create-task = Crear tarea
 
 # master.menu.user-account ####################################################
 

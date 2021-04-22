@@ -2,8 +2,8 @@ package acme.entities.workPlans;
 
 import java.util.Collection;
 import java.util.Date;
-import java.util.stream.Collectors;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
@@ -30,11 +30,12 @@ public class WorkPlan extends DomainEntity {
 	
 	// Atributos
 	
-	
+	@Column(name = "initial_time")
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
 	protected Date initialTime;
 	
+	@Column(name = "final_time")
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
 	protected Date finalTime;
@@ -48,15 +49,9 @@ public class WorkPlan extends DomainEntity {
 	@ManyToOne(optional = false)
 	protected Manager manager;
 	
-	public Double workload() {
-		Double result;
-
-		result = this.tasks.stream().collect(Collectors.summingDouble(x->x.getWorkload()));
-		return result;
-	}
+	protected Double workload;
 	
 	protected boolean publicWorkPlan;
 	
-	protected boolean finalMode;
 
 }
