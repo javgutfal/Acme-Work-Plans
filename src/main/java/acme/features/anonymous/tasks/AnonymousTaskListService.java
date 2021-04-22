@@ -1,6 +1,8 @@
 package acme.features.anonymous.tasks;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +39,13 @@ public class AnonymousTaskListService implements AbstractListService<Anonymous, 
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
 		
-		return this.repository.findByPublicTaskTrueAndFinishedFalse();
+		Calendar calendar;
+		Date deadline;
+
+		calendar = Calendar.getInstance();
+		deadline = calendar.getTime();
+		
+		return this.repository.findByPublicTaskTrueAndFinishedFalse(deadline);
 	}
 
 }
