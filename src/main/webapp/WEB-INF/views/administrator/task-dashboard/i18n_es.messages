@@ -19,9 +19,9 @@ administrator.dashboard.form.label.averageOfExecutionTaskPeriod=Media de ejecuci
 administrator.dashboard.form.label.deviationOfExecutionTaskPeriod=Desviación de ejecución del periodo de Task
 administrator.dashboard.form.label.minExecutionTaskPeriod=Mínimo periodo de ejecución de Task
 administrator.dashboard.form.label.maxExecutionTaskPeriod=Máximo periodo de ejecución de Task
-administrator.dashboard.form.label.averageOfTaskWorkload=Media de la ejecución de carga de trabajo de Task
-administrator.dashboard.form.label.deviationOfTaskWorkload=Desviación de ejecución de carga de trabajo de Task
-administrator.dashboard.form.label.minTaskWorkload=Mínimo periodo de ejecución de carga de trabajo de Task
-administrator.dashboard.form.label.maxTaskWorkload=Máximo periodo de ejecución de carga de trabajo de Task
+administrator.dashboard.form.label.averageOfTaskWorkload=Media de la carga de trabajo de todas Tasks
+administrator.dashboard.form.label.deviationOfTaskWorkload=Desviación de las cargas de trabajo de todas Tasks
+administrator.dashboard.form.label.minTaskWorkload=Task con menor carga de trabajo
+administrator.dashboard.form.label.maxTaskWorkload=Task con mayor carga de trabajo
 
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

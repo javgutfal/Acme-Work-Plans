@@ -19,10 +19,10 @@ administrator.dashboard.form.label.averageOfExecutionTaskPeriod=Average of execu
 administrator.dashboard.form.label.deviationOfExecutionTaskPeriod=Deviation of execution Task Period
 administrator.dashboard.form.label.minExecutionTaskPeriod=Minimum execution Task Period
 administrator.dashboard.form.label.maxExecutionTaskPeriod=Maximum execution Task Period
-administrator.dashboard.form.label.averageOfTaskWorkload=Average of execution Task Workload
-administrator.dashboard.form.label.deviationOfTaskWorkload=Deviation of execution Task Workload
-administrator.dashboard.form.label.minTaskWorkload=Minimum execution Task Workload
-administrator.dashboard.form.label.maxTaskWorkload=Maximum execution Task Workload
+administrator.dashboard.form.label.averageOfTaskWorkload=Average of Task Workload
+administrator.dashboard.form.label.deviationOfTaskWorkload=Deviation of Task Workload
+administrator.dashboard.form.label.minTaskWorkload=Minimum Task Workload
+administrator.dashboard.form.label.maxTaskWorkload=Maximum Task Workload
 
 administrator.dashboard.form.title.application-statuses = Application statuses
 
