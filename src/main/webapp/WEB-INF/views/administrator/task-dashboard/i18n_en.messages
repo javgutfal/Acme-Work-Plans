@@ -25,4 +25,3 @@ administrator.dashboard.form.label.minTaskWorkload=Minimum Task Workload
 administrator.dashboard.form.label.maxTaskWorkload=Maximum Task Workload
 
 administrator.dashboard.form.title.application-statuses = Application statuses
-

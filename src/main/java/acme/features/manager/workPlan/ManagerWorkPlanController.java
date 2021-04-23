@@ -1,4 +1,4 @@
-package acme.features.anonymous.tasks;
+package acme.features.manager.workPlan;
 
 import javax.annotation.PostConstruct;
 
@@ -6,19 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.tasks.Task;
+import acme.entities.roles.Manager;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/task/")
-public class AnonymousTaskController extends AbstractController<Anonymous, Task> {
+@RequestMapping("/manager/workPlans/")
+public class ManagerWorkPlanController extends AbstractController<Manager, WorkPlan> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousTaskListService listService;
+	private ManagerWorkPlanListMineService listService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -26,5 +26,4 @@ public class AnonymousTaskController extends AbstractController<Anonymous, Task>
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 	}
-
 }
