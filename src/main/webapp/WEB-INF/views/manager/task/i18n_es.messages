@@ -20,6 +20,10 @@ manager.task.form.button.update= Actualizar Tarea
 manager.task.form.button.delete= Borrar Tarea
 manager.task.form.button.return= Volver
 
+manager.task.form.error.initialTime = La fecha inicial del periodo de ejecución de una tarea debe estar en el futuro
+manager.task.form.error.finalTime = La fecha final del periodo de ejecución de una tarea debe estar en el futuro
+manager.task.form.error.finalTimeInitial = La fecha final del periodo de ejecución de una tarea debe ser posterior a la fecha inicial
+
 PUBLIC= PÚBLICO
 PRIVATE=PRIVADO
 
