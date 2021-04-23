@@ -1,5 +1,9 @@
 package acme.features.manager.tasks;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -72,6 +76,25 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		if (!errors.hasErrors("initialTime")) {
+			Calendar calendar;
+			Date actualDate;
+						
+			calendar = new GregorianCalendar();
+			actualDate = calendar.getTime();
+			errors.state(request, entity.getInitialTime().after(actualDate), "initialTime", "manager.task.form.error.initialTime");
+		}
+		
+		if (!errors.hasErrors("finalTime")) {
+			Calendar calendar;
+			Date actualDate;
+						
+			calendar = new GregorianCalendar();
+			actualDate = calendar.getTime();
+			errors.state(request, entity.getFinalTime().after(actualDate), "finalTime", "manager.task.form.error.finalTime");
+			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.task.form.error.finalTimeInitial");
+		}
 	
 	}
 

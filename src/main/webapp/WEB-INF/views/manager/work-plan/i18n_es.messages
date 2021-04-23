@@ -12,3 +12,7 @@ manager.work-plan.list.manager = Manager
 manager.work-plan.list.initialTime = Fecha y hora de inicio
 manager.work-plan.list.finalTime = Fecha y hora de finalización
 manager.work-plan.list.workload = Workload
+
+manager.work-plan.form.error.initialTime = La fecha inicial del periodo de ejecución de un work plan debe estar en el futuro
+manager.work-plan.form.error.finalTime = La fecha final del periodo de ejecución de un work plan debe estar en el futuro
+manager.work-plan.form.error.finalTimeInitial = La fecha final del periodo de ejecución de un work plan debe ser posterior a la fecha inicial

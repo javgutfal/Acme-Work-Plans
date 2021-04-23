@@ -20,4 +20,8 @@ manager.task.form.button.update= Update Task
 manager.task.form.button.delete= Delete Task
 manager.task.form.button.return= Return
 
+manager.task.form.error.initialTime = The initial time of the execution period of a task must be future
+manager.task.form.error.finalTime = The final time of the execution period of a task must be future
+manager.task.form.error.finalTimeInitial = The final time of the execution period of a task must be after the initial time
+
 NOT.FINISHED=NOT FINISHED
