@@ -8,6 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-anonymous.work-plan.list.initialTime = Initial Date
-anonymous.work-plan.list.finalTime = Final Date
-anonymous.work-plan.list.workload = Workload
+manager.work-plan.list.manager = Manager
+manager.work-plan.list.initialTime = Initial Date
+manager.work-plan.list.finalTime = Final Date
+manager.work-plan.list.workload = Workload
