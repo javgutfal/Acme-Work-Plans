@@ -140,8 +140,7 @@ Highcharts.chart('container', {
         categories: [
             'Public',
             'Private',
-            'Finished',
-            'Not Finished',
+            'Total',
 
         ],
         crosshair: true
@@ -169,7 +168,7 @@ Highcharts.chart('container', {
     series: [{
         name: 'workplans',
         data: [<jstl:out value="${publicWorkPlanNumber}"/>,<jstl:out value="${privateWorkPlanNumber}"/>,
-        				<jstl:out value="${finishedWorkPlanNumber}"/>,<jstl:out value="${notFinishedWorkPlanNumber}"/>]
+        				<jstl:out value="${publicWorkPlanNumber}"/> + <jstl:out value="${privateWorkPlanNumber}"/>]
 
     }]
 });
