@@ -64,6 +64,7 @@ master.menu.manager= Mánager
 master.menu.manager.create-task = Crear tarea
 master.menu.manager.list-workPlans = Ver workplans
 
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

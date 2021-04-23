@@ -32,6 +32,7 @@ master.menu.anonymous.list-shouts = See shouts
 master.menu.anonymous.create-shout = ¡Shout!
 master.menu.anonymous.list-workPlans = See workplans
 
+
 # master.menu.authenticated #######################################################
 master.menu.authenticated = Authenticated
 
@@ -63,6 +64,7 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.manager= Manager
 master.menu.manager.create-task = Create task
 master.menu.manager.list-workPlans = View workplans
+
 
 # master.menu.user-account ####################################################
 
