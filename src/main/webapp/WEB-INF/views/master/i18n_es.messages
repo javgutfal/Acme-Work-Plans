@@ -25,14 +25,17 @@ master.menu.home = Inicio
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
+master.menu.list-tasks = Ver tareas
 
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
-master.menu.anonymous.list-workPlans = Ver workPlans
+master.menu.anonymous.list-workPlans = Ver workplans
 
+# master.menu.authenticated #######################################################
+master.menu.authenticated = Autenticado
 
 # master.menu.administrator ###################################################
 
@@ -42,6 +45,8 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.workPlanDashboard= Tablero de Workplan
+master.menu.administrator.taskDashboard= Tablero de Task
 
 # master.menu.provider ########################################################
 
@@ -52,6 +57,12 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.manager #########################################################
+
+master.menu.manager= Mánager
+master.menu.manager.create-task = Crear tarea
+master.menu.manager.list-workPlans = Ver workplans
 
 # master.menu.user-account ####################################################
 

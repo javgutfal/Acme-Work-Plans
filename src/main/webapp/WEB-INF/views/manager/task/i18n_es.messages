@@ -1,0 +1,27 @@
+# i18n_es.messages
+
+manager.task.list.label.title = Título
+manager.task.list.label.initial-time = Momento de inicio
+manager.task.list.label.final-time = Momento de finalización
+manager.task.list.label.workload = Carga de trabajo
+manager.task.list.label.description = Descripción
+manager.task.list.label.link = Enlace
+
+manager.task.form.label.title = Título:
+manager.task.form.label.initialTime = Tiempo de inicio:
+manager.task.form.label.finalTime = Tiempo de finalización:
+manager.task.form.label.workload = Carga de trabajo:
+manager.task.form.label.description= Descripción:
+manager.task.form.label.link=Link:
+manager.task.form.label.publicTask= Tarea Pública:
+manager.task.form.label.finished= Finalizada:
+manager.task.form.button.create= Crear Tarea
+manager.task.form.button.update= Actualizar Tarea
+manager.task.form.button.delete= Borrar Tarea
+manager.task.form.button.return= Volver
+
+PUBLIC= PÚBLICO
+PRIVATE=PRIVADO
+
+NOT.FINISHED=NO FINALIZADO
+FINISHED= FINALIZADO

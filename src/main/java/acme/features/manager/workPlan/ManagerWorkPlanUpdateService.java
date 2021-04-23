@@ -35,7 +35,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		workplan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workplan.getManager();
 		principal = request.getPrincipal();
-		result = !workplan.isFinalMode() && manager.getUserAccount().getId() == principal.getAccountId();
+		result = !workplan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}

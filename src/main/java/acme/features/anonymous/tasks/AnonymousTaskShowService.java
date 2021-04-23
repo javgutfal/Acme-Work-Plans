@@ -1,5 +1,8 @@
 package acme.features.anonymous.tasks;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.entities.tasks.Task;
@@ -33,8 +36,13 @@ public class AnonymousTaskShowService implements AbstractShowService<Anonymous, 
 	@Override
 	public Task findOne(final Request<Task> request) {
 		assert request != null;
+		Calendar calendar;
+		Date deadline;
+
+		calendar = Calendar.getInstance();
+		deadline = calendar.getTime();
 		
-		return this.repository.findByIdAndPublicTaskTrueAndFinishedFalse(request.getModel().getInteger("id"));
+		return this.repository.findByIdAndPublicTaskTrueAndFinishedFalse(request.getModel().getInteger("id"),deadline);
 	}
 
 }

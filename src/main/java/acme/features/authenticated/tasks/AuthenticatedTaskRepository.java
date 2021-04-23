@@ -1,5 +1,6 @@
 package acme.features.authenticated.tasks;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
@@ -11,10 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedTaskRepository extends AbstractRepository {
 	
-	@Query("select t from Task t where t.publicTask = true and t.finished = true")
-	List<Task> findByPublicTaskTrueAndFinishedTrue();
+	@Query("select t from Task t where t.publicTask = true and t.finalTime < ?1")
+	List<Task> findByPublicTaskTrueAndFinishedTrue(Date moment);
 	
-	@Query("select t from Task t where t.id = ?1 and t.publicTask = true and t.finished = true")
-	Task findByIdAndPublicTaskTrueAndFinishedTrue(int id);
+	@Query("select t from Task t where t.id = ?1 and t.publicTask = true and t.finalTime < ?1")
+	Task findByIdAndPublicTaskTrueAndFinishedTrue(int id, Date moment);
 
 }

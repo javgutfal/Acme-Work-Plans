@@ -1,0 +1,27 @@
+# i18n_es.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.show = Panel de indicadores
+
+administrator.dashboard.form.title.general-indicators = Indicadores generales
+administrator.dashboard.form.label.publicWorkPlans= WorkPlans Públicos
+administrator.dashboard.form.label.privateWorkPlans= WorkPlans Privado
+administrator.dashboard.form.label.finishedWorkPlan= WorkPlans Finalizados
+administrator.dashboard.form.label.notFinishedWorkPlan=WorkPlans No Finalizados
+administrator.dashboard.form.label.averageOfExecutionWorkPlanPeriod=Media de ejecución del periodo de WorkPlan
+administrator.dashboard.form.label.deviationOfExecutionWorkPlanPeriod=Desviación de ejecución del periodo de WorkPlan
+administrator.dashboard.form.label.minExecutionWorkPlanPeriod=Mínimo periodo de ejecución de WorkPlan
+administrator.dashboard.form.label.maxExecutionWorkPlanPeriod=Máximo periodo de ejecución de WorkPlan
+administrator.dashboard.form.label.averageOfWorkPlanWorkload=Media de la ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.deviationOfWorkPlanWorkload=Desviación de ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.minWorkPlanWorkload=Mínimo periodo de ejecución de carga de trabajo de WorkPlan
+administrator.dashboard.form.label.maxWorkPlanWorkload=Máximo periodo de ejecución de carga de trabajo de WorkPlan
+
+administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

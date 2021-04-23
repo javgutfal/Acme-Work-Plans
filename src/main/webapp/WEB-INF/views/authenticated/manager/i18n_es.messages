@@ -1,0 +1,7 @@
+
+authenticated.manager.manager.form.title.create = Hazte mánager
+authenticated.manager.manager.form.title.update = Actualiza tus datos de mánager
+
+authenticated.manager.manager.form.button.create = Registrar
+authenticated.manager.manager.form.button.update = Actualizar
+authenticated.manager.manager.form.button.return = Volver
