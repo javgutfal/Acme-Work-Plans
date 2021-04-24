@@ -22,4 +22,7 @@
 		<put-attribute name="body" type="template" value="../manager/work-plan/list.jsp" />
 	</definition>
 
+	<definition name="manager/work-plan/form" extends="master">		
+		<put-attribute name="body" type="template" value="../manager/work-plan/form.jsp" />
+	</definition>
 </tiles-definitions>

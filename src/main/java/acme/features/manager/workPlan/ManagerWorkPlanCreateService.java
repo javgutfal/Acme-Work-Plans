@@ -73,7 +73,7 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime", "tasks");
+		request.unbind(entity, model, "initialTime", "finalTime");
 	}
 
 	@Override
@@ -86,6 +86,7 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		manager = this.repository.findOneManagerById(request.getPrincipal().getActiveRoleId());
 		result = new WorkPlan();
 		result.setManager(manager);
+		result.setPublicWorkPlan(false);
 
 		return result;
 	}
