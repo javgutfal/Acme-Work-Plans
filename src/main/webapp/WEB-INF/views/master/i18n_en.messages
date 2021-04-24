@@ -64,6 +64,7 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.manager= Manager
 master.menu.manager.create-task = Create task
 master.menu.manager.list-workPlans = View workplans
+master.menu.manager.create-workPlans= Create WorkPlans
 
 
 # master.menu.user-account ####################################################
