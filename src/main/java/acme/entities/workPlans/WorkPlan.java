@@ -1,10 +1,12 @@
 package acme.entities.workPlans;
 
-import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
@@ -41,8 +43,8 @@ public class WorkPlan extends DomainEntity {
 	protected Date finalTime;
 	
 	@Valid
-	@ManyToMany(mappedBy = "workPlans")
-	protected Collection<Task> tasks;
+	@ManyToMany(fetch = FetchType.EAGER, mappedBy = "workPlans",cascade = CascadeType.ALL)
+	protected List<Task> tasks;
 	
 	@NotNull
 	@Valid

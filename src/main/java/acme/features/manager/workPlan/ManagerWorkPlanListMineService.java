@@ -1,11 +1,17 @@
 package acme.features.manager.workPlan;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
+import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -33,8 +39,22 @@ public class ManagerWorkPlanListMineService implements AbstractListService<Manag
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		
+		Calendar calendar;
+		Date actualDate;
+					
+		calendar = new GregorianCalendar();
+		actualDate = calendar.getTime();
 
-		request.unbind(entity, model, "initialTime", "finalTime");
+		request.unbind(entity, model, "initialTime", "finalTime","workload","publicWorkPlan");
+		final List<String> listaTitulosTareas = entity.getTasks().stream().map(Task::getTitle).collect(Collectors.toList());
+		
+		for(int i = 1; i< listaTitulosTareas.size();i++) {
+			listaTitulosTareas.set(i,  " "+listaTitulosTareas.get(i));
+		}
+		
+		model.setAttribute("inicialMoment", actualDate);
+		model.setAttribute("tasks", listaTitulosTareas);
 	}
 
 	@Override
