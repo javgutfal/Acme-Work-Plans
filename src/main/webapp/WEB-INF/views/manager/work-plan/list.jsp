@@ -20,4 +20,5 @@
 	<acme:list-column code="manager.work-plan.list.finalTime" path="finalTime" width="20%" />
 	<acme:list-column code="manager.work-plan.list.workload" path="workload" width="20%" />
 	<acme:list-column code="manager.work-plan.list.tasks" path="tasks" width="20%" />
+	
 </acme:list>

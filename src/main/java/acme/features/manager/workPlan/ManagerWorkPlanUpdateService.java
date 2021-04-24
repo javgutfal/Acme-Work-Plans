@@ -31,15 +31,15 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 
 		boolean result;
 		int workPlanId;
-		WorkPlan workplan;
+		final WorkPlan workPlan;
 		Manager manager;
 		Principal principal;
 
 		workPlanId = request.getModel().getInteger("id");
-		workplan = this.repository.findOneWorkPlanById(workPlanId);
-		manager = workplan.getManager();
+		workPlan = this.repository.findOneWorkPlanById(workPlanId);
+		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = !workplan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId();
+		result = workPlan.isPublicWorkPlan() || (!workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId());
 
 		return result;
 	}
@@ -86,7 +86,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime");
+		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
 
 	}
 

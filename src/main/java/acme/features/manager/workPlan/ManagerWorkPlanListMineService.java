@@ -46,7 +46,7 @@ public class ManagerWorkPlanListMineService implements AbstractListService<Manag
 		calendar = new GregorianCalendar();
 		actualDate = calendar.getTime();
 
-		request.unbind(entity, model, "initialTime", "finalTime","workload");
+		request.unbind(entity, model, "initialTime", "finalTime","workload","publicWorkPlan");
 		final List<String> listaTitulosTareas = entity.getTasks().stream().map(Task::getTitle).collect(Collectors.toList());
 		
 		for(int i = 1; i< listaTitulosTareas.size();i++) {

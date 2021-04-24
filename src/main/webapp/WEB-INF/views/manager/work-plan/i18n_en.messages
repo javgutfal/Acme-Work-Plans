@@ -17,3 +17,10 @@ manager.work-plan.list.tasks = Tasks
 manager.work-plan.form.error.initialTime = The initial time of the execution period of a work-plan must be future
 manager.work-plan.form.error.finalTime = The final time of the execution period of a work-plan must be future
 manager.work-plan.form.error.finalTimeInitial = The final time of the execution period of a work-plan must be after the initial time
+
+manager.workplan.form.label.initialTime = Initial Time:
+manager.workplan.form.label.finalTime = Final Time:
+manager.workplan.form.label.tasks = Tasks:
+manager.workplan.form.label.manager = Manager:
+manager.workplan.form.button.create = Create Workplan!
+manager.workplan.form.button.return = Return
