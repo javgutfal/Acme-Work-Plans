@@ -12,3 +12,9 @@ anonymous.work-plan.list.manager = Manager
 anonymous.work-plan.list.initialTime = Fecha y hora de inicio
 anonymous.work-plan.list.finalTime = Fecha y hora de finalización
 anonymous.work-plan.list.workload = Workload
+
+anonymous.workplan.form.label.manager = Manager
+anonymous.workplan.form.label.initialTime = Fecha y hora de inicio
+anonymous.workplan.form.label.finalTime = Fecha y hora de finalización
+anonymous.workplan.form.label.workload = Carga de trabajo
+anonymous.workplan.form.button.return = Volver

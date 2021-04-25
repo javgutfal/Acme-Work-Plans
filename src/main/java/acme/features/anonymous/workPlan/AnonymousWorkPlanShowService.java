@@ -40,6 +40,7 @@ public class AnonymousWorkPlanShowService implements AbstractShowService<Anonymo
 		assert model != null;
 		
 		request.unbind(entity, model, "initialTime", "finalTime", "workload");
+		model.setAttribute("manager", entity.getManager().getUserAccount().getUsername());
 	}
 
 	@Override
