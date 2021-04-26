@@ -73,7 +73,7 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime");
+		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 	public void create(final Request<WorkPlan> request, final WorkPlan entity) {
 		assert request != null;
 		assert entity != null;
-
+		entity.setPublished(false);
 		this.repository.save(entity);
 	}
 

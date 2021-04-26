@@ -95,6 +95,13 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 			errors.state(request, entity.getFinalTime().after(actualDate), "finalTime", "manager.task.form.error.finalTime");
 			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.task.form.error.finalTimeInitial");
 		}
+		
+		if (!errors.hasErrors("workload")) {
+			final Long diferencia = entity.getInitialTime().getTime()- entity.getFinalTime().getTime();
+
+			errors.state(request, entity.getWorkload()<0, "workload", "manager.task.form.error.workload");
+			errors.state(request, entity.getWorkload()> diferencia/3600000, "workload", "manager.task.form.error.workloadExecution");
+		}
 	
 	}
 

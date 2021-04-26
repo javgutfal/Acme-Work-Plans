@@ -53,7 +53,6 @@ public class ManagerWorkPlanListMineService implements AbstractListService<Manag
 			listaTitulosTareas.set(i,  " "+listaTitulosTareas.get(i));
 		}
 		
-		model.setAttribute("inicialMoment", actualDate);
 		model.setAttribute("tasks", listaTitulosTareas);
 	}
 

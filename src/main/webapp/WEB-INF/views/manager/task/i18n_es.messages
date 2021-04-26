@@ -23,7 +23,8 @@ manager.task.form.button.return= Volver
 manager.task.form.error.initialTime = La fecha inicial del periodo de ejecución de una tarea debe estar en el futuro
 manager.task.form.error.finalTime = La fecha final del periodo de ejecución de una tarea debe estar en el futuro
 manager.task.form.error.finalTimeInitial = La fecha final del periodo de ejecución de una tarea debe ser posterior a la fecha inicial
-
+manager.task.form.error.workload = La carga de trabajo de una tarea no puede ser negativa
+manager.task.form.error.workloadExecution = La carga de trabajo de una tarea no puede ser superior al número de horas del periodo de ejecución
 PUBLIC= PÚBLICO
 PRIVATE=PRIVADO
 

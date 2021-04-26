@@ -55,5 +55,7 @@ public class WorkPlan extends DomainEntity {
 	
 	protected boolean publicWorkPlan;
 	
+	protected boolean published;
+	
 
 }

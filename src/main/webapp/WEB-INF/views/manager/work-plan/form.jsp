@@ -7,10 +7,15 @@
 	
 	<acme:form-moment code="manager.workplan.form.label.initialTime" path="initialTime"/>
 	<acme:form-moment code="manager.workplan.form.label.finalTime" path="finalTime"/>
+	<acme:form-select code="manager.workplan.form.label.publicWorkPlan"
+		path="publicWorkPlan">
+		<acme:form-option code="PUBLIC" value="true" selected="true" />
+		<acme:form-option code="PRIVATE" value="false" />
+	</acme:form-select>
 	
 	<acme:form-submit test="${command == 'show' }" code="manager.workplan.form.button.update" action="/manager/workPlans/update"/>
 	<acme:form-submit test="${command == 'show' }" code="manager.workplan.form.button.delete" action="/manager/workPlans/delete"/>
-	<acme:form-submit test="${command == 'show' && publicWorkPlan == 'false' }" code="manager.workplan.form.button.publish" action="/manager/workPlans/publish"/>
+	<acme:form-submit test="${command == 'show' && published == 'false' }" code="manager.workplan.form.button.publish" action="/manager/workPlans/publish"/>
 	<acme:form-submit test="${command == 'create' }" code="manager.workplan.form.button.create" action="/manager/workPlans/create"/>
 	<acme:form-submit test="${command == 'update' }" code="manager.workplan.form.button.update" action="/manager/workPlans/update"/>
 	<acme:form-submit test="${command == 'publish' }" code="manager.workplan.form.button.publish" action="/manager/workPlans/publish"/>
