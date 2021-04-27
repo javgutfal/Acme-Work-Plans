@@ -34,7 +34,7 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isPublicWorkPlan() || (!workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId());
+		result = manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -62,7 +62,7 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime");
+		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
 	}
 
 	@Override
@@ -83,7 +83,7 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		assert request != null;
 		assert entity != null;
 
-		entity.setPublicWorkPlan(true);
+		entity.setPublished(true);
 		this.repository.save(entity);
 	}
 

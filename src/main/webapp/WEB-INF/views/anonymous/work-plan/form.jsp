@@ -9,6 +9,7 @@
 	<acme:form-moment code="anonymous.workplan.form.label.initialTime" path="initialTime"/>
 	<acme:form-moment code="anonymous.workplan.form.label.finalTime" path="finalTime"/>
 	<acme:form-double code="anonymous.workplan.form.label.workload" path="workload"/>
-
+	<acme:form-textbox code="anonymous.workplan.form.label.published" path="published"/>
+	
   	<acme:form-return code="anonymous.workplan.form.button.return"/>
 </acme:form>

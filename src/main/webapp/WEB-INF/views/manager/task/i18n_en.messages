@@ -23,5 +23,7 @@ manager.task.form.button.return= Return
 manager.task.form.error.initialTime = The initial time of the execution period of a task must be future
 manager.task.form.error.finalTime = The final time of the execution period of a task must be future
 manager.task.form.error.finalTimeInitial = The final time of the execution period of a task must be after the initial time
+manager.task.form.error.workload = The workload of a task must be positive
+manager.task.form.error.workloadExecution = The workload of a task can't be greater than the execution period
 
 NOT.FINISHED=NOT FINISHED

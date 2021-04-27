@@ -39,7 +39,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isPublicWorkPlan() || (!workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId());
+		result = manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -86,7 +86,7 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
+		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan","published");
 
 	}
 

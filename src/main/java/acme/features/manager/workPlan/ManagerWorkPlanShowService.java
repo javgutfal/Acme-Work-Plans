@@ -33,7 +33,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isPublicWorkPlan() || (!workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId());
+		result = manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -44,7 +44,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime", "workload","publicWorkPlan");
+		request.unbind(entity, model, "initialTime", "finalTime", "workload","publicWorkPlan","published");
 	}
 
 	@Override

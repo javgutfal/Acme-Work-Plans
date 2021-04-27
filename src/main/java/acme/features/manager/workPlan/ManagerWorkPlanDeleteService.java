@@ -35,7 +35,7 @@ public class ManagerWorkPlanDeleteService implements AbstractDeleteService<Manag
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = workPlan.isPublicWorkPlan() || (!workPlan.isPublicWorkPlan() && manager.getUserAccount().getId() == principal.getAccountId());
+		result = manager.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}

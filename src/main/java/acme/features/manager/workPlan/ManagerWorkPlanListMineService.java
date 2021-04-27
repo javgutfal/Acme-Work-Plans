@@ -1,9 +1,6 @@
 package acme.features.manager.workPlan;
 
-import java.util.Calendar;
 import java.util.Collection;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,21 +36,26 @@ public class ManagerWorkPlanListMineService implements AbstractListService<Manag
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
-		Calendar calendar;
-		Date actualDate;
-					
-		calendar = new GregorianCalendar();
-		actualDate = calendar.getTime();
 
-		request.unbind(entity, model, "initialTime", "finalTime","workload","publicWorkPlan");
+		request.unbind(entity, model, "initialTime", "finalTime","workload");
 		final List<String> listaTitulosTareas = entity.getTasks().stream().map(Task::getTitle).collect(Collectors.toList());
 		
 		for(int i = 1; i< listaTitulosTareas.size();i++) {
 			listaTitulosTareas.set(i,  " "+listaTitulosTareas.get(i));
 		}
 		
-		model.setAttribute("inicialMoment", actualDate);
+		if(entity.isPublished()) {
+			model.setAttribute("published", "Yes");
+		}else {
+			model.setAttribute("published", "No");
+		}
+		
+		if(entity.isPublicWorkPlan()) {
+			model.setAttribute("publicWorkPlan", "Yes");
+		}else {
+			model.setAttribute("publicWorkPlan", "No");
+		}
+		
 		model.setAttribute("tasks", listaTitulosTareas);
 	}
 
