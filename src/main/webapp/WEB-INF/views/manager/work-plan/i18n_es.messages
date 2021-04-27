@@ -12,7 +12,7 @@ manager.work-plan.list.manager = Manager
 manager.work-plan.list.initialTime = Fecha y hora de inicio
 manager.work-plan.list.finalTime = Fecha y hora de finalización
 manager.work-plan.list.workload = Carga de trabajo
-manager.work-plan.list.publicWorkPlan = Ámbito del plan de trabajo
+manager.work-plan.list.publicWorkPlan = Plan de trabajo público
 manager.work-plan.list.published = Publicado
 
 manager.work-plan.list.tasks = Tareas

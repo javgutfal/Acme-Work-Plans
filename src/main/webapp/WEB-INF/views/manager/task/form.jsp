@@ -18,9 +18,19 @@
 
 	<acme:form-select code="manager.task.form.label.publicTask"
 		path="publicTask">
-		<acme:form-option code="PUBLIC" value="true" selected="true" />
-		<acme:form-option code="PRIVATE" value="false" />
+		
+		<jstl:if test="${(command == 'show' || command == 'update') && publicTask == 'true'}">
+			<acme:form-option code="PUBLIC" value="true" selected="true" />
+			<acme:form-option code="PRIVATE" value="false" />
+		</jstl:if>
+		
+		<jstl:if test="${(command == 'show' || command == 'update') && publicTask == 'false'}">
+			<acme:form-option code="PUBLIC" value="true"  />
+			<acme:form-option code="PRIVATE" value="false" selected="true" />
+		</jstl:if>
 	</acme:form-select>
+	
+	
 	<jstl:if test="${command == 'show'}">
 	<acme:form-submit code="manager.task.form.button.update"
 			action="/manager/task/update" />

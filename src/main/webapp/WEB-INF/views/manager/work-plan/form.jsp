@@ -9,9 +9,19 @@
 	<acme:form-moment code="manager.workplan.form.label.finalTime" path="finalTime"/>
 	<acme:form-select code="manager.workplan.form.label.publicWorkPlan"
 		path="publicWorkPlan">
-		<acme:form-option code="PUBLIC" value="true" selected="true" />
-		<acme:form-option code="PRIVATE" value="false" />
+		<jstl:if test="${(command == 'show' || command == 'update' || command == 'publish') && publicWorkPlan == 'true'}">
+			<acme:form-option code="PUBLIC" value="true" selected="true" />
+			<acme:form-option code="PRIVATE" value="false" />
+		</jstl:if>
+		
+		<jstl:if test="${(command == 'show' || command == 'update' || command == 'publish') && publicWorkPlan == 'false'}">
+			<acme:form-option code="PUBLIC" value="true"  />
+			<acme:form-option code="PRIVATE" value="false" selected="true" />
+		</jstl:if>
+		
 	</acme:form-select>
+	
+	
 	
 	<acme:form-submit test="${command == 'show' }" code="manager.workplan.form.button.update" action="/manager/workPlans/update"/>
 	<acme:form-submit test="${command == 'show' }" code="manager.workplan.form.button.delete" action="/manager/workPlans/delete"/>

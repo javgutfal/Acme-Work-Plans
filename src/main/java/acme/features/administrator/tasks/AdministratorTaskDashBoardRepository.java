@@ -23,7 +23,7 @@ public interface AdministratorTaskDashBoardRepository extends AbstractRepository
 	@Query("select avg(datediff(t.finalTime, t.initialTime)) from Task t ")
 	Double averageOfExecutionTaskPeriod();
 	
-	@Query("select avg(datediff(t.finalTime, t.initialTime)) from Task t ")
+	@Query("select sqrt(sum((datediff(t.finalTime, t.initialTime)- (select avg(datediff(t.finalTime, t.initialTime)) from Task t))*(datediff(t.finalTime, t.initialTime) - (select avg(datediff(t.finalTime, t.initialTime)) from Task t)))) from Task t")
 	Double deviationOfExecutionTaskPeriod();
 	
 	@Query("select min(datediff(t.finalTime, t.initialTime)) from Task t ")

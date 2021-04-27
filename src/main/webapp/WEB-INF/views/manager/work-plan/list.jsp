@@ -22,5 +22,5 @@
 	<acme:list-column code="manager.work-plan.list.publicWorkPlan" path="publicWorkPlan" width="20%" />
 	<acme:list-column code="manager.work-plan.list.tasks" path="tasks" width="20%" />
 	<acme:list-column code="manager.work-plan.list.published" path="published" width="20%" />
-	
+		
 </acme:list>

@@ -12,7 +12,7 @@ manager.work-plan.list.manager = Manager
 manager.work-plan.list.initialTime = Initial Date
 manager.work-plan.list.finalTime = Final Date
 manager.work-plan.list.workload = Workload
-manager.work-plan.list.publicWorkPlan = Scope WorkPlan
+manager.work-plan.list.publicWorkPlan = Public WorkPlan
 manager.work-plan.list.published = Published
 
 manager.work-plan.list.tasks = Tasks

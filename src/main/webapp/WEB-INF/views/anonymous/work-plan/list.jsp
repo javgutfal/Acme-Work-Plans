@@ -20,5 +20,6 @@
 	<acme:list-column code="anonymous.work-plan.list.initialTime" path="initialTime" width="20%" />
 	<acme:list-column code="anonymous.work-plan.list.finalTime" path="finalTime" width="20%" />
 	<acme:list-column code="anonymous.work-plan.list.workload" path="workload" width="20%" />
+	<acme:list-column code="manager.work-plan.list.tasks" path="tasks" width="20%" />
 	<acme:list-column code="anonymous.work-plan.list.published" path="published" width="20%" />
 </acme:list>
