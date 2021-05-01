@@ -96,6 +96,7 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 		assert request != null;
 		assert entity != null;
 		entity.setPublished(false);
+		entity.setWorkload(0.);
 		this.repository.save(entity);
 	}
 

@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
-import acme.features.manager.workPlan.tasks.ManagerWorkPlanTaskRepository;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractListService;
@@ -16,7 +15,7 @@ import acme.framework.services.AbstractListService;
 public class ManagerTaskListWorkPlanService implements AbstractListService<Manager, Task> {
 	
 	@Autowired
-	protected ManagerWorkPlanTaskRepository repository;
+	protected ManagerTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {

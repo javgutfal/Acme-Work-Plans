@@ -1,26 +1,26 @@
-package acme.features.manager.workPlan.tasks;
+package acme.features.anonymous.tasks;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class ManagerWorkPlanTaskListWorkPlanService implements AbstractListService<Manager, Task> {
+public class AnonymousTaskListWorkPlanService implements AbstractListService<Anonymous, Task> {
 	
 	@Autowired
-	protected ManagerWorkPlanTaskRepository repository;
+	protected AnonymousTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
-
+		
 		return true;
 	}
 
@@ -30,21 +30,15 @@ public class ManagerWorkPlanTaskListWorkPlanService implements AbstractListServi
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
-		model.setAttribute("workPlanId", request.getModel().getInteger("workPlanId"));
-		model.setAttribute("isWorkPlan", true);
-		model.setAttribute("isWorkPlanList", true);
+		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link");
 	}
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
-
-		final Collection<Task> result;
-
-		result = this.repository.findManyTasksByWorkPlanId(request.getModel().getInteger("workPlanId"));
-
-		return result;
+		
+		
+		return this.repository.findByPublicTasksByWorkPlanId(request.getModel().getInteger("id"));
 	}
 
 }
