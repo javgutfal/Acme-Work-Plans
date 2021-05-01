@@ -14,8 +14,8 @@ manager.work-plan.list.finalTime = Final Date
 manager.work-plan.list.workload = Workload
 manager.work-plan.list.publicWorkPlan = Public WorkPlan
 manager.work-plan.list.published = Published
-
-manager.work-plan.list.tasks = Tasks
+manager.workplan.form.button.list.NotTask = Add tasks
+manager.workplan.form.button.list.Task = List of tasks
 
 manager.work-plan.form.error.initialTime = The initial time of the execution period of a work-plan must be future
 manager.work-plan.form.error.finalTime = The final time of the execution period of a work-plan must be future

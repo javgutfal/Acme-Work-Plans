@@ -44,7 +44,7 @@ public class ManagerWorkPlanShowService implements AbstractShowService<Manager, 
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "initialTime", "finalTime", "workload","publicWorkPlan","published");
+		request.unbind(entity, model,"id", "initialTime", "finalTime", "workload","publicWorkPlan","published");
 	}
 
 	@Override

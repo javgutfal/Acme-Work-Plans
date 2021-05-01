@@ -113,7 +113,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
@@ -125,7 +124,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
@@ -137,7 +135,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan01"/>
 	</bean>
 	
 	<bean id="task04" class="acme.entities.tasks.Task">
@@ -149,7 +146,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan02"/>
 	</bean>
 	
 	<bean id="task05" class="acme.entities.tasks.Task">
@@ -161,7 +157,6 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan02"/>
 	</bean>
 	
 	<bean id="task06" class="acme.entities.tasks.Task">
@@ -173,7 +168,11 @@
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
 		<property name="publicTask" value="true" />
-		<property name="workPlans" ref="workPlan03"/>
+	</bean>
+	
+	<bean id="consistsOf01" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task01" />
+		<property name="workPlan" ref="workPlan01"/>
 	</bean>
 	
 	<bean id="workPlan01" class="acme.entities.workPlans.WorkPlan">
