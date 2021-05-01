@@ -13,4 +13,5 @@
 	<acme:list-column code="manager.task.list.label.workload" path="workload"/>
 	<acme:list-column code="manager.task.list.label.link" path="link"/>
 	<acme:list-column code="manager.task.list.label.description" path="description"/>
+	<acme:list-column code="manager.task.list.label.public" path="publicTask"/>
 </acme:list>
