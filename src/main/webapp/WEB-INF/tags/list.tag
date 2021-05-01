@@ -110,17 +110,30 @@
 		
 		<jstl:if test="${!readonly}">
 		    $("#list tbody").on("click", "td", function () {
-		    	var id, row, column, singleColumn;
+		    	var id, isWorkPlan, row, column, singleColumn;
 		    	
 		    	row = $(this).parent().parent().children().index($(this).parent());
 		    	column = $(this).parent().children().index($(this));
 		    	singleColumn = $(this).parent().children().length == 1;
-		    			    	
+		    	const urlParams = new URLSearchParams(window.location.search); 
+		    	workPlanId = urlParams.get("workPlanId");
+		    	
 		    	if (singleColumn || column >= 1) {
 			    	id = $(this).parent().attr("data-item-id")
 			    	if (typeof(id) != 'undefined') {	    		
 			    		pushReturnUrl("<%=JspHelper.getRequestUrl(request)%>");
-			    		redirect("show?id={0}".format(id));
+			    		 if(workPlanId == null){
+			    			redirect("show?id={0}".format(id));
+			    		 }else{
+			    			if(window.location.hash == "#listWorkPlan"){
+			    				redirect("show-workplan?id={0}".format(id));
+			    			}else{
+			    				redirect("show-workplan?id={0}&workPlanId={1}".format(id, workPlanId));
+			    			}
+			    		 }
+			    		
+		    			
+		    		
 			    	}
 		    	}
 	    	});
