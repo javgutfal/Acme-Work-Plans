@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
@@ -11,7 +12,7 @@ import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
-
+@Service
 public class AuthenticatedTaskShowService implements AbstractShowService<Authenticated, Task> {
 	
 	@Autowired

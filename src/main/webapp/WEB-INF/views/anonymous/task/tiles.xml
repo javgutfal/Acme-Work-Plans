@@ -6,8 +6,8 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/shout/form" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/shout/form.jsp" />
+	<definition name="anonymous/task/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/task/form.jsp" />
 	</definition>
 	
 	<definition name="anonymous/task/list" extends="master">

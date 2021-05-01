@@ -6,6 +6,7 @@ manager.task.list.label.final-time = Finalization time
 manager.task.list.label.workload = Workload
 manager.task.list.label.description = Description
 manager.task.list.label.link = Link
+manager.task.list.label.public = Public Task
 
 manager.task.form.label.title =Title:
 manager.task.form.label.initialTime = Initial Time:
