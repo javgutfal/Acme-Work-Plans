@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
-import acme.features.manager.workPlan.tasks.ManagerWorkPlanTaskRepository;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractListService;
@@ -16,7 +16,7 @@ import acme.framework.services.AbstractListService;
 public class ManagerTaskListNotWorkPlanService implements AbstractListService<Manager, Task> {
 	
 	@Autowired
-	protected ManagerWorkPlanTaskRepository repository;
+	protected ManagerTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
@@ -39,10 +39,20 @@ public class ManagerTaskListNotWorkPlanService implements AbstractListService<Ma
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
-
+		
 		final Collection<Task> result;
-
-		result = this.repository.findManyTasksByNotWorkPlanId(request.getModel().getInteger("workPlanId"));
+		WorkPlan workPlan;
+		int id;
+		id = request.getModel().getInteger("workPlanId");
+		
+		workPlan = this.repository.findOneWorkPlanById(id);
+		
+		if(workPlan.isPublicWorkPlan()) {
+			result = this.repository.findManyTasksByNotWorkPlanPublicId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+		}else {
+			result = this.repository.findManyTasksByNotWorkPlanId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+		}
+		
 
 		return result;
 	}

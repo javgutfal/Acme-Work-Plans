@@ -21,4 +21,5 @@ anonymous.workplan.form.label.finalTime = Fecha y hora de finalización
 anonymous.workplan.form.label.workload = Carga de trabajo
 anonymous.workplan.form.label.published = Publicado:
 anonymous.workplan.form.label.tasks = Tareas:
+anonymous.workplan.form.button.list = Lista tareas
 anonymous.workplan.form.button.return = Volver

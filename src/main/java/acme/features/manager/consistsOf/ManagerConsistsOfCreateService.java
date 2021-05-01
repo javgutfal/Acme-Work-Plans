@@ -38,8 +38,24 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 	@Override
 	public boolean authorise(final Request<ConsistsOf> request) {
 		assert request != null;
+		WorkPlan workPlan;
+		Task task;
 
-		return true;
+		workPlan = this.repository.findOneWorkPlanById(request.getModel().getInteger("workPlanId"));
+		task = this.repository.findOneTaskById(request.getModel().getInteger("taskId"));
+		
+		if(workPlan.isPublicWorkPlan()) {
+			return task.isPublicTask() && workPlan.getInitialTime().equals(task.getInitialTime()) 
+				|| workPlan.getInitialTime().before(task.getInitialTime())
+				&& workPlan.getFinalTime().after(task.getFinalTime())
+				|| workPlan.getFinalTime().equals(task.getFinalTime());
+		}else {
+			return workPlan.getInitialTime().equals(task.getInitialTime()) 
+				|| workPlan.getInitialTime().before(task.getInitialTime())
+				&& workPlan.getFinalTime().after(task.getFinalTime())
+				|| workPlan.getFinalTime().equals(task.getFinalTime());
+		}
+
 	}
 
 	@Override
@@ -72,7 +88,6 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 
 		workPlan = this.repository.findOneWorkPlanById(request.getModel().getInteger("workPlanId"));
 		task = this.repository.findOneTaskById(request.getModel().getInteger("taskId"));
-
 		result = new ConsistsOf();
 		result.setTask(task);
 		result.setWorkPlan(workPlan);
@@ -91,7 +106,12 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 	public void create(final Request<ConsistsOf> request, final ConsistsOf entity) {
 		assert request != null;
 		assert entity != null;
+		WorkPlan workPlan;
 		
+		workPlan = entity.getWorkPlan();
+		workPlan.setWorkload(workPlan.getWorkload()+entity.getTask().getWorkload());
+		entity.setWorkPlan(workPlan);
+		this.repository.save(workPlan);
 		this.repository.save(entity);
 	}
 
