@@ -2,6 +2,8 @@ package acme.entities.variables;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -26,7 +28,9 @@ public class Percent extends DomainEntity {
 	protected String code;
 	
 	@NotNull
-	@Digits(integer = 10, fraction = 2)
+	@Min(0)
+	@Max(100)
+	@Digits(integer = 3, fraction = 2)
 	protected Double data;
 
 }

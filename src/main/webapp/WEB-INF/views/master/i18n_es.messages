@@ -49,6 +49,7 @@ master.menu.administrator.workPlanDashboard= Tablero de Workplan
 master.menu.administrator.taskDashboard= Tablero de Task
 master.menu.administrator.list-spamWord= Ver palabras de spam
 master.menu.administrator.create-spamWord= Crear palabra de spam
+master.menu.administrator.list-percent= Ver porcentajes
 
 # master.menu.provider ########################################################
 

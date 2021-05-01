@@ -431,7 +431,7 @@ manage v</panel_attributes>
 Percent
 --
 + code: String (NotBlank, Length(1,50))
-+ data: Double (NotNull, Digits(3,2))</panel_attributes>
++ data: Double (NotNull, Min(0), Max(100), Digits(3,2))</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
