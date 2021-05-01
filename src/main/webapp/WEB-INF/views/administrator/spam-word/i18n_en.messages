@@ -1,0 +1,9 @@
+administrator.spamWord.list.label.wordEn= English word
+administrator.spamWord.list.label.wordEs= Spanish word
+
+administrator.spamWord.form.label.wordEn= English word
+administrator.spamWord.form.label.wordEs= Spanish word
+administrator.spamWord.form.button.create= Create
+administrator.spamWord.form.button.update= Update
+administrator.spamword.form.button.delete= Delete
+administrator.spamWord.form.button.return= Return
