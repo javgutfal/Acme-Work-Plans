@@ -84,6 +84,10 @@
 	<jstl:if test="${isWorkPlanList != 'true'}">
 		<acme:form-submit code="manager.task.form.button.create.consistsOf" action="/manager/consistsOf/create?workPlanId=${workPlanId}&taskId=${id}" />
 	</jstl:if>
+	
+	<jstl:if test="${isWorkPlanList == 'true'}">
+		<acme:form-submit code="manager.task.form.button.delete.consistsOf" action="/manager/consistsOf/delete?workPlanId=${workPlanId}&taskId=${id}" />
+	</jstl:if>
 	<acme:form-return code="manager.task.form.button.return" />
 </acme:form>
 </jstl:if>

@@ -125,11 +125,7 @@
 			    		 if(workPlanId == null){
 			    			redirect("show?id={0}".format(id));
 			    		 }else{
-			    			if(window.location.hash == "#listWorkPlan"){
-			    				redirect("show-workplan?id={0}".format(id));
-			    			}else{
-			    				redirect("show-workplan?id={0}&workPlanId={1}".format(id, workPlanId));
-			    			}
+			    			redirect("show-workplan?id={0}&workPlanId={1}".format(id, workPlanId));
 			    		 }
 			    		
 		    			

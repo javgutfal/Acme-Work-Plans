@@ -36,5 +36,8 @@ public interface ManagerConsistsOfRepository extends AbstractRepository {
 
 	@Query("select c from ConsistsOf c where c.workPlan.id = ?1")
 	Collection<ConsistsOf> findManyConsistsOfByWorkPlanId(int id);
+	
+	@Query("select c from ConsistsOf c where c.task.id = ?1 and c.workPlan.id = ?2")
+	ConsistsOf findOneConsistsOfById(int taskId, int workplanId);
 
 }

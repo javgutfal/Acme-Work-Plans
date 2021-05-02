@@ -22,6 +22,7 @@ import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractCreateService;
 
 @Service
@@ -38,22 +39,32 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 	@Override
 	public boolean authorise(final Request<ConsistsOf> request) {
 		assert request != null;
+		
+		boolean managerValidation;
 		WorkPlan workPlan;
+		Manager manager;
+		Principal principal;
 		Task task;
 
 		workPlan = this.repository.findOneWorkPlanById(request.getModel().getInteger("workPlanId"));
 		task = this.repository.findOneTaskById(request.getModel().getInteger("taskId"));
+
+		manager = workPlan.getManager();
+		principal = request.getPrincipal();
+		managerValidation = manager.getUserAccount().getId() == principal.getAccountId();
+		
+		
 		
 		if(workPlan.isPublicWorkPlan()) {
 			return task.isPublicTask() && workPlan.getInitialTime().equals(task.getInitialTime()) 
 				|| workPlan.getInitialTime().before(task.getInitialTime())
 				&& workPlan.getFinalTime().after(task.getFinalTime())
-				|| workPlan.getFinalTime().equals(task.getFinalTime());
+				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation;
 		}else {
 			return workPlan.getInitialTime().equals(task.getInitialTime()) 
 				|| workPlan.getInitialTime().before(task.getInitialTime())
 				&& workPlan.getFinalTime().after(task.getFinalTime())
-				|| workPlan.getFinalTime().equals(task.getFinalTime());
+				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation;
 		}
 
 	}

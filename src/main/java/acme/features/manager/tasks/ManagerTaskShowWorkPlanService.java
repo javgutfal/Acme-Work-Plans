@@ -3,6 +3,7 @@ package acme.features.manager.tasks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.consistsOf.ConsistsOf;
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
@@ -42,11 +43,13 @@ public class ManagerTaskShowWorkPlanService implements AbstractShowService<Manag
 		assert model != null;
 		
 		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
-		if(request.getModel().hasAttribute("workPlanId")) {
-			model.setAttribute("workPlanId", request.getModel().getInteger("workPlanId"));
-			model.setAttribute("isWorkPlan", true);
-		}else {
-			model.setAttribute("isWorkPlan", true);
+		
+		ConsistsOf consistsOf;
+		consistsOf = this.repository.findOneConsistsOfById(request.getModel().getInteger("id"), request.getModel().getInteger("workPlanId"));
+		model.setAttribute("workPlanId", request.getModel().getInteger("workPlanId"));
+		model.setAttribute("isWorkPlan", true);
+		
+		if(consistsOf != null) {
 			model.setAttribute("isWorkPlanList", true);
 		}
 		
