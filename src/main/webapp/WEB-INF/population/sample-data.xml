@@ -609,13 +609,13 @@
 	</bean>
 	
 	<bean id="spamWord06" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="you’ve won" />
+		<property name="wordEn" value="you've won" />
 		<property name="wordEs" value="Usted ha ganado" />
 	</bean>
 	
 	<bean id="spamWord07" class="acme.entities.spam.SpamWord">
 		<property name="wordEn" value="million dollar" />
-		<property name="wordEs" value="millon de dólares" />
+		<property name="wordEs" value="millón de dólares" />
 	</bean>
 	
 	<bean id="spamWord08" class="acme.entities.spam.SpamWord">
@@ -637,5 +637,4 @@
 		<property name="code" value="SPAM_THRESHOLD" />
 		<property name="data" value="10.00" />
 	</bean>
-	
 </beans>
