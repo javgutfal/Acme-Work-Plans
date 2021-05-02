@@ -1,8 +1,5 @@
 package acme.features.authenticated.tasks;
 
-import java.util.Calendar;
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,13 +34,9 @@ public class AuthenticatedTaskShowService implements AbstractShowService<Authent
 	@Override
 	public Task findOne(final Request<Task> request) {
 		assert request != null;
-		Calendar calendar;
-		Date deadline;
-
-		calendar = Calendar.getInstance();
-		deadline = calendar.getTime();
+	
 		
-		return this.repository.findByIdAndPublicTaskTrueAndFinishedTrue(request.getModel().getInteger("id"),deadline);
+		return this.repository.findByIdAndPublicTaskTrueAndFinishedTrue(request.getModel().getInteger("id"));
 	}
 
 }

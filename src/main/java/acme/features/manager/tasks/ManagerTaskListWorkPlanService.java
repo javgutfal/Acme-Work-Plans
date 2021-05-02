@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
@@ -21,7 +23,19 @@ public class ManagerTaskListWorkPlanService implements AbstractListService<Manag
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
 
-		return true;
+		boolean result;
+		int workplanId;
+		WorkPlan workplan;
+		Manager manager;
+		Principal principal;
+
+		workplanId = request.getModel().getInteger("workPlanId");
+		workplan = this.repository.findOneWorkPlanById(workplanId);
+		manager = workplan.getManager();
+		principal = request.getPrincipal();
+		result = manager.getUserAccount().getId() == principal.getAccountId();
+
+		return result;
 	}
 
 	@Override

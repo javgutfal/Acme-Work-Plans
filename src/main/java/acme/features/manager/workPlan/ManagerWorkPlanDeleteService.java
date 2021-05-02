@@ -1,8 +1,11 @@
 package acme.features.manager.workPlan;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.consistsOf.ConsistsOf;
 import acme.entities.roles.Manager;
 import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Errors;
@@ -82,7 +85,11 @@ public class ManagerWorkPlanDeleteService implements AbstractDeleteService<Manag
 	public void delete(final Request<WorkPlan> request, final WorkPlan entity) {
 		assert request != null;
 		assert entity != null;
-
+		List<ConsistsOf> consistsOfAEliminar;
+		consistsOfAEliminar = this.repository.findManyConsistsOfById(entity.getId());
+		for(int i=0; i<consistsOfAEliminar.size();i++) {
+			this.repository.delete(consistsOfAEliminar.get(i));
+		}
 		this.repository.delete(entity);
 	}
 

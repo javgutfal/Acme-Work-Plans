@@ -18,6 +18,7 @@ manager.task.form.label.publicTask= Public Task:
 manager.task.form.label.finished= Finished:
 manager.task.form.button.create= Create Task
 manager.task.form.button.create.consistsOf= Add Task
+manager.task.form.button.delete.consistsOf= Delete Task from WorkPlan
 manager.task.form.button.update= Update Task
 manager.task.form.button.delete= Delete Task
 manager.task.form.button.return= Return

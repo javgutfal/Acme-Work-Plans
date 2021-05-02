@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.consistsOf.ConsistsOf;
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.entities.workPlans.WorkPlan;
@@ -34,5 +35,11 @@ public interface ManagerTaskRepository extends AbstractRepository {
 	
 	@Query("select t from Task t where t.publicTask = true and t.initialTime >= ?2 and t.finalTime<= ?3 and t.id not in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
 	List<Task> findManyTasksByNotWorkPlanPublicId(int workPlanId, Date initialTime, Date finalTime);
+	
+	@Query("select c from ConsistsOf c where c.task.id = ?1 and c.workPlan.id = ?2")
+	ConsistsOf findOneConsistsOfById(int taskId, int workplanId);
+	
+	@Query("select c from ConsistsOf c where c.task.id = ?1")
+	List<ConsistsOf> findManyConsistsOfById(int taskId);
 
 }

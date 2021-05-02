@@ -18,6 +18,7 @@ manager.task.form.label.publicTask= Tarea Pública:
 manager.task.form.label.finished= Finalizada:
 manager.task.form.button.create= Crear Tarea
 manager.task.form.button.create.consistsOf= Añadir Tarea
+manager.task.form.button.delete.consistsOf= Delete Tarea del Plan de Trabajo
 manager.task.form.button.update= Actualizar Tarea
 manager.task.form.button.delete= Borrar Tarea
 manager.task.form.button.return= Volver

@@ -37,6 +37,9 @@ public class ManagerConsistsOfController extends AbstractController<Manager, Con
 
 	@Autowired
 	protected ManagerConsistsOfCreateService	createService;
+	
+	@Autowired
+	protected ManagerConsistsOfDeleteService	deleteService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -46,6 +49,7 @@ public class ManagerConsistsOfController extends AbstractController<Manager, Con
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 
 }
