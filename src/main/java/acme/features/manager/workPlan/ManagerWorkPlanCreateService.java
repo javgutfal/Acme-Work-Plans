@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.workPlans.WorkPlan;
+import acme.features.generic.spam.GenericSpamService;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -22,7 +23,8 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 	@Autowired
 	protected ManagerWorkPlanRepository repository;
 	
-
+	@Autowired
+	protected GenericSpamService spamService;
 
 	@Override
 	public boolean authorise(final Request<WorkPlan> request) {

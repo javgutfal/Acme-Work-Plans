@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
+import acme.features.generic.spam.GenericSpamService;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -19,6 +20,9 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 	
 	@Autowired
 	protected ManagerTaskRepository repository;
+	
+	@Autowired
+	protected GenericSpamService spamService;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
@@ -89,6 +93,27 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 
 			errors.state(request, entity.getWorkload()>=0, "workload", "manager.task.form.error.workload");
 			errors.state(request, entity.getWorkload()<= diferencia/3600000, "workload", "manager.task.form.error.workloadExecution");
+		}
+		
+		if (!errors.hasErrors("title")) {
+			String text;
+			
+			text = entity.getTitle().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "title", "anonymous.shout.form.error.spam");
+		}
+		
+		if (!errors.hasErrors("description")) {
+			String text;
+			
+			text = entity.getDescription().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "description", "anonymous.shout.form.error.spam");
+		}
+		
+		if (!errors.hasErrors("link")) {
+			String text;
+			
+			text = entity.getLink().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "link", "anonymous.shout.form.error.spam");
 		}
 		
 	}
