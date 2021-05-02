@@ -217,7 +217,7 @@
 		<property name="description" value="Esta tarea no esta finalizada" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
-		<property name="publicTask" value="true" />
+		<property name="publicTask" value="false" />
 		
 	</bean>
 	
@@ -253,7 +253,7 @@
 		<property name="description" value="Esta tarea esta finalizada." />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
-		<property name="publicTask" value="true" />
+		<property name="publicTask" value="false" />
 		
 	</bean>
 	
@@ -277,7 +277,7 @@
 		<property name="description" value="Esta tarea no esta finalizada" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
-		<property name="publicTask" value="true" />
+		<property name="publicTask" value="false" />
 		
 	</bean>
 	
@@ -319,9 +319,9 @@
 	
 	<bean id="task16" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear nuevos roles" />
-		<property name="initialTime" value="2021/5/02 10:30" />
-		<property name="finalTime" value="2021/7/01 10:30" />
-		<property name="workload" value="6" />
+		<property name="initialTime" value="2021/4/12 10:30" />
+		<property name="finalTime" value="2021/4/19 10:30" />
+		<property name="workload" value="35" />
 		<property name="description" value="Esta tarea no esta finalizada" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
@@ -382,6 +382,18 @@
 		<property name="finalTime" value="2021/5/20 10:30" />
 		<property name="workload" value="15" />
 		<property name="description" value="Esta tarea no esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola.com" />
+		<property name="publicTask" value="true" />
+		
+	</bean>
+	
+	<bean id="task22" class="acme.entities.tasks.Task">
+		<property name="title" value="Crear repositorios" />
+		<property name="initialTime" value="2021/4/29 10:30" />
+		<property name="finalTime" value="2021/5/15 10:30" />
+		<property name="workload" value="35" />
+		<property name="description" value="Esta tarea esta finalizada" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola.com" />
 		<property name="publicTask" value="true" />
@@ -458,6 +470,11 @@
 		<property name="workPlan" ref="workPlan01"/>
 	</bean>
 	
+	<bean id="consistsOf15" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task22"/>
+		<property name="workPlan" ref="workPlan07"/>
+	</bean>
+	
 	<bean id="workPlan01" class="acme.entities.workPlans.WorkPlan">
 		<property name="initialTime" value="2021/4/01 10:30" />
 		<property name="finalTime" value="2021/5/31 10:30" />
@@ -513,12 +530,12 @@
 	</bean>
 	
 	<bean id="workPlan07" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/4/10 10:30" />
-		<property name="finalTime" value="2021/4/20 10:30" />
+		<property name="initialTime" value="2021/4/27 10:30" />
+		<property name="finalTime" value="2021/5/19 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
-		<property name="workload" value="0" />
-		<property name="published" value="true" />
+		<property name="workload" value="35" />
+		<property name="published" value="false" />
 	</bean>
 	
 	<bean id="workPlan08" class="acme.entities.workPlans.WorkPlan">
@@ -551,6 +568,15 @@
 	<bean id="workPlan11" class="acme.entities.workPlans.WorkPlan">
 		<property name="initialTime" value="2021/4/10 10:30" />
 		<property name="finalTime" value="2021/4/20 10:30" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="publicWorkPlan" value="true" />
+		<property name="workload" value="0" />
+		<property name="published" value="false" />
+	</bean>
+	
+	<bean id="workPlan12" class="acme.entities.workPlans.WorkPlan">
+		<property name="initialTime" value="2021/4/15 10:30" />
+		<property name="finalTime" value="2021/4/25 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
 		<property name="workload" value="0" />
