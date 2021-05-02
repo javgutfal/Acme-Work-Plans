@@ -239,7 +239,7 @@
 	</bean>
 	
 	<bean id="spamWord06" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="you’ve won" />
+		<property name="wordEn" value="you've won" />
 		<property name="wordEs" value="Usted ha ganado" />
 	</bean>
 	
