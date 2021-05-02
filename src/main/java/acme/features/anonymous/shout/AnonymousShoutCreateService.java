@@ -91,6 +91,13 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 			text = entity.getInfo().toLowerCase();
 			errors.state(request, !this.spamService.isSpam(text), "info", "anonymous.shout.form.error.spam");
 		}
+		
+		if (!errors.hasErrors("text")) {
+			String text;
+			
+			text = entity.getText().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "text", "anonymous.shout.form.error.spam");
+		}
 	}
 
 	@Override
