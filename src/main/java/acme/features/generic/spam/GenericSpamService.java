@@ -2,8 +2,6 @@ package acme.features.generic.spam;
 
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,25 +15,20 @@ public class GenericSpamService {
 	@Autowired
 	protected GenericSpamRepository repository;
 	
-	private List<SpamWord> spamWords;
-	
-	private Percent percent;
-	
-	@PostConstruct
-	public void initialise() {
-		this.spamWords = this.repository.findAllSpamWords();
-		this.percent = this.repository.findPercentByCode("SPAM_THRESHOLD");
-	}
-	
 	@Transactional(readOnly = true)
 	public boolean isSpam(String text) {
+		
+		final List<SpamWord> spamWords = this.repository.findAllSpamWords();
+		
+		final Percent percent = this.repository.findPercentByCode("SPAM_THRESHOLD");
+		
 		final double caracteresTotales = text.length();
 		
-		if(this.percent == null || this.percent.getData().equals(0.)) {
+		if(percent == null || percent.getData().equals(0.)) {
 			return false;
 		}
 		
-		for(final SpamWord spamWord : this.spamWords) {
+		for(final SpamWord spamWord : spamWords) {
 			if(text.contains(spamWord.getWordEs())) {
 				text = text.replace(spamWord.getWordEs(), "");
 			}
@@ -46,7 +39,7 @@ public class GenericSpamService {
 		
 		final double caracteresSpam = caracteresTotales - text.length();
 		
-		return (caracteresSpam/caracteresTotales)*100 >= this.percent.getData();
+		return (caracteresSpam/caracteresTotales)*100 >= percent.getData();
 	}
 
 }
