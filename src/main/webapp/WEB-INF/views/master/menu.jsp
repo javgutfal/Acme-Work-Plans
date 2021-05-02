@@ -45,6 +45,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-spamWord" action="/administrator/spamword/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-spamWord" action="/administrator/spamword/create"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-percent" action="/administrator/variable/percent/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">

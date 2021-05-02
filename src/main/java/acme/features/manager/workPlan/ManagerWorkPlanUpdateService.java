@@ -50,14 +50,14 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert entity != null;
 		assert errors != null;
 		
-		if (!errors.hasErrors("initialTime")) {
-			Calendar calendar;
-			Date actualDate;
-						
-			calendar = new GregorianCalendar();
-			actualDate = calendar.getTime();
-			errors.state(request, entity.getInitialTime().after(actualDate), "initialTime", "manager.work-plan.form.error.initialTime");
-		}
+//		if (!errors.hasErrors("initialTime")) {
+//			Calendar calendar;
+//			Date actualDate;
+//						
+//			calendar = new GregorianCalendar();
+//			actualDate = calendar.getTime();
+//			errors.state(request, entity.getInitialTime().after(actualDate), "initialTime", "manager.work-plan.form.error.initialTime");
+//		}
 		
 		if (!errors.hasErrors("finalTime")) {
 			Calendar calendar;

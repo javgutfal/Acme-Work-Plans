@@ -32,6 +32,12 @@ public class ManagerTaskListMineService implements AbstractListService<Manager, 
 		assert model != null;
 		
 		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
+		
+		if(entity.isPublicTask()) {
+			model.setAttribute("publicTask", "Yes");
+		}else {
+			model.setAttribute("publicTask", "No");
+		}
 	}
 
 	@Override

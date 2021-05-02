@@ -17,5 +17,8 @@ public interface AnonymousTaskRepository extends AbstractRepository {
 	
 	@Query("select t from Task t where t.id = ?1 and t.publicTask = true and t.finalTime >= ?1 order by t.workload")
 	Task findByIdAndPublicTaskTrueAndFinishedFalse(int id, Date moment);
+	
+	@Query("select c.task from ConsistsOf c where c.workPlan.id = ?1 ")
+	List<Task> findByPublicTasksByWorkPlanId(int workPlanId);
 
 }

@@ -6,6 +6,7 @@ manager.task.list.label.final-time = Finalization time
 manager.task.list.label.workload = Workload
 manager.task.list.label.description = Description
 manager.task.list.label.link = Link
+manager.task.list.label.public = Public Task
 
 manager.task.form.label.title =Title:
 manager.task.form.label.initialTime = Initial Time:
@@ -16,6 +17,7 @@ manager.task.form.label.link=Link:
 manager.task.form.label.publicTask= Public Task:
 manager.task.form.label.finished= Finished:
 manager.task.form.button.create= Create Task
+manager.task.form.button.create.consistsOf= Add Task
 manager.task.form.button.update= Update Task
 manager.task.form.button.delete= Delete Task
 manager.task.form.button.return= Return
@@ -27,3 +29,5 @@ manager.task.form.error.workload = The workload of a task must be positive
 manager.task.form.error.workloadExecution = The workload of a task can't be greater than the execution period
 
 NOT.FINISHED=NOT FINISHED
+
+
