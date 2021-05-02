@@ -400,6 +400,75 @@
 		
 	</bean>
 	
+		<bean id="task23" class="acme.entities.tasks.Task">
+		<property name="title" value="Crear causas" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="5" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+		
+	</bean>
+	
+	<bean id="task24" class="acme.entities.tasks.Task">
+		<property name="title" value="Crear donaciones" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="10" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+		
+	</bean>
+	
+	<bean id="task25" class="acme.entities.tasks.Task">
+		<property name="title" value="Crear listados" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="5" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+	</bean>
+	
+	<bean id="task26" class="acme.entities.tasks.Task">
+		<property name="title" value="Revisar documentos" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="15" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+	</bean>
+	
+	<bean id="task27" class="acme.entities.tasks.Task">
+		<property name="title" value="Repartir futuros eventos" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="5" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+	</bean>
+	
+	<bean id="task28" class="acme.entities.tasks.Task">
+		<property name="title" value="Entrevista con clientes" />
+		<property name="initialTime" value="2021/4/11 10:30" />
+		<property name="finalTime" value="2021/7/15 10:30" />
+		<property name="workload" value="20" />
+		<property name="description" value="Esta tarea esta finalizada" />
+		<property name="manager" ref="manager1Manager"/>
+		<property name="link" value="http://www.hola2.com" />
+		<property name="publicTask" value="true" />
+		
+	</bean>
+	
 	<bean id="consistsOf01" class="acme.entities.consistsOf.ConsistsOf">
 		<property name="task" ref="task01"/>
 		<property name="workPlan" ref="workPlan01"/>
@@ -475,6 +544,36 @@
 		<property name="workPlan" ref="workPlan07"/>
 	</bean>
 	
+	<bean id="consistsOf16" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task23"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
+	<bean id="consistsOf17" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task24"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
+	<bean id="consistsOf18" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task25"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
+	<bean id="consistsOf19" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task26"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
+	<bean id="consistsOf20" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task27"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
+	<bean id="consistsOf21" class="acme.entities.consistsOf.ConsistsOf">
+		<property name="task" ref="task28"/>
+		<property name="workPlan" ref="workPlan08"/>
+	</bean>
+	
 	<bean id="workPlan01" class="acme.entities.workPlans.WorkPlan">
 		<property name="initialTime" value="2021/4/01 10:30" />
 		<property name="finalTime" value="2021/5/31 10:30" />
@@ -543,7 +642,7 @@
 		<property name="finalTime" value="2021/4/27 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
-		<property name="workload" value="0" />
+		<property name="workload" value="60" />
 		<property name="published" value="true" />
 	</bean>
 	
