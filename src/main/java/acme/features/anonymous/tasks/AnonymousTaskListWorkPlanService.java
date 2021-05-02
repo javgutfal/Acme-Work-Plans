@@ -1,27 +1,26 @@
-package acme.features.manager.tasks;
+package acme.features.anonymous.tasks;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Principal;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class ManagerTaskListMineService implements AbstractListService<Manager, Task> {
+public class AnonymousTaskListWorkPlanService implements AbstractListService<Anonymous, Task> {
 	
 	@Autowired
-	protected ManagerTaskRepository repository;
+	protected AnonymousTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
-
+		
 		return true;
 	}
 
@@ -31,26 +30,15 @@ public class ManagerTaskListMineService implements AbstractListService<Manager, 
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
-		
-		if(entity.isPublicTask()) {
-			model.setAttribute("publicTask", "Yes");
-		}else {
-			model.setAttribute("publicTask", "No");
-		}
+		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link");
 	}
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
-
-		final Collection<Task> result;
-		Principal principal;
-
-		principal = request.getPrincipal();
-		result = this.repository.findManyByManagerId(principal.getActiveRoleId());
-
-		return result;
+		
+		
+		return this.repository.findByPublicTasksByWorkPlanId(request.getModel().getInteger("id"));
 	}
 
 }

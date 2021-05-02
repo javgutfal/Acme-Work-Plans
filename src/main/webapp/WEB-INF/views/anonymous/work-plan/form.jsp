@@ -11,5 +11,6 @@
 	<acme:form-double code="anonymous.workplan.form.label.workload" path="workload"/>
 	<acme:form-textbox code="anonymous.workplan.form.label.published" path="published"/>
 	
+	<acme:form-submit method="get" code="anonymous.workplan.form.button.list" action="/anonymous/task/list-tasks-workplan?id=${id}"/>
   	<acme:form-return code="anonymous.workplan.form.button.return"/>
 </acme:form>

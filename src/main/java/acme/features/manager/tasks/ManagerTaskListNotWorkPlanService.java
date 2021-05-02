@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.roles.Manager;
 import acme.entities.tasks.Task;
+import acme.entities.workPlans.WorkPlan;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class ManagerTaskListMineService implements AbstractListService<Manager, Task> {
+public class ManagerTaskListNotWorkPlanService implements AbstractListService<Manager, Task> {
 	
 	@Autowired
 	protected ManagerTaskRepository repository;
@@ -32,23 +32,27 @@ public class ManagerTaskListMineService implements AbstractListService<Manager, 
 		assert model != null;
 		
 		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
-		
-		if(entity.isPublicTask()) {
-			model.setAttribute("publicTask", "Yes");
-		}else {
-			model.setAttribute("publicTask", "No");
-		}
+		model.setAttribute("workPlanId", request.getModel().getInteger("workPlanId"));
+		model.setAttribute("isWorkPlan", true);
 	}
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
 		assert request != null;
-
+		
 		final Collection<Task> result;
-		Principal principal;
-
-		principal = request.getPrincipal();
-		result = this.repository.findManyByManagerId(principal.getActiveRoleId());
+		WorkPlan workPlan;
+		int id;
+		id = request.getModel().getInteger("workPlanId");
+		
+		workPlan = this.repository.findOneWorkPlanById(id);
+		
+		if(workPlan.isPublicWorkPlan()) {
+			result = this.repository.findManyTasksByNotWorkPlanPublicId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+		}else {
+			result = this.repository.findManyTasksByNotWorkPlanId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+		}
+		
 
 		return result;
 	}

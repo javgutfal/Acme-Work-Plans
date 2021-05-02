@@ -21,4 +21,5 @@ anonymous.workplan.form.label.finalTime = Final Date
 anonymous.workplan.form.label.workload = Workload 
 anonymous.workplan.form.label.published = Published:
 anonymous.workplan.form.label.tasks = Tasks:
+anonymous.workplan.form.button.list = List of Tasks
 anonymous.workplan.form.button.return = Return

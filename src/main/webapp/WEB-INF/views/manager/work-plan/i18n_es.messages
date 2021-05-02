@@ -14,7 +14,8 @@ manager.work-plan.list.finalTime = Fecha y hora de finalización
 manager.work-plan.list.workload = Carga de trabajo
 manager.work-plan.list.publicWorkPlan = Plan de trabajo público
 manager.work-plan.list.published = Publicado
-
+manager.workplan.form.button.list.NotTask = Añadir Tareas
+manager.workplan.form.button.list.Task = Listado de tareas
 manager.work-plan.list.tasks = Tareas
 
 manager.work-plan.form.error.initialTime = La fecha inicial del periodo de ejecución de un work plan debe estar en el futuro
