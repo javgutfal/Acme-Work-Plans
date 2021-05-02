@@ -1,14 +1,12 @@
 package acme.features.anonymous.shout;
 
 import java.util.Date;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.shouts.Shout;
-import acme.entities.spam.SpamWord;
-import acme.entities.variables.Percent;
+import acme.features.generic.spam.GenericSpamService;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -20,6 +18,9 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Autowired
 	protected AnonymousShoutRepository repository;
+	
+	@Autowired
+	protected GenericSpamService spamService;
 	
 	@Override
 	public boolean authorise(final Request<Shout> request) {
@@ -70,24 +71,25 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity!= null;
 		assert errors!= null;
 		
-		List<SpamWord> spamWords;
-		Percent percent;
-		
-		spamWords = this.repository.findAllSpamWords();
-		percent = this.repository.findPercentByCode("SPAM_THRESHOLD");
-		
 		if (!errors.hasErrors("author")) {
 			String text;
 			
 			text = entity.getAuthor().toLowerCase();
-			errors.state(request, !this.isSpam(spamWords, text, (percent != null)?percent.getData():0.0), "author", "anonymous.shout.form.error.spam");
+			errors.state(request, !this.spamService.isSpam(text), "author", "anonymous.shout.form.error.spam");
+		}
+		
+		if (!errors.hasErrors("text")) {
+			String text;
+			
+			text = entity.getText().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "text", "anonymous.shout.form.error.spam");
 		}
 		
 		if (!errors.hasErrors("info")) {
 			String text;
 			
-			text = entity.getAuthor().toLowerCase();
-			errors.state(request, !this.isSpam(spamWords, text, (percent != null)?percent.getData():0), "info", "anonymous.shout.form.error.spam");
+			text = entity.getInfo().toLowerCase();
+			errors.state(request, !this.spamService.isSpam(text), "info", "anonymous.shout.form.error.spam");
 		}
 	}
 
@@ -101,38 +103,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		moment= new Date(System.currentTimeMillis()-1);
 		entity.setMoment(moment);
 		this.repository.save(entity);
-	}
-	
-	
-	// PRIVATE METHODS
-	
-	/**
-	 * Function which detects text with spam
-	 * 
-	 * @param spamWords
-	 * @param text
-	 * @param percent
-	 * @return
-	 */
-	private boolean isSpam(final List<SpamWord> spamWords, String text, final Double percent) {
-		final double caracteresTotales = text.length();
-		
-		if(percent.equals(0.)) {
-			return false;
-		}
-		
-		for(final SpamWord spamWord : spamWords) {
-			if(text.contains(spamWord.getWordEs())) {
-				text = text.replace(spamWord.getWordEs(), "");
-			}
-			if(text.contains(spamWord.getWordEn())) {
-				text = text.replace(spamWord.getWordEn(), "");
-			}
-		}
-		
-		final double caracteresSpam = caracteresTotales - text.length();
-		
-		return (caracteresSpam/caracteresTotales)*100 >= percent;
 	}
 
 }
