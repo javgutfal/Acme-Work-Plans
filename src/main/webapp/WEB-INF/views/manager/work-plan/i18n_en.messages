@@ -18,6 +18,7 @@ manager.workplan.form.button.list.NotTask = Add tasks
 manager.workplan.form.button.list.Task = List of tasks
 
 manager.work-plan.form.error.initialTime = The initial time of the execution period of a work-plan must be future
+manager.work-plan.form.error.publicWorkPlan = You cannot make the Work Plan public as long as you keep tasks private
 manager.work-plan.form.error.finalTime = The final time of the execution period of a work-plan must be future
 manager.work-plan.form.error.finalTimeInitial = The final time of the execution period of a work-plan must be after the initial time
 
@@ -26,6 +27,7 @@ manager.workplan.form.label.finalTime = Final Time:
 manager.workplan.form.label.tasks = Tasks:
 manager.workplan.form.label.manager = Manager:
 manager.workplan.form.label.publicWorkPlan = Scope WorkPlan:
+manager.workplan.form.label.fechaSugerida = Suggested date taking into account the tasks of the work plan
 manager.workplan.form.button.update = Update Workplan
 manager.workplan.form.button.delete = Delete Workplan
 manager.workplan.form.button.publish = Publish Workplan

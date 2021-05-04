@@ -33,6 +33,12 @@ public class AuthenticatedTaskListService implements AbstractListService<Authent
 		assert model != null;
 		
 		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link");
+		
+		if(entity.isPublicTask()) {
+			model.setAttribute("publicTask", "Yes");
+		}else {
+			model.setAttribute("publicTask", "No");
+		}
 	}
 
 	@Override

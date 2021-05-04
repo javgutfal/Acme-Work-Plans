@@ -84,6 +84,7 @@ public class ManagerConsistsOfDeleteService implements AbstractDeleteService<Man
 		
 		workPlan = entity.getWorkPlan();
 		workPlan.setWorkload(workPlan.getWorkload()-entity.getTask().getWorkload());
+		this.repository.save(workPlan);
 		entity.setWorkPlan(workPlan);
 		this.repository.delete(entity);
 	}

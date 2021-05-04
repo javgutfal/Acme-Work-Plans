@@ -3,6 +3,7 @@ package acme.features.manager.workPlan;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -49,15 +50,17 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
-//		if (!errors.hasErrors("initialTime")) {
-//			Calendar calendar;
-//			Date actualDate;
-//						
-//			calendar = new GregorianCalendar();
-//			actualDate = calendar.getTime();
-//			errors.state(request, entity.getInitialTime().after(actualDate), "initialTime", "manager.work-plan.form.error.initialTime");
-//		}
+		WorkPlan workPlan;
+		workPlan = this.repository.findOneWorkPlanById(entity.getId());
+		if (!errors.hasErrors("initialTime")) {
+			Calendar calendar;
+			Date actualDate;
+						
+			calendar = new GregorianCalendar();
+			actualDate = calendar.getTime();
+			
+			errors.state(request, workPlan.getInitialTime().compareTo(entity.getInitialTime())==0 || entity.getInitialTime().after(actualDate), "initialTime", "manager.work-plan.form.error.initialTime");
+		}
 		
 		if (!errors.hasErrors("finalTime")) {
 			Calendar calendar;
@@ -65,8 +68,16 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 						
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
-			errors.state(request, entity.getFinalTime().after(actualDate), "finalTime", "manager.work-plan.form.error.finalTime");
+			errors.state(request, workPlan.getFinalTime().compareTo(entity.getFinalTime())==0 || entity.getFinalTime().after(actualDate), "finalTime", "manager.work-plan.form.error.finalTime");
 			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+		}
+		
+		if (!errors.hasErrors("publicWorkPlan")) {
+			
+			List<Boolean> tasks;
+			tasks = this.repository.findManyTasksPrivateById(entity.getId());
+			
+			errors.state(request, !entity.isPublicWorkPlan() || (entity.isPublicWorkPlan() && tasks.isEmpty()), "publicWorkPlan", "manager.work-plan.form.error.publicWorkPlan");
 		}
 	
 	}

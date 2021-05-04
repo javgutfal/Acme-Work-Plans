@@ -4,11 +4,14 @@ authenticated.task.list.label.final-time = Momento de finalización
 authenticated.task.list.label.workload = Carga de trabajo
 authenticated.task.list.label.description = Descripción
 authenticated.task.list.label.link = Enlace
+authenticated.task.list.label.public = Tarea pública
+
 
 authenticated.task.form.label.title = Título
 authenticated.task.form.label.initial-time = Momento de inicio
 authenticated.task.form.label.final-time = Momento de finalización
 authenticated.task.form.label.workload = Carga de trabajo
 authenticated.task.form.label.description = Descripción
+authenticated.task.form.label.publicTask= Tarea Pública:
 authenticated.task.form.label.link = Enlace
 authenticated.task.form.button.return = Volver

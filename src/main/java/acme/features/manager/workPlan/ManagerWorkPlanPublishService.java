@@ -1,5 +1,10 @@
 package acme.features.manager.workPlan;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,8 +66,39 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
+		final Calendar newInitialTime = Calendar.getInstance();
+		final Calendar newFinalTime = Calendar.getInstance();
+		Date initialTime;
+		Date finalTime;
+		
 		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
+		
+		initialTime = this.repository.findInitialTimeManyConsistsOfById(entity.getId());
+		if(initialTime != null) {
+		
+			
+			
+			newInitialTime.setTime(initialTime);
+			newInitialTime.set(Calendar.HOUR, 8);
+			newInitialTime.set(Calendar.MINUTE, 0);
+			newInitialTime.add(Calendar.DATE, -1);
+			
+			
+			finalTime = this.repository.findFinalTimeManyConsistsOfById(entity.getId());
+			
+			newFinalTime.setTime(finalTime);
+			newFinalTime.set(Calendar.HOUR, 17);
+			newFinalTime.set(Calendar.MINUTE, 0);
+			newFinalTime.add(Calendar.DATE, +1);
+			
+			final DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");  
+			final String strDateInitialTime = dateFormat.format(newInitialTime.getTime());
+			final String strDateFinalTime = dateFormat.format(newFinalTime.getTime());
+			model.setAttribute("fechaSugerida", strDateInitialTime+ " - "+strDateFinalTime);
+		
+		}else {
+			model.setAttribute("fechaSugerida", false);
+		}
 	}
 
 	@Override

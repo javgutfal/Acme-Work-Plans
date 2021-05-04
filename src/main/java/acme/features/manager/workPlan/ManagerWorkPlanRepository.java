@@ -1,6 +1,7 @@
 package acme.features.manager.workPlan;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
@@ -25,4 +26,13 @@ public interface ManagerWorkPlanRepository extends AbstractRepository {
 
 	@Query("select c from ConsistsOf c where c.workPlan.id = ?1")
 	List<ConsistsOf> findManyConsistsOfById(int workPlanId);
+	
+	@Query("select min(c.task.initialTime) from ConsistsOf c where c.workPlan.id = ?1")
+	Date findInitialTimeManyConsistsOfById(int workPlanId);
+	
+	@Query("select max(c.task.finalTime) from ConsistsOf c where c.workPlan.id = ?1")
+	Date findFinalTimeManyConsistsOfById(int workPlanId);
+	
+	@Query("select c.task.publicTask from ConsistsOf c where c.workPlan.id = ?1 and c.task.publicTask = false")
+	List<Boolean> findManyTasksPrivateById(int workPlanId);
 }

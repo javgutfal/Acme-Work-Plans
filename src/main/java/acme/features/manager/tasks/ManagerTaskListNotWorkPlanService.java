@@ -44,9 +44,15 @@ public class ManagerTaskListNotWorkPlanService implements AbstractListService<Ma
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
+		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link");
 		model.setAttribute("workPlanId", request.getModel().getInteger("workPlanId"));
 		model.setAttribute("isWorkPlan", true);
+		
+		if(entity.isPublicTask()) {
+			model.setAttribute("publicTask", "Yes");
+		}else {
+			model.setAttribute("publicTask", "No");
+		}
 	}
 
 	@Override
