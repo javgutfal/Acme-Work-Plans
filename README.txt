@@ -9,8 +9,9 @@
 # they accept any liabilities with respect to them.
 
 This is the Acme-Planner.
-Link Git Hub Repository: https://github.com/gonlalle/Acme-Planner
 
+Link GitHub Repository: https://github.com/gonlalle/Acme-Planner
+Link GitHub Release: 1.0.0
 
 For Clever Cloud:
 Git username: gonlalle
