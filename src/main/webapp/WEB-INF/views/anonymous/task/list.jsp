@@ -10,4 +10,5 @@
 	<acme:list-column code="anonymous.task.list.label.workload" path="workload"/>
 	<acme:list-column code="anonymous.task.list.label.description" path="description"/>
 	<acme:list-column code="anonymous.task.list.label.link" path="link"/>
+	<acme:list-column code="anonymous.task.list.label.publicTask" path="publicTask"/>
 </acme:list>
