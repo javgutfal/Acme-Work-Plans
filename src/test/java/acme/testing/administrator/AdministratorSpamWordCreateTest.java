@@ -38,27 +38,23 @@ public class AdministratorSpamWordCreateTest extends AcmePlannerTest{
 			super.signOut();
 		}
 		
-		/*@ParameterizedTest
-		@CsvFileSource(resources = "/employer/job/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
-		@Order(20)
-		public void createNegative(final int recordIndex, final String reference, final String title, final String deadline, final String salary, final String score, final String moreInfo, final String description) {
+		@ParameterizedTest
+		@CsvFileSource(resources = "/administrator/spamword/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+		@Order(10)
+		public void createNegative(final int recordIndex, final String wordEn, final String wordEs) {
 			super.signIn("administrator", "administrator");
 
-			super.clickOnMenu("Employer", "Create a job");
+			super.clickOnMenu("Administrator", "Create spam word");
 
-			super.fillInputBoxIn("reference", reference);
-			super.fillInputBoxIn("title", title);
-			super.fillInputBoxIn("deadline", deadline);
-			super.fillInputBoxIn("salary", salary);
-			super.fillInputBoxIn("score", score);
-			super.fillInputBoxIn("moreInfo", moreInfo);
-			super.fillInputBoxIn("description", description);
+			super.fillInputBoxIn("wordEn", wordEn);
+			super.fillInputBoxIn("wordEs", wordEs);
+			
 			super.clickOnSubmitButton("Create");
 
 			super.checkErrorsExist();
 
 			super.signOut();
-		}*/
+		}
 
 		// Ancillary methods ------------------------------------------------------
 }
