@@ -7352,3 +7352,932 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting consistsOf19 = ac
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting consistsOf20 = acme.entities.consistsOf.ConsistsOf{id=971, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting consistsOf21 = acme.entities.consistsOf.ConsistsOf{id=972, version=0}
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+WARN [org.springframework.context.support.FileSystemXmlApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumer1UserAccount' defined in class path resource [WEB-INF/population/sample-data.xml]: Cannot resolve reference to bean 'consumer1Authenticated' while setting bean property 'roles' with key [1]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'consumer1Authenticated' available
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-Planner/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342): Error creating bean with name 'consumer1UserAccount' defined in class path resource [WEB-INF/population/sample-data.xml]: Cannot resolve reference to bean 'consumer1Authenticated' while setting bean property 'roles' with key [1]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'consumer1Authenticated' available
+org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:863): No bean named 'consumer1Authenticated' available
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#50]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#95]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#140]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#185]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#230]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#275]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#320]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#365]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#410]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#455]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#500]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#545]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#590]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#635]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#680]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#725]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#770]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#815]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#860]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#905]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
+WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([acme.entities.workPlans.WorkPlan#0])
+	Dependent entities: ([[acme.entities.consistsOf.ConsistsOf#950]])
+	Non-nullable association(s): ([acme.entities.consistsOf.ConsistsOf.workPlan])
