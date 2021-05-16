@@ -14,6 +14,92 @@
 
 	<import
 		resource="classpath:/WEB-INF/population/conversion-service.xml" />
+		
+	<!-- Manager -->
+	
+	<bean name="manager1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager"/>
+		<property name="password" value="asdf1234"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Manager"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="manager1@mail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="manager1Manager"/>
+				<ref bean="manager1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="manager1Manager" class="acme.entities.roles.Manager">
+		<property name="userAccount" ref="manager1UserAccount"/>
+	</bean>
+
+	<bean name="manager1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="manager1UserAccount"/>
+	</bean>
+	
+	<!-- Consumer -->
+	
+	<bean name="consumer1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="consumer1"/>
+		<property name="password" value="consumer1"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Consumer"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="consumer1@mail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="consumer1Consumer"/>
+				<ref bean="consumer1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="consumer1Consumer" class="acme.entities.roles.Consumer">
+		<property name="userAccount" ref="consumer1UserAccount"/>
+		<property name="company" value="Company1"/>
+		<property name="sector" value="Sector1"/>
+	</bean>
+
+	<bean name="consumer1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="consumer1UserAccount"/>
+	</bean>
+	
+	<!-- Authenticated -->
+	
+	<bean name="authenticated1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="authenticated1"/>
+		<property name="password" value="authenticated1"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Authenticated"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="authenticated1@mail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="manager1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="authenticated1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticated1UserAccount"/>
+	</bean>
+	
+	<!-- Shouts -->	
 
 <bean id="shout01" class="acme.entities.shouts.Shout">
 		<property name="moment" value="2021/04/12 18:30" />
@@ -110,61 +196,7 @@
 		</property>
 	</bean>
 	
-	<bean name="manager1UserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="manager"/>
-		<property name="password" value="asdf1234"/>
-		<property name="identity">
-			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="Manager"/>
-				<property name="surname" value="One"/>
-				<property name="email" value="manager1@mail.com"/>
-			</bean>
-		</property>
-		<property name="enabled" value="true"/>		
-		<property name="roles">
-			<list>
-				<ref bean="manager1Manager"/>
-				<ref bean="manager1Authenticated"/>
-			</list>
-		</property>
-	</bean>
-
-	<bean name="manager1Manager" class="acme.entities.roles.Manager">
-		<property name="userAccount" ref="manager1UserAccount"/>
-	</bean>
-
-	<bean name="manager1Authenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="manager1UserAccount"/>
-	</bean>
-	
-	<bean name="consumer1UserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="consumer1"/>
-		<property name="password" value="consumer1"/>
-		<property name="identity">
-			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="Consumer"/>
-				<property name="surname" value="One"/>
-				<property name="email" value="consumer1@mail.com"/>
-			</bean>
-		</property>
-		<property name="enabled" value="true"/>		
-		<property name="roles">
-			<list>
-				<ref bean="consumer1Consumer"/>
-				<ref bean="consumer1Authenticated"/>
-			</list>
-		</property>
-	</bean>
-
-	<bean name="consumer1Consumer" class="acme.entities.roles.Consumer">
-		<property name="userAccount" ref="consumer1UserAccount"/>
-		<property name="company" value="Company1"/>
-		<property name="sector" value="Sector1"/>
-	</bean>
-
-	<bean name="consumer1Authenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="consumer1UserAccount"/>
-	</bean>
+	<!-- Tasks -->
 
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear entidad Task" />
