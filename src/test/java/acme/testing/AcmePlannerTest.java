@@ -68,4 +68,15 @@ public class AcmePlannerTest extends AcmeTest{
 		super.checkSimplePath("/master/welcome");
 	}
 
+	protected void navigatePath(final String path) {
+		assert this.isSimplePath(path);
+		this.navigate(() -> {
+			String url;
+
+			url = String.format("%s%s", this.baseUrl, path);
+			this.driver.get(url);
+			this.longSleep();
+		});
+	}
+
 }
