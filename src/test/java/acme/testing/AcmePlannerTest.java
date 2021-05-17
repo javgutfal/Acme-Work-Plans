@@ -3,7 +3,7 @@ package acme.testing;
 import org.hibernate.internal.util.StringHelper;
 import org.junit.jupiter.api.BeforeAll;
 
-public class AcmePlannerTest extends AcmeTest{
+public abstract class AcmePlannerTest extends AcmeTest{
 
 	// Internal state ---------------------------------------------------------
 
