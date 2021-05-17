@@ -12,7 +12,6 @@ public class AuthenticatedManagerCreateTest extends AcmePlannerTest{
 
 		super.navigatePath("/authenticated/manager/create");
 
-		super.sleep(10, true);
 		super.checkErrorsExist();
 	}
 	
