@@ -44,6 +44,37 @@
 		<property name="userAccount" ref="manager1UserAccount"/>
 	</bean>
 	
+	<!-- Consumer -->
+	
+	<bean name="consumer1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="consumer1"/>
+		<property name="password" value="consumer1"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Consumer"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="consumer1@mail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="consumer1Consumer"/>
+				<ref bean="consumer1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="consumer1Consumer" class="acme.entities.roles.Consumer">
+		<property name="userAccount" ref="consumer1UserAccount"/>
+		<property name="company" value="Company1"/>
+		<property name="sector" value="Sector1"/>
+	</bean>
+
+	<bean name="consumer1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="consumer1UserAccount"/>
+	</bean>
+	
 	<!-- Authenticated -->
 	
 	<bean name="authenticated1UserAccount" class="acme.framework.entities.UserAccount">
