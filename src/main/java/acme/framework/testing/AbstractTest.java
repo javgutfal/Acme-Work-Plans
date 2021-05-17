@@ -314,7 +314,7 @@ public abstract class AbstractTest {
 			this.longSleep();
 		});
 	}
-
+	
 	protected void navigate(final Runnable navigator) {
 		assert navigator != null;
 
