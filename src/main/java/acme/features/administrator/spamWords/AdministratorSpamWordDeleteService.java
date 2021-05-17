@@ -24,24 +24,6 @@ public class AdministratorSpamWordDeleteService implements AbstractDeleteService
 	}
 
 	@Override
-	public void bind(final Request<SpamWord> request, final SpamWord entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-		
-		request.bind(entity, errors);
-	}
-
-	@Override
-	public void unbind(final Request<SpamWord> request, final SpamWord entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "wordEn", "wordEs");
-	}
-
-	@Override
 	public SpamWord findOne(final Request<SpamWord> request) {
 		assert request != null;
 		
@@ -67,6 +49,18 @@ public class AdministratorSpamWordDeleteService implements AbstractDeleteService
 		assert entity != null;
 
 		this.repository.delete(entity);
+	}
+
+	@Override
+	public void bind(Request<SpamWord> request, SpamWord entity, Errors errors) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unbind(Request<SpamWord> request, SpamWord entity, Model model) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
