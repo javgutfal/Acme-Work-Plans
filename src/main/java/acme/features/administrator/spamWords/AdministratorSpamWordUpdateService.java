@@ -31,16 +31,7 @@ public class AdministratorSpamWordUpdateService implements AbstractUpdateService
 		
 		request.bind(entity, errors);
 	}
-
-	@Override
-	public void unbind(final Request<SpamWord> request, final SpamWord entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "wordEn", "wordEs");
-	}
-
+	
 	@Override
 	public SpamWord findOne(final Request<SpamWord> request) {
 		assert request != null;
@@ -67,6 +58,12 @@ public class AdministratorSpamWordUpdateService implements AbstractUpdateService
 		assert entity != null;
 
 		this.repository.save(entity);
+	}
+
+	@Override
+	public void unbind(Request<SpamWord> request, SpamWord entity, Model model) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -43,7 +43,6 @@
 	<bean name="manager1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="manager1UserAccount"/>
 	</bean>
-	
 	<!-- Consumer -->
 	
 	<bean name="consumer1UserAccount" class="acme.framework.entities.UserAccount">
@@ -74,7 +73,7 @@
 	<bean name="consumer1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="consumer1UserAccount"/>
 	</bean>
-	
+
 	<!-- Authenticated -->
 	
 	<bean name="authenticated1UserAccount" class="acme.framework.entities.UserAccount">
