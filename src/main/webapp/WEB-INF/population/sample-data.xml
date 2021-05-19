@@ -73,6 +73,37 @@
 	<bean name="consumer1Authenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="consumer1UserAccount"/>
 	</bean>
+	
+		<!-- Provide -->
+	
+	<bean name="provider1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="provider1"/>
+		<property name="password" value="provider1"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Provider"/>
+				<property name="surname" value="One"/>
+				<property name="email" value="consumer1@mail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="provider1Provider"/>
+				<ref bean="provider1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="provider1Provider" class="acme.entities.roles.Provider">
+		<property name="userAccount" ref="provider1UserAccount"/>
+		<property name="company" value="Company1"/>
+		<property name="sector" value="Sector1"/>
+	</bean>
+
+	<bean name="provider1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="provider1UserAccount"/>
+	</bean>
 
 	<!-- Authenticated -->
 	
