@@ -1,4 +1,4 @@
-package acme.testing.administrator;
+package acme.testing.administrator.spamWord;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
