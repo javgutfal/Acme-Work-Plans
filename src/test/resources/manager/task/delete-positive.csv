@@ -1,0 +1,2 @@
+recordIndex,title,initialTime,finalTime,workload,link,description,publicTask,publicTaskShow,nextTitle,nextInitialTime,nextFinalTime,nextWorkload,nextLink,nextDescription,nextPublicTask,nextPublicTaskShow
+10,Crear test de Task4,2021/04/20 10:30,2021/05/23 10:30,10.00,http://www.hola2.com,Esta tarea no esta finalizada,Yes,PUBLIC,Crear test de Task5,2021/04/16 10:30,2021/04/21 10:30,30.00,http://www.hola2.com,Esta tarea no esta finalizada,No,PRIVATE
