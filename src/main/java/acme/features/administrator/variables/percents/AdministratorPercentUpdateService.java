@@ -37,8 +37,6 @@ public class AdministratorPercentUpdateService implements AbstractUpdateService<
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
-		request.unbind(entity, model, "code", "data");
 	}
 
 	@Override
