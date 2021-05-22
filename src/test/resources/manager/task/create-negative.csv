@@ -1,0 +1,11 @@
+recordIndex,title,initialTime,finalTime,workload,description,link,publicTask,publicTaskShow,value
+1,,2021/06/20 10:30,2021/07/23 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+2,Crear test de Task1,,2021/07/23 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+3,Crear test de Task1,2021/05/20 10:30,2021/07/23 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+4,Crear test de Task1,20/06/2021 10:30,2021/07/23 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+5,Crear test de Task1,2021/06/20 10:30,2021/05/10 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+6,Crear test de Task1,2021/06/20 10:30,,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+1,Crear test de Task1,2021/06/20 10:30,23/07/2021 10:30,10.00,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+6,Crear test de Task1,2021/06/20 10:30,2021/07/23 10:30,,Esta tarea no esta finalizada,http://www.hola2.com,Yes,PUBLIC,true
+7,Crear test de Task1,2021/06/20 10:30,2021/07/23 10:30,10.00,,http://www.hola2.com,Yes,PUBLIC,true
+8,Crear test de Task1,2021/06/20 10:30,2021/07/23 10:30,10.00,Esta tarea no esta finalizada,hola2,Yes,PUBLIC,true
