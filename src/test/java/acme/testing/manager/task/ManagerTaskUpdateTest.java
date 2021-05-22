@@ -12,7 +12,7 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 	@CsvFileSource(resources = "/manager/task/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)	
 	public void updatePositive(final int recordIndex, final String prevTitle, final String prevInitialTime, final String prevFinalTime, final String prevWorkload, final String prevLink, final String prevDescription, final String prevPublicTask, final String prevPublicTaskShow,
-		final String newTitle, final String newInitialTime, final String newFinalTime, final String newWorkload, final String newLink, final String newDescription, final String newPublicTask, final String newPublicTaskShow) {		
+		final String newTitle, final String newInitialTime, final String newFinalTime, final String newWorkload, final String newLink, final String newDescription, final String newPublicTask, final String newPublicTaskShow, final String newValue) {		
 		
 		super.signIn("manager", "asdf1234");
 		super.clickOnMenu("Manager", "See tasks");
@@ -33,6 +33,7 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("workload", newWorkload);
 		super.fillInputBoxIn("description", newDescription);
 		super.fillInputBoxIn("link", newLink);
+		super.fillInputBoxIn("publicTask", newValue);
 		
 		super.clickOnSubmitButton("Update Task");
 		
