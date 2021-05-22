@@ -175,7 +175,34 @@ public abstract class AcmeTest extends AbstractTest {
 		contents = (contents == null ? "" : contents.trim());
 		value = (expectedValue != null ? expectedValue.trim() : "");
 
-		assert contents.equals(value) : String.format("Expected value '%s' in attribute %d of record %d, but found '%s'", expectedValue, attributeIndex, recordIndex, value);
+		assert contents.equals(value) : String.format("Expected value '%s' in attribute %d of record %d, but found '%s'", expectedValue, attributeIndex, recordIndex, contents);
+	}
+	
+	protected void checkColumnDashBoardHasValue(final int recordIndex, final int attributeIndex, final String expectedValue) {
+		assert recordIndex >= 0;
+		assert attributeIndex >= 0;
+		// expectedValue is nullable
+
+		List<WebElement> row;
+		WebElement attribute, toggle;
+		String contents, value;
+
+		row = this.getListingDashBoardRecord(recordIndex);
+		//assert attributeIndex + 1 < row.size() : String.format("Attribute %d in record %d is out of range", attributeIndex, recordIndex);
+		attribute = row.get(attributeIndex);
+		if (attribute.isDisplayed())
+			contents = attribute.getText();
+		else {
+			toggle = row.get(0);
+			toggle.click();
+			contents = (String) super.executor.executeScript("return arguments[0].innerText;", attribute);
+			toggle.click();
+		}
+
+		contents = (contents == null ? "" : contents.trim());
+		value = (expectedValue != null ? expectedValue.trim() : "");
+
+		assert contents.equals(value) : String.format("Expected value '%s' in attribute %d of record %d, but found '%s'", expectedValue, attributeIndex, recordIndex, contents);
 	}
 
 	// Form-filling methods ---------------------------------------------------
@@ -332,6 +359,33 @@ public abstract class AcmeTest extends AbstractTest {
 		assert pageIndex < pageLinks.size() : String.format("Record index %d is out of range", recordIndex);
 		pageLink = pageLinks.get(pageIndex);
 		super.clickAndGo(pageLink);
+
+		rowLocator = By.tagName("tr");
+		rows = list.findElements(rowLocator);
+		assert rowIndex < rows.size() : String.format("Record index %d is out of range", recordIndex);
+		row = rows.get(rowIndex);
+		columnLocator = By.tagName("td");
+		result = row.findElements(columnLocator);
+
+		return result;
+	}
+	
+	protected List<WebElement> getListingDashBoardRecord(final int recordIndex) {
+		assert recordIndex >= 0;
+
+		List<WebElement> result;
+		int rowIndex;
+		By listLocator;
+		By rowLocator, columnLocator;
+		WebElement list;
+		WebElement row;
+		List<WebElement> rows;
+
+
+		rowIndex = recordIndex;
+
+		listLocator = By.id("list");
+		list = super.locateOne(listLocator);
 
 		rowLocator = By.tagName("tr");
 		rows = list.findElements(rowLocator);
