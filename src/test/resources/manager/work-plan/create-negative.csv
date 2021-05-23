@@ -1,0 +1,5 @@
+recordIndex,initialTime,finalTime,workload,publicWorkPlan,published,publicWorkPlanShow,value
+0,,2021/07/23 10:30,0.00,Yes,No,PUBLIC,true
+1,2021/06/21 10:30,,0.00,No,No,PRIVATE,false
+2,2021/05/22 10:30,2021/07/25 10:30,0.00,Yes,No,PUBLIC,true
+3,2021/06/22 10:30,2021/05/25 10:30,0.00,Yes,No,PUBLIC,true
