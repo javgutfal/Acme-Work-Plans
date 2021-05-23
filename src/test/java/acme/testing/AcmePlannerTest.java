@@ -2,6 +2,7 @@ package acme.testing;
 
 import org.hibernate.internal.util.StringHelper;
 import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.By;
 
 import acme.framework.testing.AbstractTest;
 
@@ -97,6 +98,15 @@ public abstract class AcmePlannerTest extends AcmeTest{
 		assert !urlSimple.equals("/master/referrer") : "The '/master/referrer' redirector didn't work";
 
 		return result;
+	}
+	
+	protected void clickOnButton(final String label) {
+		assert !StringHelper.isBlank(label);
+
+		By locator;
+
+		locator = By.xpath(String.format("//button[normalize-space()='%s']", label));
+		super.clickAndWait(locator);
 	}
 
 }
