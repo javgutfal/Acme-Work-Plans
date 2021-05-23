@@ -6,6 +6,10 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedConsumerUpdateTest extends AcmePlannerTest{
 	
+	/*
+	 Este test intenta actualizar los datos de un consumer dejando los parámetros vacios,
+	 se espera un resultado negativo.
+	 */
 	@Test
 	public void updateNegativeUnauthorised() {
 		super.signIn("consumer1", "consumer1");
@@ -16,6 +20,9 @@ public class AuthenticatedConsumerUpdateTest extends AcmePlannerTest{
 		super.checkErrorsExist();
 	}
 	
+	/*
+	 Este test actualiza los datos de un consumer, se espera un resultado positivo.
+	 */
 	@Test
 	public void updatePositive() {
 		super.signIn("consumer1", "consumer1");
