@@ -30,12 +30,6 @@ public class ManagerConsistsOfController extends AbstractController<Manager, Con
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected ManagerConsistsOfListService		listService;
-
-	@Autowired
-	protected ManagerConsistsOfShowService		showService;
-
-	@Autowired
 	protected ManagerConsistsOfCreateService	createService;
 	
 	@Autowired
@@ -46,8 +40,6 @@ public class ManagerConsistsOfController extends AbstractController<Manager, Con
 
 	@PostConstruct
 	protected void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
-		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}

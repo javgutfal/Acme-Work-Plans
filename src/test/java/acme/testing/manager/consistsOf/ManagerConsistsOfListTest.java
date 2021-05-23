@@ -1,6 +1,7 @@
 package acme.testing.manager.consistsOf;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -42,6 +43,27 @@ public class ManagerConsistsOfListTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
 		
 		//super.checkButtonExists("Delete Task from Workplan");
+	}
+	
+	@Test
+	public void listNegativeNotAuthorised() {
+
+		super.signIn("manager", "asdf1234");
+		super.clickOnMenu("Manager", "View workplans");
+		
+		super.clickOnListingRecord(0);
+		
+		final String url = this.getCurrentUrlComplete();
+		final String[] parts = url.split("=");
+		final String workplanId = parts[1];
+		
+		super.navigatePath("/manager/task/list-workplan?workPlanId="+workplanId);
+		
+		super.signOut();
+		
+		super.navigatePath("/manager/task/list-workplan?workPlanId="+workplanId);
+		
+		super.checkPanicExists();
 	}
 	
 }

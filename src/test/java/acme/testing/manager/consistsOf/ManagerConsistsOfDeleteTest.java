@@ -1,6 +1,7 @@
 package acme.testing.manager.consistsOf;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -44,6 +45,35 @@ public class ManagerConsistsOfDeleteTest  extends AcmePlannerTest{
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
+		
+		super.signOut();
+	}
+	
+	@Test
+	public void deleteNegativeNotAuthorised() {
+
+		super.signIn("manager", "asdf1234");
+		super.clickOnMenu("Manager", "View workplans");
+		
+		super.clickOnListingRecord(0);
+		
+		String url = this.getCurrentUrlComplete();
+		String[] parts = url.split("=");
+		final String workplanId = parts[1];
+		
+		super.navigatePath("/manager/task/list-workplan?workPlanId="+workplanId);
+		
+		super.clickOnListingRecord(0);
+		
+		url = this.getCurrentUrlComplete();
+		parts = url.split("\\?");
+		final String query = parts[1];
+		
+		super.signOut();
+		
+		super.navigatePath("/manager/task/show-workplan?"+query);
+		
+		super.checkPanicExists();
 	}
 	
 }

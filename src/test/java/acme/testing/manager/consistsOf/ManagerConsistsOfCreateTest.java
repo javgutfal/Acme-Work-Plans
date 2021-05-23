@@ -2,6 +2,7 @@ package acme.testing.manager.consistsOf;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -59,6 +60,8 @@ public class ManagerConsistsOfCreateTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
+		
+		super.signOut();
 	}
 	
 	@ParameterizedTest
@@ -99,6 +102,8 @@ public class ManagerConsistsOfCreateTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
+		
+		super.signOut();
 	}
 	
 	@ParameterizedTest
@@ -147,6 +152,29 @@ public class ManagerConsistsOfCreateTest extends AcmePlannerTest{
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
+		
+		super.signOut();
+	}
+	
+	@Test
+	public void createNegativeNotAuthorised() {
+
+		super.signIn("manager", "asdf1234");
+		super.clickOnMenu("Manager", "View workplans");
+		
+		super.clickOnListingRecord(0);
+		
+		final String url = this.getCurrentUrlComplete();
+		final String[] parts = url.split("=");
+		final String workplanId = parts[1];
+		
+		super.navigatePath("/manager/task/list-workplan?workPlanId="+workplanId);
+		
+		super.signOut();
+		
+		super.navigatePath("/manager/task/list-not-workplan?workPlanId="+workplanId);
+		
+		super.checkPanicExists();
 	}
 	
 }
