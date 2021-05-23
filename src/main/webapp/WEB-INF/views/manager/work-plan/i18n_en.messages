@@ -21,6 +21,8 @@ manager.work-plan.form.error.initialTime = The initial time of the execution per
 manager.work-plan.form.error.publicWorkPlan = You cannot make the Work Plan public as long as you keep tasks private
 manager.work-plan.form.error.finalTime = The final time of the execution period of a work-plan must be future
 manager.work-plan.form.error.finalTimeInitial = The final time of the execution period of a work-plan must be after the initial time
+manager.work-plan.form.error.initialTimeTask = The initial time must be early or equals to the initial time of the first task
+manager.work-plan.form.error.finalTimeTask =The final time must be after or equals to the final time of the last task
 
 manager.workplan.form.label.initialTime = Initial Time:
 manager.workplan.form.label.finalTime = Final Time:
