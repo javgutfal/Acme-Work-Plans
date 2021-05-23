@@ -57,14 +57,13 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 		
 		if(workPlan.isPublicWorkPlan()) {
 			return task.isPublicTask() && workPlan.getInitialTime().equals(task.getInitialTime()) 
-				|| workPlan.getInitialTime().before(task.getInitialTime())
-				&& workPlan.getFinalTime().after(task.getFinalTime())
-				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation;
+				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation|| workPlan.getInitialTime().before(task.getInitialTime())
+				&& workPlan.getFinalTime().after(task.getFinalTime());
 		}else {
-			return workPlan.getInitialTime().equals(task.getInitialTime()) 
+			return workPlan.getInitialTime().equals(task.getInitialTime())
+				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation
 				|| workPlan.getInitialTime().before(task.getInitialTime())
-				&& workPlan.getFinalTime().after(task.getFinalTime())
-				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation;
+				&& workPlan.getFinalTime().after(task.getFinalTime());
 		}
 
 	}
