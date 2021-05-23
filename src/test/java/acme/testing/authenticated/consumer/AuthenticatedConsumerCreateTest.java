@@ -6,6 +6,10 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedConsumerCreateTest extends AcmePlannerTest{
 	
+	/*
+	 Este test intenta crear un consumer sin añadir company ni sector, 
+	 se espera resultado negativo.
+	 */
 	@Test
 	public void createNegativeUnauthorised() {
 		super.signIn("authenticated1", "authenticated1");
@@ -15,7 +19,9 @@ public class AuthenticatedConsumerCreateTest extends AcmePlannerTest{
 		super.clickOnSubmitButton("Register");
 		super.checkErrorsExist();
 	}
-	
+	/*
+	 Este test crea un consumer, se espera un resultado positivo.
+	 */
 	@Test
 	public void createPositive() {
 		super.signIn("authenticated1", "authenticated1");

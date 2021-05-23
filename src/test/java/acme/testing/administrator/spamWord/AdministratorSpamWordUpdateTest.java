@@ -8,6 +8,10 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorSpamWordUpdateTest extends AcmePlannerTest{
 	
+	/*
+	 Este test actualiza una palabra previamente comprobada y luego comprueba la nueva palabra,
+	 se espera un resultado positivo
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamword/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)	
@@ -38,7 +42,10 @@ public class AdministratorSpamWordUpdateTest extends AcmePlannerTest{
 		
 		super.signOut();
 	}
-	
+	/*
+	 Este test intenta actualizar una spamWord saltandose los validadores,
+	  se espera un resultado negativo.
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamword/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
