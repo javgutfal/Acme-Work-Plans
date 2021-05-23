@@ -48,6 +48,6 @@ public class AdministratorSpamWordDeleteTest extends AcmePlannerTest{
 	@Test
 	public void deleteNegative() {
 		super.navigatePath("/administrator/spamword/delete");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 }

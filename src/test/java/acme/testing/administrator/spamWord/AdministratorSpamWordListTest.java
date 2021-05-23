@@ -37,6 +37,6 @@ public class AdministratorSpamWordListTest extends AcmePlannerTest{
 	@Test
 	public void listNegative() {
 		super.navigatePath("/administrator/spamword/list");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 }
