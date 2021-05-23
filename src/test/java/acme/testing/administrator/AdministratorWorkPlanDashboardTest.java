@@ -30,7 +30,7 @@ public class AdministratorWorkPlanDashboardTest extends AcmePlannerTest{
 	@Test
 	public void listNegative() {
 		super.navigatePath("/administrator/workplandashboard/show");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 
 }
