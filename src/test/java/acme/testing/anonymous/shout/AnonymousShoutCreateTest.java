@@ -9,6 +9,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AnonymousShoutCreateTest  extends AcmePlannerTest {
 	
+	/*
+	 Este test crea un shout, se espera un resultado positivo.
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -31,7 +34,10 @@ public class AnonymousShoutCreateTest  extends AcmePlannerTest {
 
 		
 	}
-	
+	/*
+	 Este test intenta crear un shout añadiendo mal los datos en el csv, 
+	 se espera resultado negativo.
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
