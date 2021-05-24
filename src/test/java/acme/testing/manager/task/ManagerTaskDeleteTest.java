@@ -9,6 +9,11 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerTaskDeleteTest extends AcmePlannerTest {
 
+	/*
+		Este test borra una task y comprueba que no esté en el listado tras borrarla,
+		mirando que la siguiente task del listado a ocupado el lugar de la task borrada.
+		Se espera un resultado positivo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -53,7 +58,10 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest {
 		super.signOut();
 	}
 
-	
+	/*
+	 Este test intenta acceder al borrado sin loguearse como manager.
+	 Se espera un resultado negativo.
+	*/
 	@Test
 	public void deleteNegative() {
 		super.navigatePath("/manager/task/delete");

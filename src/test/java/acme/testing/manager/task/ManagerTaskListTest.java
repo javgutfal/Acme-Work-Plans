@@ -9,6 +9,10 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerTaskListTest extends AcmePlannerTest {
 
+	/*
+	 Este test comprueba el listado de task,
+	 se espera un resultado positivo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -39,6 +43,10 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 		super.checkButtonExists("Delete Task");
 	}
 	
+	/*
+	 Este test intenta acceder al listado sin loguearse como manager,
+	 se espera un resultado negativo.
+	*/
 	@Test
 	public void listNegative() {
 		super.navigatePath("/manager/task/list");
