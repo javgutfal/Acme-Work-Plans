@@ -31,7 +31,8 @@ public class AdministratorPercentListTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
-	/* Con este test comprobamos que si intentamos ver el listado de porcentajes sin ser administrador nos devuelve a la vista de panic*/
+	/* Con este test comprobamos que si intentamos ver el listado de porcentajes sin ser administrador nos devuelve a la vista de panic
+	   las restricciones violadas a probar son valor mayor a 100, valor que no sea un double y que el valor debe ser superior a 0*/
 	
 	@Test
 	public void listNegative() {
