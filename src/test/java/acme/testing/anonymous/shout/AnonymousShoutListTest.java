@@ -8,7 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 
 public class AnonymousShoutListTest extends AcmePlannerTest {
-	
+	/* 
+	 Test que comprueba que todos los campos del listado de shouts en Anonymous son los esperados
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
