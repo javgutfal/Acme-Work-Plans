@@ -65,6 +65,11 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 	
 	/*
 		Este test intenta actualizar una task sin cumplir las validaciones.
+		Las validaciones que este test intenta saltarse son:
+			- Dejar el titulo vacio.
+			- Dejar la fecha de inicio vacía y poner una fecha previa a la actual.
+			- Dejar la fecha de finalización vacía y poner una fecha previa a la actual.
+			- Dejar el workload vacío.
 		Se espera un resultado negativo.
 	*/
 	@ParameterizedTest

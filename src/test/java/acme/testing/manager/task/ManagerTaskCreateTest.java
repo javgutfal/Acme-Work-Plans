@@ -60,6 +60,13 @@ public class ManagerTaskCreateTest  extends AcmePlannerTest {
 	
 	/* 
 		Esta test intenta crear tasks que no complen las validaciones.
+		Las validaciones que este test intenta saltarse son:
+			- Dejar el titulo vacio.
+			- Dejar la fecha de inicio vacía, poner una fecha previa a la actual y poner la fecha con el formato erróneo.
+			- Dejar la fecha de finalización vacía, poner una fecha previa a la actual y poner la fecha con el formato erróneo.
+			- Dejar el workload vacío.
+			- Dejar la descripción vacía.
+			- Introducir un link no valido.
 		Se espera un resultado negativo.
 	*/
 	@ParameterizedTest
