@@ -6,6 +6,8 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedProviderUpdateTest extends AcmePlannerTest{
 	
+	/* Test que comprueba que se produce error si intentamos actualizar nuestros datos de Provider vaciando los campos company y sector */
+	
 	@Test
 	public void updateNegativeUnauthorised() {
 		super.signIn("provider1", "provider1");
@@ -16,6 +18,8 @@ public class AuthenticatedProviderUpdateTest extends AcmePlannerTest{
 		super.checkErrorsExist();
 	}
 	
+	
+	/* Test simple que comprueba que como autenticado podemos actualizar nuestros datos de Provider correctamente*/
 	@Test
 	public void updatePositive() {
 		super.signIn("provider1", "provider1");

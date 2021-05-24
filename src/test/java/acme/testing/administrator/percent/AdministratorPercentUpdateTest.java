@@ -8,6 +8,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorPercentUpdateTest extends AcmePlannerTest{
 	
+	/* Con este test comprobamos que si estamos logeados como administrator podemos modificar correctamente a un valor de porcentaje
+	   válido comprobando nuevamente tras actualizar el valor que se encuentra tanto en el listado como en el show*/
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/percent/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)	
@@ -37,6 +40,7 @@ public class AdministratorPercentUpdateTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
+	/* Comprobamos que con varios ejemplos negativos el test falla y por tanto las restricciones se están cumpliendo correctamente*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/percent/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

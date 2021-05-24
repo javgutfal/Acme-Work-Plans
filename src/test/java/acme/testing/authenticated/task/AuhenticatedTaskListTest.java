@@ -10,6 +10,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AuhenticatedTaskListTest extends AcmePlannerTest {
 	
+	/* Test que comprueba que todos los campos del listado de tasks entrando como authenticated son los esperados, al igual que los
+	   que aparecen al entrar en el show*/ 
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -37,9 +40,11 @@ public class AuhenticatedTaskListTest extends AcmePlannerTest {
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
 	}
 	
+	/*Comprobamos que si intentamos entrar a este listado como anónimo nos devuelve la vista de panic */
+	
 	@Test
 	public void listNegative() {
 		super.navigatePath("/authenticated/task/list");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 }

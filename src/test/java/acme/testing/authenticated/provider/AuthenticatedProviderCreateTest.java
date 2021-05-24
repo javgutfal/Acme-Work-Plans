@@ -6,6 +6,8 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedProviderCreateTest extends AcmePlannerTest{
 	
+	
+	/* Test que comprueba que se produce error si intentamos convertirnos en Provider sin rellenar los campos company y sector */
 	@Test
 	public void createNegativeUnauthorised() {
 		super.signIn("authenticated1", "authenticated1");
@@ -16,6 +18,8 @@ public class AuthenticatedProviderCreateTest extends AcmePlannerTest{
 		super.checkErrorsExist();
 	}
 	
+	
+	/* Test simple que comprueba que como autenticado podemos convertirnos en Provider correctamente*/
 	@Test
 	public void createPositive() {
 		super.signIn("authenticated1", "authenticated1");
