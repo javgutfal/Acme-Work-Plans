@@ -1,12 +1,18 @@
 package acme.testing.anonymous.task;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmePlannerTest;
 
 public class AnonymousTaskListTest extends AcmePlannerTest {
+	
+	/* 
+	 Test que comprueba que todos los campos del listado de tasks en anonymous son los esperados, al igual que los
+	   que aparecen al entrar en el show
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -32,6 +38,17 @@ public class AnonymousTaskListTest extends AcmePlannerTest {
 		super.checkInputBoxHasValue("link", link);
 		super.checkInputBoxHasValue("publicTask", publicTaskShow);
 	}
+	
+	/*
+	 Este test intenta acceder al listado de task de Anonymous logeado como manager y 
+	 nos devuelve la vista de panic
+	 */
+	@Test
+	public void listNegativeNotAuthorised() {
 
+		super.signIn("manager", "asdf1234");
+		super.navigatePath("/anonymous/task/list");		
+		super.checkPanicExists();
+	}
 
 }
