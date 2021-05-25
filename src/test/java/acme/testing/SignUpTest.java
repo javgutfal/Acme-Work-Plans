@@ -32,21 +32,14 @@ public class SignUpTest extends AcmePlannerTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/negative-username-already-taken.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeSignUpUsernameTaken(final String username, final String password, final String name, final String surname, final String email, final String phone) {
-		this.signUpFail(username, password, name, surname, email);
-	}
-	
-	@ParameterizedTest
-	@CsvFileSource(resources = "/sign-up/negative-email-already-taken.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
-	public void negativeSignUpEmailTaken(final String username, final String password, final String name, final String surname, final String email, final String phone) {
+	public void negativeSignUpUsernameTaken(final String username, final String password, final String name, final String surname, final String email) {
 		this.signUpFail(username, password, name, surname, email);
 	}
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/negative-password-short.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void negativeSignUpPasswordShort(final String username, final String password, final String name, final String surname, final String email, final String phone) {
+	public void negativeSignUpPasswordShort(final String username, final String password, final String name, final String surname, final String email) {
 		this.signUpFail(username, password, name, surname, email);
 	}
 	
