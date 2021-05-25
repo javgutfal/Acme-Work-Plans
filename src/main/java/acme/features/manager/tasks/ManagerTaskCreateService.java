@@ -85,14 +85,18 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
 			errors.state(request, entity.getFinalTime().after(actualDate), "finalTime", "manager.task.form.error.finalTime");
-			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.task.form.error.finalTimeInitial");
+			if(entity.getInitialTime() != null) {
+				errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.task.form.error.finalTimeInitial");
+			}
 		}
-		
 		if (!errors.hasErrors("workload")) {
-			final Long diferencia = entity.getFinalTime().getTime() - entity.getInitialTime().getTime();
-
+			
+			if(entity.getInitialTime() != null) {
+				final Long diferencia = entity.getFinalTime().getTime() - entity.getInitialTime().getTime();
+				errors.state(request, entity.getWorkload()<= diferencia/3600000, "workload", "manager.task.form.error.workloadExecution");
+			}
 			errors.state(request, entity.getWorkload()>=0, "workload", "manager.task.form.error.workload");
-			errors.state(request, entity.getWorkload()<= diferencia/3600000, "workload", "manager.task.form.error.workloadExecution");
+			
 		}
 		
 		if (!errors.hasErrors("title")) {
