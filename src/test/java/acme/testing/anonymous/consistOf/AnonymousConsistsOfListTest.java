@@ -52,19 +52,20 @@ public class AnonymousConsistsOfListTest extends AcmePlannerTest{
 	  logeado como manager y nos devuelve la vista de panic
 	 */
 	@Test
-	public void listNegativeNotAuthorised() {
-		
+    public void listNegativeNotAuthorised() {
 
-		super.signIn("manager", "asdf1234");
-		
-		
-		final String url = this.getCurrentUrlComplete();
-		final String[] parts = url.split("=");
-		final String workplanId = parts[1];
-		
-		super.navigatePath("/anonymous/task/list-tasks-workplan?id="+workplanId);
-	
-		super.checkPanicExists();
-	}
+        super.signIn("manager", "asdf1234");
+        super.clickOnMenu("Manager", "View workplans");
+
+        super.clickOnListingRecord(0);
+
+        final String url = this.getCurrentUrlComplete();
+        final String[] parts = url.split("=");
+        final String workplanId = parts[1];
+
+        super.navigatePath("/anonymous/task/list-tasks-workplan?id="+workplanId);
+
+        super.checkPanicExists();
+    }
 	
 }
