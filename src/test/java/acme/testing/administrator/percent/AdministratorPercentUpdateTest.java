@@ -40,7 +40,9 @@ public class AdministratorPercentUpdateTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
-	/* Comprobamos que con varios ejemplos negativos el test falla y por tanto las restricciones se están cumpliendo correctamente*/
+	/* Comprobamos que con varios ejemplos negativos el test falla y por tanto las restricciones se están cumpliendo correctamente
+	   las restricciones violadas a probar son valor mayor a 100, valor que no sea un double y que el valor debe ser superior a 0*/
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/percent/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
