@@ -11,7 +11,10 @@ public class AdministratorSpamWordCreateTest extends AcmePlannerTest{
 	// Lifecycle management ---------------------------------------------------
 
 		// Test cases -------------------------------------------------------------
-
+	/*
+	 Este test crea varias spamWords y comprueba que se encuentran en el listado,
+	 se espera un resultado positivo
+	 */
 		@ParameterizedTest
 		@CsvFileSource(resources = "/administrator/spamword/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 		@Order(10)
@@ -38,6 +41,10 @@ public class AdministratorSpamWordCreateTest extends AcmePlannerTest{
 			super.signOut();
 		}
 		
+		/*
+		 Este test intenta crear spamWords pero sobrepasando las limitaciones
+		 de los validadores, se espera un resultado negativo
+		 */
 		@ParameterizedTest
 		@CsvFileSource(resources = "/administrator/spamword/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 		@Order(10)

@@ -17,6 +17,12 @@ public interface ManagerWorkPlanRepository extends AbstractRepository {
 
 	@Query("select w from WorkPlan w where w.id = ?1")
 	WorkPlan findOneWorkPlanById(int id);
+	
+	@Query("select min(c.task.initialTime) from ConsistsOf c where c.workPlan.id = ?1")
+	Date findEarliestInitialTimeTaskByWorkPlanId(int id);
+	
+	@Query("select max(c.task.finalTime) from ConsistsOf c where c.workPlan.id = ?1")
+	Date findLatestFinalTimeTaskByWorkPlanId(int id);
 
 	@Query("select m from Manager m where m.id = ?1")
 	Manager findOneManagerById(int id);

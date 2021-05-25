@@ -9,6 +9,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorSpamWordListTest extends AcmePlannerTest{
 	
+	/*
+	 Este test comprueba el listado de spamWord, se espera un resultado positivo
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamword/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -27,10 +30,13 @@ public class AdministratorSpamWordListTest extends AcmePlannerTest{
 		
 		super.signOut();
 	}
-	
+	/*
+	 Este test intenta acceder al listado sin loguearse como administrador,
+	  se espera un resultado negativo.
+	 */
 	@Test
 	public void listNegative() {
 		super.navigatePath("/administrator/spamword/list");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 }

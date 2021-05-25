@@ -9,6 +9,11 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerTaskCreateTest  extends AcmePlannerTest {
 	
+	/*
+		Este test crea varias tasks nuevas y comprueba que la creación ha sido realizada 
+		con éxito comprobando posteriormente que estas se encuentran en el listado.
+		Se espera un resultado positivo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -53,6 +58,10 @@ public class ManagerTaskCreateTest  extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	/* 
+		Esta test intenta crear tasks que no complen las validaciones.
+		Se espera un resultado negativo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

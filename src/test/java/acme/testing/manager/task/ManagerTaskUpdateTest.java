@@ -8,6 +8,12 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerTaskUpdateTest extends AcmePlannerTest {
 
+	/*
+		Este test actualiza un task. Comprueba que las task que se quiere actualizar
+		existe en el listado, la modifica y actualiza, y posteriormente comprueba que
+		la actualización ha sido realizada con éxito.
+		Se espera un resultado positivo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)	
@@ -57,6 +63,10 @@ public class ManagerTaskUpdateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	/*
+		Este test intenta actualizar una task sin cumplir las validaciones.
+		Se espera un resultado negativo.
+	*/
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/task/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

@@ -2,6 +2,9 @@ package acme.testing;
 
 import org.hibernate.internal.util.StringHelper;
 import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.By;
+
+import acme.framework.testing.AbstractTest;
 
 public abstract class AcmePlannerTest extends AcmeTest{
 
@@ -69,7 +72,7 @@ public abstract class AcmePlannerTest extends AcmeTest{
 	}
 
 	protected void navigatePath(final String path) {
-		assert this.isSimplePath(path);
+		//assert this.isSimplePath(path);
 		this.navigate(() -> {
 			String url;
 
@@ -77,6 +80,33 @@ public abstract class AcmePlannerTest extends AcmeTest{
 			this.driver.get(url);
 			this.longSleep();
 		});
+	}
+	
+	protected String getCurrentUrlComplete() {
+		String result;
+		String urlSimple;
+		int counter;
+
+		this.waitUntilComplete();
+		result = this.driver.getCurrentUrl();
+		urlSimple = this.extractSimplePath(result);
+		for (counter = 0; counter < AbstractTest.MAX_URL_FETCH_ATTEMPTS && result.equals("/master/referrer"); counter++) {
+			this.sleep(counter + 1, true);
+			result = this.driver.getCurrentUrl();
+			urlSimple = this.extractSimplePath(result);
+		}	
+		assert !urlSimple.equals("/master/referrer") : "The '/master/referrer' redirector didn't work";
+
+		return result;
+	}
+	
+	protected void clickOnButton(final String label) {
+		assert !StringHelper.isBlank(label);
+
+		By locator;
+
+		locator = By.xpath(String.format("//button[normalize-space()='%s']", label));
+		super.clickAndWait(locator);
 	}
 
 }

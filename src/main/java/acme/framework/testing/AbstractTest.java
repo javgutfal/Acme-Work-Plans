@@ -111,7 +111,7 @@ public abstract class AbstractTest {
 
 	protected AbstractTest() {
 		super();
-		this.headless = false;
+		this.headless = true;
 		this.autoPausing = false;
 		this.defaultTimeout = 30;
 	}
@@ -121,6 +121,7 @@ public abstract class AbstractTest {
 	@BeforeAll
 	protected void beforeAll() {
 		this.options = new FirefoxOptions();
+		this.headless = true;
 		this.options.setHeadless(this.headless);
 		this.options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		this.options.setAcceptInsecureCerts(true);

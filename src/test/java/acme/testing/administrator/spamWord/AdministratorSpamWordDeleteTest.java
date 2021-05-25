@@ -9,6 +9,11 @@ import acme.testing.AcmePlannerTest;
 
 public class AdministratorSpamWordDeleteTest extends AcmePlannerTest{
 
+	/*
+	 Este test borra una spamWord y posteriormente comprueba que no esta en el listado,
+	 para ello mira que la palabra posterior ha ocupado su lugar, se espera un resultado
+	 positivo
+	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/spamword/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -36,10 +41,13 @@ public class AdministratorSpamWordDeleteTest extends AcmePlannerTest{
 		super.signOut();
 	}
 
-	
+	/*
+	 Este test intenta acceder al borrado sin loguearse como administrador,
+	  se espera un resultado negativo.
+	 */
 	@Test
 	public void deleteNegative() {
 		super.navigatePath("/administrator/spamword/delete");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 }
