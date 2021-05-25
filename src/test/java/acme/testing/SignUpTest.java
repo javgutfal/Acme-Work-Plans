@@ -12,12 +12,22 @@
 
 package acme.testing;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 
 public class SignUpTest extends AcmePlannerTest{
+	
+	@Override
+	@BeforeAll
+	public void beforeEach() {
+		this.signIn("administrator", "administrator");
+		super.clickOnMenu("Administrator", "Populate DB (samples)");
+		super.checkAlertExists(true);		
+		this.signOut();
+	}
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
