@@ -6,6 +6,9 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedManagerUpdateTest extends AcmePlannerTest{
 
+	//Caso exitoso de intento de actualizar privilegios de mánager siendo usuario autenticado
+	//Se comprueba que se tiene acceso a las opciones de mánager en el menú
+	
 	@Test
 	public void createPositive() {
 		super.signIn("manager", "asdf1234");
@@ -19,11 +22,14 @@ public class AuthenticatedManagerUpdateTest extends AcmePlannerTest{
 		super.signOut();
 	}
 	
+	//Intento de acceder al formulario para actualizar privilegios de mánager sin estar autenticado
+	//Se comprueba que se genera una visa de error
+	
 	@Test
 	public void createNegativeUnauthorised() {
 		
 		super.navigatePath("/authenticated/manager/update");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 	
 }

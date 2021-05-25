@@ -9,10 +9,14 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerConsistsOfDeleteTest  extends AcmePlannerTest{
 
+	//Caso exitoso de intento de eliminar una tarea de un plan de trabajo
+	//Se comprueba que en el listado de tareas del plan de trabajo en la
+	//posición donde figuraba la tarea eliminada ahora figura otra
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/consists-of/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void listAll(final int recordIndex1,final int recordIndex2, final String title, final String initialTime, final String finalTime, final String workload, final String link, final String description, final String publicTask, final String publicTaskShow) {
+	public void deletePositive(final int recordIndex1,final int recordIndex2, final String title, final String initialTime, final String finalTime, final String workload, final String link, final String description, final String publicTask, final String publicTaskShow) {
 		super.signIn("manager", "asdf1234");
 		super.clickOnMenu("Manager", "View workplans");
 		
@@ -48,6 +52,10 @@ public class ManagerConsistsOfDeleteTest  extends AcmePlannerTest{
 		
 		super.signOut();
 	}
+	
+	//Caso fallido de intento de acceder a la vista que muestra una tarea
+	//de  un plan de trabajo siendo usuario anónimo.
+	//Se comprueba que se muestra una vista de pánico.
 	
 	@Test
 	public void deleteNegativeNotAuthorised() {

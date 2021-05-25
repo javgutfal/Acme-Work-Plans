@@ -52,15 +52,13 @@ public class AdministratorSpamWordDeleteService implements AbstractDeleteService
 	}
 
 	@Override
-	public void bind(Request<SpamWord> request, SpamWord entity, Errors errors) {
-		// TODO Auto-generated method stub
-		
+	public void bind(final Request<SpamWord> request, final SpamWord entity, final Errors errors) {
+		//This method is needed for the app to run propperly
 	}
 
 	@Override
-	public void unbind(Request<SpamWord> request, SpamWord entity, Model model) {
-		// TODO Auto-generated method stub
-		
+	public void unbind(final Request<SpamWord> request, final SpamWord entity, final Model model) {
+		//This method is needed for the app to run propperly
 	}
 
 }

@@ -61,9 +61,8 @@ public class AdministratorSpamWordUpdateService implements AbstractUpdateService
 	}
 
 	@Override
-	public void unbind(Request<SpamWord> request, SpamWord entity, Model model) {
-		// TODO Auto-generated method stub
-		
+	public void unbind(final Request<SpamWord> request, final SpamWord entity, final Model model) {
+		//This method is needed for the app to run propperly
 	}
 
 }

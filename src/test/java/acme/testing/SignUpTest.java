@@ -19,6 +19,9 @@ import org.openqa.selenium.By;
 
 public class SignUpTest extends AcmePlannerTest{
 	
+	//Caso exitoso de intento de registro en el sistema como usaurio autenticado.
+	//Se comprueba que se tiene acceso a las opciones de cuenta en el menú.
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -29,12 +32,20 @@ public class SignUpTest extends AcmePlannerTest{
 		this.signOut();
 	}
 	
+	//Caso fallido de intento de registro en el sistema como usuario autenticado con un nombre
+	//de usuario ya existente.
+	//Se comprueba que se genera una vista de pánico después de enviar el formulario
+	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/negative-username-already-taken.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void negativeSignUpUsernameTaken(final String username, final String password, final String name, final String surname, final String email) {
 		this.signUpFail(username, password, name, surname, email);
 	}
+	
+	//Caso fallido de intento de registro en el sistema como usuario autenticado con una
+	//contraseña demasiado corta.
+	//Se comprueba que se genera una vista de pánico después de enviar el formulario
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/negative-password-short.csv", encoding = "utf-8", numLinesToSkip = 1)

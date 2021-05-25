@@ -6,14 +6,19 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedManagerCreateTest extends AcmePlannerTest{
 
+	//Intento de acceder al formulario para convertirse en mánager sin estar autenticado
+	//Se comprueba que se genera una visa de error
 	
 	@Test
 	public void createNegativeUnauthorised() {
 
 		super.navigatePath("/authenticated/manager/create");
 
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
+	
+	//Caso exitoso de intento de convertirse en mánager siendo usuario autenticado
+	//Se comprueba que se tiene acceso a las opciones de mánager en el menú
 	
 	@Test
 	public void createPositive() {
