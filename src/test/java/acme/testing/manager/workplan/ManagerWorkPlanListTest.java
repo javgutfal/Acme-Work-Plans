@@ -9,6 +9,8 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanListTest extends AcmePlannerTest {
 	
+	
+	// Test para comprobar que todos los registros del listado mostrado de workplans para manager es totalmente correcto
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -35,10 +37,11 @@ public class ManagerWorkPlanListTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	// Test para comprobar si da panic al entrar de forma no autorizada en la url
 	@Test
 	public void listNegative() {
 		super.navigatePath("/manager/workPlans/list");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 
 }

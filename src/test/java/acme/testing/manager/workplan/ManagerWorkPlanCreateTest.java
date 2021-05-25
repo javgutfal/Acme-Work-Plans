@@ -9,6 +9,7 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 	
+	// Comprueba el correcto funcionamiento de la creación de varios workplans con diferentes parámetros y comprueba que se añaden a la lista de forma progresiva
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -43,6 +44,7 @@ public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	// Comprueba que se detectan errores cuando introducimos datos erroneos en la creación de un workplan
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
