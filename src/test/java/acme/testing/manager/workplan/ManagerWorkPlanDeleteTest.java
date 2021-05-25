@@ -10,6 +10,7 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanDeleteTest extends AcmePlannerTest {
 	
+	// Comprueba el correcto funcionamiento del borrado de un registro de workplan, y que en el listado ya no aparece una vez se ha realizado la operación
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/delete-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
@@ -46,10 +47,11 @@ public class ManagerWorkPlanDeleteTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	// Comprueba la existencia de un panic al intentar acceder a la url de borrado sin permisos
 	@Test
 	public void deleteNegative() {
 		super.navigatePath("/manager/workPlans/delete");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 
 }

@@ -9,6 +9,7 @@ import acme.testing.AcmePlannerTest;
 
 public class ManagerWorkPlanUpdateTest extends AcmePlannerTest {
 	
+	// Comprueba el correcto funcionamiento de la actualización de workplans y comprueba que los valores en la lista y en el detalle de dicho workplan se muestran actualizados
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)	
@@ -47,6 +48,7 @@ public class ManagerWorkPlanUpdateTest extends AcmePlannerTest {
 		super.signOut();
 	}
 	
+	// Comprueba que se detectan errores cuando introducimos datos erroneos en la actualización de un workplan
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
