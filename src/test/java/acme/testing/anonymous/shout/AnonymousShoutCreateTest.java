@@ -35,8 +35,9 @@ public class AnonymousShoutCreateTest  extends AcmePlannerTest {
 		
 	}
 	/*
-	 Este test intenta crear un shout añadiendo mal los datos en el csv, 
-	 se espera resultado negativo.
+	 Este test intenta crear un shout añadiendo mal los datos en el csv como por ejemplo en info no utilizar un @,
+	 dejar los campos author, text e info vacíos o pasarnos de 25 carácteres en el author. 
+	 Se espera resultado negativo.
 	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
