@@ -50,6 +50,7 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
 		WorkPlan workPlan;
 		workPlan = this.repository.findOneWorkPlanById(entity.getId());
 		
@@ -61,7 +62,9 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
 			
-			errors.state(request, entity.getInitialTime().equals(initialTime) || entity.getInitialTime().before(initialTime), "initialTime", "manager.work-plan.form.error.initialTimeTask");
+			if(initialTime != null) {
+				errors.state(request, entity.getInitialTime().equals(initialTime) || entity.getInitialTime().before(initialTime), "initialTime", "manager.work-plan.form.error.initialTimeTask");
+			}
 			errors.state(request, workPlan.getInitialTime().compareTo(entity.getInitialTime())==0 || entity.getInitialTime().after(actualDate), "initialTime", "manager.work-plan.form.error.initialTime");
 		}
 		
@@ -71,9 +74,14 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 						
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
-			errors.state(request, entity.getFinalTime().equals(finalTime) || entity.getFinalTime().after(finalTime), "finalTime", "manager.work-plan.form.error.finalTimeTask");
+			if(finalTime != null) {
+				errors.state(request, entity.getFinalTime().equals(finalTime) || entity.getFinalTime().after(finalTime), "finalTime", "manager.work-plan.form.error.finalTimeTask");
+
+			}
 			errors.state(request, workPlan.getFinalTime().compareTo(entity.getFinalTime())==0 || entity.getFinalTime().after(actualDate), "finalTime", "manager.work-plan.form.error.finalTime");
-			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			if(entity.getInitialTime() != null) {
+				errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			}
 		}
 
 	}

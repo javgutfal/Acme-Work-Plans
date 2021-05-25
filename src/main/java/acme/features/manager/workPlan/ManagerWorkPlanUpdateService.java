@@ -69,7 +69,9 @@ public class ManagerWorkPlanUpdateService implements AbstractUpdateService<Manag
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
 			errors.state(request, workPlan.getFinalTime().compareTo(entity.getFinalTime())==0 || entity.getFinalTime().after(actualDate), "finalTime", "manager.work-plan.form.error.finalTime");
-			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			if(entity.getInitialTime() != null) {
+				errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			}
 		}
 		
 		if (!errors.hasErrors("publicWorkPlan")) {

@@ -55,7 +55,9 @@ public class ManagerWorkPlanCreateService implements AbstractCreateService<Manag
 			calendar = new GregorianCalendar();
 			actualDate = calendar.getTime();
 			errors.state(request, entity.getFinalTime().after(actualDate), "finalTime", "manager.work-plan.form.error.finalTime");
-			errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			if(entity.getInitialTime() != null) {
+				errors.state(request, entity.getFinalTime().after(entity.getInitialTime()), "finalTime", "manager.work-plan.form.error.finalTimeInitial");
+			}
 		}
 		
 	}
