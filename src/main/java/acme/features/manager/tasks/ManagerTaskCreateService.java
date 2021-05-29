@@ -91,7 +91,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		}
 		if (!errors.hasErrors("workload")) {
 			
-			if(entity.getInitialTime() != null) {
+			if(entity.getInitialTime() != null && entity.getFinalTime() != null) {
 				final Long diferencia = entity.getFinalTime().getTime() - entity.getInitialTime().getTime();
 				errors.state(request, entity.getWorkload()<= diferencia/3600000, "workload", "manager.task.form.error.workloadExecution");
 			}
