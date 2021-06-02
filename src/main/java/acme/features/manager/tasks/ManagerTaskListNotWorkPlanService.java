@@ -64,12 +64,16 @@ public class ManagerTaskListNotWorkPlanService implements AbstractListService<Ma
 		int id;
 		id = request.getModel().getInteger("workPlanId");
 		
+		Principal principal;
+		principal = request.getPrincipal();
+		
+		
 		workPlan = this.repository.findOneWorkPlanById(id);
 		
 		if(workPlan.isPublicWorkPlan()) {
-			result = this.repository.findManyTasksByNotWorkPlanPublicId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+			result = this.repository.findManyTasksByNotWorkPlanPublicId(id,workPlan.getInitialTime(), workPlan.getFinalTime(),principal.getAccountId());
 		}else {
-			result = this.repository.findManyTasksByNotWorkPlanId(id,workPlan.getInitialTime(), workPlan.getFinalTime());
+			result = this.repository.findManyTasksByNotWorkPlanId(id,workPlan.getInitialTime(), workPlan.getFinalTime(),principal.getAccountId());
 		}
 		
 

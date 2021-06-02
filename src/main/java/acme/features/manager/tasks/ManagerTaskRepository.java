@@ -30,11 +30,11 @@ public interface ManagerTaskRepository extends AbstractRepository {
 	@Query("select t from Task t where t.id in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
 	List<Task> findManyTasksByWorkPlanId(int workPlanId);
 	
-	@Query("select t from Task t where t.initialTime >= ?2 and t.finalTime<= ?3 and t.id not in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
-	List<Task> findManyTasksByNotWorkPlanId(int workPlanId, Date initialTime, Date finalTime);
+	@Query("select t from Task t where t.initialTime >= ?2  and t.manager.id = ?4 and t.finalTime<= ?3 and t.id not in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
+	List<Task> findManyTasksByNotWorkPlanId(int workPlanId, Date initialTime, Date finalTime, Integer managerId);
 	
-	@Query("select t from Task t where t.publicTask = true and t.initialTime >= ?2 and t.finalTime<= ?3 and t.id not in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
-	List<Task> findManyTasksByNotWorkPlanPublicId(int workPlanId, Date initialTime, Date finalTime);
+	@Query("select t from Task t where t.publicTask = true and t.manager.id = ?4 and t.initialTime >= ?2 and t.finalTime<= ?3 and t.id not in (select c.task.id from ConsistsOf c where c.workPlan.id = ?1)")
+	List<Task> findManyTasksByNotWorkPlanPublicId(int workPlanId, Date initialTime, Date finalTime, Integer managerId);
 	
 	@Query("select c from ConsistsOf c where c.task.id = ?1 and c.workPlan.id = ?2")
 	ConsistsOf findOneConsistsOfById(int taskId, int workplanId);
