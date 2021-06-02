@@ -20,11 +20,11 @@ public class SpamWord extends DomainEntity {
 	private static final long serialVersionUID = 1L;
 	
 	@NotBlank
-	@Length(min = 1, max = 45)
+	@Length(min = 1, max = 150)
 	protected String wordEn;
 	
 	@NotBlank
-	@Length(min = 1, max = 23)
+	@Length(min = 1, max = 150)
 	protected String wordEs;
 
 }
