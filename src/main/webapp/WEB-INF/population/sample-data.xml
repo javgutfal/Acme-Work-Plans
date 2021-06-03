@@ -773,6 +773,7 @@
 		<property name="published" value="false" />
 	</bean>
 	
+	
 	<bean id="spamWord08" class="acme.entities.spam.SpamWord">
 		<property name="wordEn" value="spiderman" />
 		<property name="wordEs" value="hombre araña" />
