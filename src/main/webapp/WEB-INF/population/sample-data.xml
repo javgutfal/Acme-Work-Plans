@@ -772,40 +772,6 @@
 		<property name="workload" value="0" />
 		<property name="published" value="false" />
 	</bean>
-		<bean id="spamWord01" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="sex" />
-		<property name="wordEs" value="sexo" />
-	</bean>
-	
-	<bean id="spamWord02" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="hardcore" />
-		<property name="wordEs" value="duro" />
-	</bean>
-	
-	<bean id="spamWord03" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="viagra" />
-		<property name="wordEs" value="viagra" />
-	</bean>
-	
-	<bean id="spamWord04" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="cialis" />
-		<property name="wordEs" value="cialis" />
-	</bean>
-	
-	<bean id="spamWord05" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="nigeria" />
-		<property name="wordEs" value="nigeria" />
-	</bean>
-	
-	<bean id="spamWord06" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="you've won" />
-		<property name="wordEs" value="Usted ha ganado" />
-	</bean>
-	
-	<bean id="spamWord07" class="acme.entities.spam.SpamWord">
-		<property name="wordEn" value="million dollar" />
-		<property name="wordEs" value="millón de dólares" />
-	</bean>
 	
 	<bean id="spamWord08" class="acme.entities.spam.SpamWord">
 		<property name="wordEn" value="spiderman" />
