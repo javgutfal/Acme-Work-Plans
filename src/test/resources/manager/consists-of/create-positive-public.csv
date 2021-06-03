@@ -1,2 +1,6 @@
 recordIndex1,recordIndex2,title,initialTime,finalTime,workload,link,description,publicTask,publicTaskShow,recordIndex3
+<<<<<<< HEAD
 0,1,Crear servicios,2021/04/20 10:30,2021/05/20 10:30,15.00,http://www.hola.com,Esta tarea no esta finalizada,Yes,PUBLIC,8
+=======
+0,0,Crear repositorios,2021/04/29 10:30,2021/05/15 10:30,35.00,http://www.hola.com,Esta tarea esta finalizada,Yes,PUBLIC,8
+>>>>>>> branch 'Task-080' of https://github.com/gonlalle/Acme-Planner.git
