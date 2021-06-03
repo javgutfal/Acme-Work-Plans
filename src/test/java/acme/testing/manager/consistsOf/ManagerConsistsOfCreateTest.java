@@ -22,6 +22,7 @@ public class ManagerConsistsOfCreateTest extends AcmePlannerTest{
 		this.signOut();
 	}
 	
+	
 	//Caso exitoso de intento de añadir una tarea a un plan de trabajo público.
 	//Se comprueba que la tarea añadida se muestra en la lista de tareas del
 	//plan de trabajo.
