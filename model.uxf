@@ -386,7 +386,7 @@ Manager
       <w>40</w>
       <h>48</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
+    <panel_attributes>lt=&lt;-
 m1=1
 m2=*
 manage v</panel_attributes>
@@ -400,7 +400,7 @@ manage v</panel_attributes>
       <w>84</w>
       <h>264</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
+    <panel_attributes>lt=&lt;-
 m1=1
 m2=*
 manage v</panel_attributes>
@@ -432,8 +432,8 @@ Percent
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 SpamWord
 --
-+ wordEn: String (NotBlank, Length(1,45))
-+ wordEs: String (NotBlank, Length(1,23))</panel_attributes>
++ wordEn: String (NotBlank, Length(1,150))
++ wordEs: String (NotBlank, Length(1,150))</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -457,7 +457,7 @@ ConsistOf
       <w>16</w>
       <h>48</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
+    <panel_attributes>lt=&lt;-
 m1=1
 m2=*</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -470,7 +470,7 @@ m2=*</panel_attributes>
       <w>16</w>
       <h>48</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
+    <panel_attributes>lt=&lt;-
 m1=1
 m2=*</panel_attributes>
     <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
