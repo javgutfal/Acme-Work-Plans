@@ -45,10 +45,12 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 		Manager manager;
 		Principal principal;
 		Task task;
+		ConsistsOf consistsOf;
 
 		workPlan = this.repository.findOneWorkPlanById(request.getModel().getInteger("workPlanId"));
 		task = this.repository.findOneTaskById(request.getModel().getInteger("taskId"));
-
+		consistsOf = this.repository.findOneConsistsOfById(request.getModel().getInteger("taskId"), request.getModel().getInteger("workPlanId"));
+		
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
 		managerValidation = manager.getUserAccount().getId() == principal.getAccountId();
@@ -56,14 +58,13 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 		
 		
 		if(workPlan.isPublicWorkPlan()) {
-			return task.isPublicTask() && workPlan.getInitialTime().equals(task.getInitialTime()) 
-				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation|| workPlan.getInitialTime().before(task.getInitialTime())
-				&& workPlan.getFinalTime().after(task.getFinalTime());
+			return task.isPublicTask()  && managerValidation && consistsOf == null && (workPlan.getInitialTime().equals(task.getInitialTime()) 
+				|| workPlan.getInitialTime().before(task.getInitialTime())) && (workPlan.getFinalTime().equals(task.getFinalTime())
+				|| workPlan.getFinalTime().after(task.getFinalTime()));
 		}else {
-			return workPlan.getInitialTime().equals(task.getInitialTime())
-				|| workPlan.getFinalTime().equals(task.getFinalTime()) && managerValidation
-				|| workPlan.getInitialTime().before(task.getInitialTime())
-				&& workPlan.getFinalTime().after(task.getFinalTime());
+			return managerValidation && consistsOf == null && (workPlan.getInitialTime().equals(task.getInitialTime()) 
+				|| workPlan.getInitialTime().before(task.getInitialTime())) && (workPlan.getFinalTime().equals(task.getFinalTime())
+				|| workPlan.getFinalTime().after(task.getFinalTime()));
 		}
 
 	}
@@ -84,8 +85,6 @@ public class ManagerConsistsOfCreateService implements AbstractCreateService<Man
 		assert model != null;
 
 		request.unbind(entity, model);
-		model.setAttribute("taskId", entity.getTask().getId());
-		model.setAttribute("workPlanId", entity.getWorkPlan().getId());
 	}
 
 	@Override
