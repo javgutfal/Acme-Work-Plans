@@ -27,14 +27,18 @@ public class ManagerConsistsOfDeleteService implements AbstractDeleteService<Man
 		WorkPlan workPlan;
 		Manager manager;
 		Principal principal;
+		ConsistsOf consistsOf;
 
 		workplanId = request.getModel().getInteger("workPlanId");
 		workPlan = this.repository.findOneWorkPlanById(workplanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
+		consistsOf = this.repository.findOneConsistsOfById(request.getModel().getInteger("taskId"), request.getModel().getInteger("workPlanId"));
+		
+		
 		result = manager.getUserAccount().getId() == principal.getAccountId();
 
-		return result;
+		return result && consistsOf != null;
 	}
 
 	@Override
