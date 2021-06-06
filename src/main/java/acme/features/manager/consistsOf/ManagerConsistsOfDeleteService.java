@@ -43,7 +43,6 @@ public class ManagerConsistsOfDeleteService implements AbstractDeleteService<Man
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors);
 	}
 
 	@Override
@@ -52,7 +51,6 @@ public class ManagerConsistsOfDeleteService implements AbstractDeleteService<Man
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "initialTime", "finalTime", "workload", "description", "link", "publicTask");
 	}
 
 	@Override
