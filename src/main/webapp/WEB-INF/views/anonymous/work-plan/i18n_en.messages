@@ -19,6 +19,7 @@ anonymous.workplan.form.label.manager = Manager
 anonymous.workplan.form.label.initialTime = Initial Date
 anonymous.workplan.form.label.finalTime = Final Date
 anonymous.workplan.form.label.workload = Workload 
+anonymous.workplan.form.label.publicWorkPlan = Scope WorkPlan:
 anonymous.workplan.form.label.published = Published:
 anonymous.workplan.form.label.tasks = Tasks:
 anonymous.workplan.form.button.list = List of Tasks

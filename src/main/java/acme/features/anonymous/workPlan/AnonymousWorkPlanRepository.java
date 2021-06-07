@@ -12,10 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousWorkPlanRepository extends AbstractRepository {
 	
-	@Query("select w from WorkPlan w where w.publicWorkPlan = true and w.finalTime <= ?1 order by w.workload")
+	@Query("select w from WorkPlan w where w.publicWorkPlan = true and w.finalTime >= ?1 order by w.workload desc")
 	List<WorkPlan> findByPublicWorkPlanTrue(Date moment);
 	
-	@Query("select w from WorkPlan w where w.id = ?1 and w.publicWorkPlan = true and w.finalTime <= ?2")
+	@Query("select w from WorkPlan w where w.id = ?1 and w.publicWorkPlan = true and w.finalTime >= ?2")
 	WorkPlan findByIdAndPublicWorkPlanTrue(int id, Date moment);
 	
 	@Query("select w from WorkPlan w where w.id = ?1")
