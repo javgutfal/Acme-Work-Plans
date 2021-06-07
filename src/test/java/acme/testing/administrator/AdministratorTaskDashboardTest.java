@@ -22,7 +22,6 @@ public class AdministratorTaskDashboardTest extends AcmePlannerTest {
 		super.checkColumnDashBoardHasValue(recordIndex, 0, value);
 		super.signOut();
 	}
-	
 	/*
 	 Este test intenta acceder a la vista sin loguearse como administrador,
 	 se espera un resultado negativo
