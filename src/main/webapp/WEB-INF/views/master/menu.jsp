@@ -42,7 +42,6 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.workPlanDashboard" action="/administrator/workplandashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.taskDashboard" action="/administrator/taskdashboard/show"/>
-			<acme:menu-suboption code="master.menu.administrator.shoutDashboard" action="/administrator/shoutdashboard/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-spamWord" action="/administrator/spamword/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-spamWord" action="/administrator/spamword/create"/>
