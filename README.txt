@@ -12,7 +12,3 @@ This is the Acme-Planner.
 
 Link GitHub Repository: https://github.com/gonlalle/Acme-Planner
 Link GitHub Release: 1.0.0
-
-For Clever Cloud:
-Git username: gonlalle
-Git password: acme-plannerDP2

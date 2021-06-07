@@ -33,7 +33,7 @@ public class ManagerTaskListNotWorkPlanService implements AbstractListService<Ma
 		workplan = this.repository.findOneWorkPlanById(workplanId);
 		manager = workplan.getManager();
 		principal = request.getPrincipal();
-		result = manager.getUserAccount().getId() == principal.getAccountId();
+		result = manager.getUserAccount().getId() == principal.getAccountId() && !workplan.isPublished();
 
 		return result;
 	}

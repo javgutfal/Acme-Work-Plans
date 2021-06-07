@@ -76,7 +76,7 @@ public class ManagerWorkPlanPublishTest extends AcmePlannerTest {
 
 		super.clickOnSubmitButton("Publish Workplan");
 
-		super.checkErrorsExist();;
+		super.checkErrorsExist();
 
 		super.signOut();
 	}

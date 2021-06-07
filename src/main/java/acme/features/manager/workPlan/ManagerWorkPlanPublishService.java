@@ -40,7 +40,7 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		workPlan = this.repository.findOneWorkPlanById(workPlanId);
 		manager = workPlan.getManager();
 		principal = request.getPrincipal();
-		result = manager.getUserAccount().getId() == principal.getAccountId();
+		result = manager.getUserAccount().getId() == principal.getAccountId() && !workPlan.isPublished();
 
 		return result;
 	}
