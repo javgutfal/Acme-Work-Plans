@@ -1,4 +1,4 @@
 recordIndex,title,initialTime,finalTime,workload,description,link,publicTask,publicTaskShow
-2,Repartir futuros eventos,2021/04/11 10:30,2021/07/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
-1,Crear listados,2021/04/11 10:30,2021/07/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
-0,Crear causas,2021/04/11 10:30,2021/07/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
+0,Entrevista con clientes,2021/04/11 10:30,2021/07/15 10:30,20.00,Description text,http://www.hola2.com,Yes,PUBLIC
+1,Hacer el modelo de dominio,2021/01/01 11:30,2021/07/01 17:30,100.00,"Esta tarea no esta finalizada, es la mas antigua,la que mayor periodo de ejecucion tiene y la que mas workload tiene",http://www.adios.com,Yes,PUBLIC
+2,Revisar documentos,2021/04/11 10:30,2021/07/15 10:30,100.00,Description text,http://www.hola2.com,Yes,PUBLIC

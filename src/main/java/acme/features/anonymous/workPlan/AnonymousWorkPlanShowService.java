@@ -47,6 +47,12 @@ public class AnonymousWorkPlanShowService implements AbstractShowService<Anonymo
 		}else {
 			model.setAttribute("published", "No");
 		}
+		
+		if(entity.isPublicWorkPlan()) {
+			model.setAttribute("publicWorkPlan", "PUBLIC");
+		}else {
+			model.setAttribute("publicWorkPlan", "PRIVATE");
+		}
 	}
 
 	@Override

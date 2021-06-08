@@ -35,7 +35,7 @@ public interface AdministratorTaskDashBoardRepository extends AbstractRepository
 	@Query("select avg(t.workload) from Task t ")
 	Double averageOfTaskWorkload();
 	
-	@Query("select avg(t.workload) from Task t ")
+	@Query("select stddev(t.workload) from Task t ")
 	Double deviationOfTaskWorkload();
 	
 	@Query("select min(t.workload) from Task t ")

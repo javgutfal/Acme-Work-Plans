@@ -47,7 +47,7 @@ public interface AdministratorWorkPlanDashboardRepository extends AbstractReposi
 	@Query("select avg(w.workload) from WorkPlan w ")
 	Double averageOfWorkPlanWorkload();
 	
-	@Query("select avg(w.workload) from WorkPlan w ")
+	@Query("select stddev(w.workload) from WorkPlan w ")
 	Double deviationOfWorkPlanWorkload();
 	
 	@Query("select min(w.workload) from WorkPlan w ")

@@ -19,6 +19,7 @@ anonymous.workplan.form.label.manager = Manager
 anonymous.workplan.form.label.initialTime = Fecha y hora de inicio
 anonymous.workplan.form.label.finalTime = Fecha y hora de finalización
 anonymous.workplan.form.label.workload = Carga de trabajo
+anonymous.workplan.form.label.publicWorkPlan = Ámbito del plan de trabajo:
 anonymous.workplan.form.label.published = Publicado:
 anonymous.workplan.form.label.tasks = Tareas:
 anonymous.workplan.form.button.list = Lista tareas
