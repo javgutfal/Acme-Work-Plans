@@ -47,7 +47,8 @@ public class ManagerWorkPlanPublishTest extends AcmePlannerTest {
 		super.signOut();
 	}
 
-	// Comprueba que se detectan errores cuando introducimos datos erroneos en la publicación de un workplan
+	// Comprueba que se detectan errores cuando introducimos datos erroneos en la publicación de un workplan. 
+	// Se comprueban los valores que no pueden ser nulos, fecha fin que no está en el futuro, fecha inicial en el pasado, y fecha inicial superior a la de la primera tarea del workplan
 	@ParameterizedTest
 	@CsvFileSource(resources = "/manager/work-plan/publish-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)

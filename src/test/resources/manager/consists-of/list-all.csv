@@ -1,2 +1,4 @@
 recordIndex1,recordIndex2,title,initialTime,finalTime,workload,link,description,publicTask,publicTaskShow,
-0,0,Crear entidad Task,2021/04/20 10:30,2021/04/20 10:00,5.00,http://www.hola.com,"Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene",Yes,PUBLIC
+0,0,Crear entidad Task,2021/04/12 10:30,2021/04/20 10:00,5.00,http://www.hola.com,"Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene",Yes,PUBLIC
+0,1,Cambiar el banner,2021/04/11 10:30,2021/04/12 10:30,10.00,http://www.adios.com,Esta tarea esta finalizada.,Yes,PUBLIC,
+0,2,Hacer el modelo de dominio,2021/04/11 10:30,2021/04/13 10:30,10.00,http://www.adios.com,Esta tarea esta finalizada.,Yes,PUBLIC,
