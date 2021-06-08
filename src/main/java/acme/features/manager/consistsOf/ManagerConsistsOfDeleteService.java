@@ -43,8 +43,7 @@ public class ManagerConsistsOfDeleteService implements AbstractDeleteService<Man
 
 	@Override
 	public void bind(final Request<ConsistsOf> request, final ConsistsOf entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
+		//This method is needed for the app to run propperly
 	}
 
 	@Override
