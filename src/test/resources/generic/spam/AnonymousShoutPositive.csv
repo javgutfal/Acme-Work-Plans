@@ -1,2 +1,4 @@
 recordIndex,author,text,info
 5,ValidAuthor,ValidText,http://valid.url
+6,ValidAuthor,Long text Long text Long text Long text Long text Long text Long text Long text Long text,http://valid.url
+7,ValidAuthor,Average length Average length Average length,http://valid.url
