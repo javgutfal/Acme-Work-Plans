@@ -1,2 +1,4 @@
-recordIndex,author,text,info,currency,amount,flag
-7,Blanca Mauri,I'm Developer and Analyst,http://www.hola2.com,USD,123.45,false
+recordIndex,author,text,info
+5,Blanca Mauri,I'm Developer and Analyst,http://www.hola2.com
+6,Blanca Mauri,I'm Developer and Analyst,http://www.hola2.com
+7,Blanca Mauri,I'm Tester,http://www.hola2.com

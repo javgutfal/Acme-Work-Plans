@@ -11,17 +11,5 @@ anonymous.shout.list.label.moment = Moment
 anonymous.shout.list.label.author = Author
 anonymous.shout.list.label.text = Text
 anonymous.shout.list.label.info = Info
-anonymous.shout.list.label.xxx.money = Money
-anonymous.shout.list.label.xxx.flag = Flag
-anonymous.shout.list.label.xxx.xxx1 = XXX
-anonymous.shout.form.label.xxx1 = XXX1
-anonymous.shout.form.label.amount = Money
-anonymous.shout.form.label.currency = Currency
-anonymous.shout.form.label.flag = Flag
 
 anonymous.shout.form.error.spam = The text is considered spam
-anonymous.shout.form.error.XXX = The currency must be EUR or USD
-anonymous.shout.form.error.XXX.amount.null = Must not be blank
-anonymous.shout.form.error.XXX.xxx1.exists = ERROR: A XXX with xxx1 as today's date already exists
-anonymous.shout.form.error.XXX.xxx1.pattern = The pattern isn't valid
-anonymous.shout.form.error.XXX.xxx1.today = The date must match today's date
