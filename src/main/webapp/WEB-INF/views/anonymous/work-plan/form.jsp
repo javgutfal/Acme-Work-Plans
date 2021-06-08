@@ -9,7 +9,7 @@
 	<acme:form-moment code="anonymous.workplan.form.label.initialTime" path="initialTime"/>
 	<acme:form-moment code="anonymous.workplan.form.label.finalTime" path="finalTime"/>
 	<acme:form-double code="anonymous.workplan.form.label.workload" path="workload"/>
-	<acme:form-double code="anonymous.workplan.form.label.publicWorkPlan" path="publicWorkPlan"/>
+	<acme:form-textbox code="anonymous.workplan.form.label.publicWorkPlan" path="publicWorkPlan"/>
 	<acme:form-textbox code="anonymous.workplan.form.label.published" path="published"/>
 	
 	<acme:form-submit method="get" code="anonymous.workplan.form.button.list" action="/anonymous/task/list-tasks-workplan?id=${id}"/>

@@ -230,7 +230,7 @@
 
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear entidad Task" />
-		<property name="initialTime" value="2021/4/20 10:30" />
+		<property name="initialTime" value="2021/4/12 10:30" />
 		<property name="finalTime" value="2021/4/20 10:00" />
 		<property name="workload" value="5" />
 		<property name="description" value="Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene" />
@@ -303,7 +303,7 @@
 	<bean id="task07" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task" />
 		<property name="initialTime" value="2021/4/11 10:30" />
-		<property name="finalTime" value="2021/5/15 10:30" />
+		<property name="finalTime" value="2021/4/15 10:30" />
 		<property name="workload" value="6" />
 		<property name="description" value="Esta tarea no esta finalizada" />
 		<property name="manager" ref="manager1Manager"/>
@@ -735,7 +735,7 @@
 		<property name="finalTime" value="2021/4/20 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
-		<property name="workload" value="100" />
+		<property name="workload" value="76" />
 		<property name="published" value="false" />
 	</bean>
 	

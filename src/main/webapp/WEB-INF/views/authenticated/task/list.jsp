@@ -7,11 +7,11 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list readonly="false">
-	<acme:list-column code="authenticated.task.list.label.title" path="title" width="10%"/>
-	<acme:list-column code="authenticated.task.list.label.initial-time" path="initialTime" width="10%"/>
-	<acme:list-column code="authenticated.task.list.label.final-time" path="finalTime" width="10%"/>
-	<acme:list-column code="authenticated.task.list.label.workload" path="workload" width="10%"/>
-	<acme:list-column code="authenticated.task.list.label.description" path="description" width="30%"/>
-	<acme:list-column code="authenticated.task.list.label.link" path="link" width="30%"/>
-	<acme:list-column code="authenticated.task.list.label.public" path="publicTask" width="30%"/>
+	<acme:list-column code="authenticated.task.list.label.title" path="title" />
+	<acme:list-column code="authenticated.task.list.label.initial-time" path="initialTime" />
+	<acme:list-column code="authenticated.task.list.label.final-time" path="finalTime" />
+	<acme:list-column code="authenticated.task.list.label.workload" path="workload" />
+	<acme:list-column code="authenticated.task.list.label.description" path="description" />
+	<acme:list-column code="authenticated.task.list.label.link" path="link"/>
+	<acme:list-column code="authenticated.task.list.label.public" path="publicTask"/>
 </acme:list>

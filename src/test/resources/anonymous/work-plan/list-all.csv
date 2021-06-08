@@ -1,2 +1,4 @@
 recordIndex,manager,initialTime,finalTime,workload,published,publicWorkPlan
 0,manager,2019/02/15 10:30,2021/09/20 10:30,500.00,No,PUBLIC
+1,manager,2021/01/01 10:30,2021/09/20 10:30,100.00,No,PUBLIC
+2,manager,2019/02/15 10:30,2021/09/20 10:30,0.00,No,PUBLIC

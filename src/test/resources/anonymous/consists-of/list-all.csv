@@ -1,2 +1,4 @@
 recordIndex1,recordIndex2,title,initialTime,finalTime,workload,link,description,publicTask,publicTaskShow
 0,0,Entrevista con clientes,2021/04/11 10:30,2021/07/15 10:30,20.00,http://www.hola2.com,Description text,Yes,PUBLIC
+0,1,Revisar documentos,2021/04/11 10:30,2021/07/15 10:30,100.00,http://www.hola2.com,Description text,Yes,PUBLIC
+0,2,Gestión de proyectos,2019/03/11 10:30,2021/08/15 10:30,200.00,http://www.hola2.com,Description text,Yes,PUBLIC
