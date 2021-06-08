@@ -1,0 +1,22 @@
+# i18n_en.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.show = Dashboard
+
+administrator.dashboard.form.title.general-indicators = General indicators
+
+administrator.dashboard.form.label.averageOfShoutCurrencyEUR=Average of Shout Currency EUR
+administrator.dashboard.form.label.averageOfShoutCurrencyUSD=Average of Shout Currency USD
+administrator.dashboard.form.label.deviationOfShoutCurrencyEUR=Deviation of Shout Currency EUR
+administrator.dashboard.form.label.deviationOfShoutCurrencyUSD=Deviation of Shout Currency USD
+administrator.dashboard.form.label.ratioOfShoutsFlagged=Ratio of shouts whose XXX were flagged as XXX
+administrator.dashboard.form.label.ratioOfShoutsXXX=Ratio of shouts whose XXX have XXX
+
+administrator.dashboard.form.title.application-statuses = Application statuses

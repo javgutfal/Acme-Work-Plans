@@ -47,6 +47,7 @@ master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.workPlanDashboard= Tablero de Workplan
 master.menu.administrator.taskDashboard= Tablero de Task
+master.menu.administrator.shoutDashboard= Tablero de Shout
 master.menu.administrator.list-spamWord= Ver palabras de spam
 master.menu.administrator.create-spamWord= Crear palabra de spam
 master.menu.administrator.list-percent= Ver porcentajes

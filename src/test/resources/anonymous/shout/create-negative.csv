@@ -1,6 +1,6 @@
-recordIndex,author,text,info
-5,Blanca Mauri,I'm Developer and Analyst,hola
-6,Blanca Mauri,I'm Developer and Analyst,hu
-7,Blanca Mauri,I'm Tester,I'm Tester
-8,,,
-9,rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr,,buenas
+recordIndex,author,text,info,xxx1,currency,amount,flag
+5,Blanca Mauri,I'm Developer and Analyst,hola,hola2,2021/08/06,EUR,"123.456,78",true
+6,Blanca Mauri,I'm Developer and Analyst,hu,https://www.hola.es,2021/06/08,YEN,123.45,false
+7,Blanca Mauri,I'm Tester,I'm Tester,,YEN,123.456,true
+8,,,,,,,
+9,rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr,,buenas,,EUR,1579874512.15,false

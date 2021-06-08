@@ -33,7 +33,10 @@ public class AnonymousShoutListService implements AbstractListService<Anonymous,
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "author", "text", "moment","info");
+		request.unbind(entity, model, "author", "text", "moment","info", "xxx.money", "xxx.flag", "xxx.xxx1");
+		model.setAttribute("xxx.money", entity.getXxx().getMoney().getAmount().toString()+" "+entity.getXxx().getMoney().getCurrency());
+		model.setAttribute("xxx.flag", entity.getXxx().getFlag().toString());
+		model.setAttribute("xxx.xxx1", entity.getXxx().getXxx1());
 	}
 	
 	@Override
