@@ -11,4 +11,4 @@
 This is the Acme-Planner.
 
 Link GitHub Repository: https://github.com/gonlalle/Acme-Planner
-Link GitHub Release: 1.0.0
+Link GitHub Release: 1.2.0
