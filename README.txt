@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-This is the Acme-Planner.
+This is the Acme-Work-Plans.
 
-Link GitHub Repository: https://github.com/gonlalle/Acme-Planner
+Link GitHub Repository: https://github.com/gonlalle/Acme-Work-Plans
 Link GitHub Release: 1.2.0

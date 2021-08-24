@@ -50,7 +50,7 @@ public class ManagerTaskListTest extends AcmePlannerTest {
 	@Test
 	public void listNegative() {
 		super.navigatePath("/manager/task/list");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 	
 }

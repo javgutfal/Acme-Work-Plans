@@ -16,7 +16,7 @@ master.banner.background = #FFE97F
 
 master.welcome.title = ¡Bienvenido!
 master.welcome.text = \
-	¡Bienvenido a Acme Planner!  ¡Organiza la actividad de tu empresa \
+	¡Bienvenido a Acme Work Plans!  ¡Organiza la actividad de tu empresa \
 	de la manera más sencilla!
 
 # master.menu #################################################################
@@ -96,9 +96,9 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Acme Planner, Inc. es una compañía ficticia que provee \
+	Acme Work Plans, Inc. es una compañía ficticia que provee \
 	software que permite a las empresas gestionar y planificar su trabajo.
-master.company.name = Acme Planner, Inc.
+master.company.name = Acme Work Plans, Inc.
 master.company.address = Avenida de Reina Mercedes Sin Número, Sevilla, España
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

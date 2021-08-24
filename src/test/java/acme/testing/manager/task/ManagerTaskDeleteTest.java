@@ -65,7 +65,7 @@ public class ManagerTaskDeleteTest extends AcmePlannerTest {
 	@Test
 	public void deleteNegative() {
 		super.navigatePath("/manager/task/delete");
-		super.checkErrorsExist();
+		super.checkPanicExists();
 	}
 	
 }
