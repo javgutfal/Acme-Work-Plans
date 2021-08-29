@@ -8,6 +8,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -45,6 +47,8 @@ public class Task extends DomainEntity {
 	
 	@NotNull
 	@Digits(integer = 10, fraction = 2)
+	@Min(0)
+	@Max(99)
 	protected Double workload;
 	
 	@NotBlank

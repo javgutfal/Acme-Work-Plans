@@ -324,10 +324,10 @@ Shout
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Task
 --
-+ title: String (NotBlank, Length(1,80))
++ title: String (NotBlank, Length(1,80), Min(0), Max(99))
 + initialTime: Date (NotNull, TEMPORAL(TIMESTAMP), FutureOrPresent)
 + finalTime: Date (NotNull, TEMPORAL(TIMESTAMP), Future)
-+ workload: Double (NotNull, Digits(10,2))
++ workload: Double (NotNull, Digits(10,2), )
 + description: String (NotBlank, Length(1,500))
 + link: String (URL)
 + publicTask: boolean

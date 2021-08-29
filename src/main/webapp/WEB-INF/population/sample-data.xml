@@ -244,7 +244,7 @@
 		<property name="title" value="Hacer el modelo de dominio" />
 		<property name="initialTime" value="2021/08/02 11:30" />
 		<property name="finalTime" value="2021/12/01 17:30" />
-		<property name="workload" value="100" />
+		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea no esta finalizada, es la mas antigua,la que mayor periodo de ejecucion tiene y la que mas workload tiene" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
@@ -316,7 +316,7 @@
 		<property name="title" value="Crear test de Workplan" />
 		<property name="initialTime" value="2021/08/08 10:30" />
 		<property name="finalTime" value="2021/12/19 10:30" />
-		<property name="workload" value="100" />
+		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea esta finalizada." />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
@@ -328,7 +328,7 @@
 		<property name="title" value="Crear test de Task2" />
 		<property name="initialTime" value="2021/08/09 10:30" />
 		<property name="finalTime" value="2021/12/19 10:30" />
-		<property name="workload" value="100" />
+		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea esta finalizada." />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.adios.com" />
@@ -576,7 +576,7 @@
 		<property name="title" value="Revisar documentos" />
 		<property name="initialTime" value="2021/08/10 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
-		<property name="workload" value="100" />
+		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
@@ -587,7 +587,7 @@
 		<property name="title" value="Gestión de proyectos" />
 		<property name="initialTime" value="2021/08/11 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
-		<property name="workload" value="200" />
+		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
@@ -598,7 +598,7 @@
 		<property name="title" value="Reuniones" />
 		<property name="initialTime" value="2021/08/01 10:30" />
 		<property name="finalTime" value="2021/08/19 10:30" />
-		<property name="workload" value="180" />
+		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="link" value="http://www.hola2.com" />
