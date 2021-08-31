@@ -18,6 +18,10 @@ master.welcome.title = Welcome!
 master.welcome.text = Welcome to Acme Work Plans! Manage your enterprise in the \
 	easiest way!
 
+# master.slogan ##############################################################
+
+master.slogan.text = The better you plan, the better you work
+
 # master.menu #################################################################
 
 master.menu.home = Home

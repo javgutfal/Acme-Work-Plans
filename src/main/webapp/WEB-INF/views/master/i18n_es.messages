@@ -19,6 +19,10 @@ master.welcome.text = \
 	¡Bienvenido a Acme Work Plans!  ¡Organiza la actividad de tu empresa \
 	de la manera más sencilla!
 
+# master.slogan ##############################################################
+
+master.slogan.text = Mejor planeado, mejor trabajado
+
 # master.menu #################################################################
 
 master.menu.home = Inicio

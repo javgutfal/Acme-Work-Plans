@@ -17,4 +17,9 @@
 
 <div class="jumbotron">
 	<acme:message code="master.welcome.text"/>
+<p></p>
+<div>
+<acme:message code="master.slogan.text"/>
 </div>
+</div>
+
