@@ -1,4 +1,4 @@
 recordIndex,title,initialTime,finalTime,workload,description,link,publicTask,publicTaskShow
-0,Crear entidad Task,2021/08/01 10:30,2021/12/20 10:00,5.00,"Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene",http://www.hola.com,Yes,PUBLIC
-2,Crear causas,2021/08/17 10:30,2021/12/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
-3,Repartir futuros eventos,2021/08/13 10:30,2021/12/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
+0,Crear entidad Task,2021/09/01 11:30,2021/12/20 10:00,5.00,"Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene",http://www.hola.com,Yes,PUBLIC
+2,Crear causas,2021/08/29 10:30,2021/12/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC
+3,Repartir futuros eventos,2021/09/01 10:30,2021/12/15 10:30,5.00,Esta tarea esta finalizada,http://www.hola2.com,Yes,PUBLIC

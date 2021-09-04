@@ -230,7 +230,7 @@
 
 	<bean id="task01" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear entidad Task" />
-		<property name="initialTime" value="2021/08/01 10:30" />
+		<property name="initialTime" value="2021/09/01 11:30" />
 		<property name="finalTime" value="2021/12/20 10:00" />
 		<property name="workload" value="5" />
 		<property name="description" value="Esta tarea no esta finalizada, es la mas reciente, la que tiene menor periodo de ejecucion y la que menos workload tiene" />
@@ -242,7 +242,7 @@
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
 		<property name="title" value="Hacer el modelo de dominio" />
-		<property name="initialTime" value="2021/08/02 11:30" />
+		<property name="initialTime" value="2021/08/30 11:30" />
 		<property name="finalTime" value="2021/12/01 17:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea no esta finalizada, es la mas antigua,la que mayor periodo de ejecucion tiene y la que mas workload tiene" />
@@ -254,7 +254,7 @@
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
 		<property name="title" value="Cambiar el banner" />
-		<property name="initialTime" value="2021/08/03 10:30" />
+		<property name="initialTime" value="2021/09/03 10:30" />
 		<property name="finalTime" value="2021/12/12 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -266,7 +266,7 @@
 	
 	<bean id="task04" class="acme.entities.tasks.Task">
 		<property name="title" value="Hacer el modelo de dominio" />
-		<property name="initialTime" value="2021/08/04 10:30" />
+		<property name="initialTime" value="2021/09/04 10:30" />
 		<property name="finalTime" value="2021/12/13 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -278,7 +278,7 @@
 	
 	<bean id="task05" class="acme.entities.tasks.Task">
 		<property name="title" value="Cambiar el banner" />
-		<property name="initialTime" value="2021/08/05 10:30" />
+		<property name="initialTime" value="2021/09/05 10:30" />
 		<property name="finalTime" value="2021/12/16 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -290,7 +290,7 @@
 	
 	<bean id="task06" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear entidad Task" />
-		<property name="initialTime" value="2021/08/06 10:30" />
+		<property name="initialTime" value="2021/09/06 10:30" />
 		<property name="finalTime" value="2021/12/13 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -302,7 +302,7 @@
 	
 	<bean id="task07" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task" />
-		<property name="initialTime" value="2021/08/07 10:30" />
+		<property name="initialTime" value="2021/09/07 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="6" />
 		<property name="description" value="Esta tarea no esta finalizada" />
@@ -314,7 +314,7 @@
 	
 	<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Workplan" />
-		<property name="initialTime" value="2021/08/08 10:30" />
+		<property name="initialTime" value="2021/09/08 10:30" />
 		<property name="finalTime" value="2021/12/19 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -326,7 +326,7 @@
 	
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task2" />
-		<property name="initialTime" value="2021/08/09 10:30" />
+		<property name="initialTime" value="2021/09/09 10:30" />
 		<property name="finalTime" value="2021/12/19 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -338,7 +338,7 @@
 	
 	<bean id="task10" class="acme.entities.tasks.Task">
 		<property name="title" value="Modificar el pom" />
-		<property name="initialTime" value="2021/08/10 10:30" />
+		<property name="initialTime" value="2021/09/10 10:30" />
 		<property name="finalTime" value="2021/12/20 10:30" />
 		<property name="workload" value="20" />
 		<property name="description" value="Esta tarea esta finalizada." />
@@ -350,7 +350,7 @@
 	
 	<bean id="task11" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task4" />
-		<property name="initialTime" value="2021/08/11 10:30" />
+		<property name="initialTime" value="2021/09/11 10:30" />
 		<property name="finalTime" value="2021/12/19 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea no esta finalizada" />
@@ -362,7 +362,7 @@
 	
 	<bean id="task12" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task5" />
-		<property name="initialTime" value="2021/08/12 10:30" />
+		<property name="initialTime" value="2021/09/12 10:30" />
 		<property name="finalTime" value="2021/12/21 10:30" />
 		<property name="workload" value="30" />
 		<property name="description" value="Esta tarea no esta finalizada" />
@@ -374,7 +374,7 @@
 	
 	<bean id="task13" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear test de Task6" />
-		<property name="initialTime" value="2021/08/13 10:30" />
+		<property name="initialTime" value="2021/09/13 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="6" />
 		<property name="description" value="Esta tarea no esta finalizada" />
@@ -469,7 +469,7 @@
 	
 	<bean id="task21" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear servicios" />
-		<property name="initialTime" value="2021/08/19 11:30" />
+		<property name="initialTime" value="2021/09/19 11:30" />
 		<property name="finalTime" value="2021/12/12 10:30" />
 		<property name="workload" value="15" />
 		<property name="description" value="Esta tarea no esta finalizada" />
@@ -481,7 +481,7 @@
 	
 	<bean id="task22" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear repositorios" />
-		<property name="initialTime" value="2021/08/18 10:30" />
+		<property name="initialTime" value="2021/08/28 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="35" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -493,7 +493,7 @@
 	
 		<bean id="task23" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear causas" />
-		<property name="initialTime" value="2021/08/17 10:30" />
+		<property name="initialTime" value="2021/08/29 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="5" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -505,7 +505,7 @@
 	
 	<bean id="task24" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear donaciones" />
-		<property name="initialTime" value="2021/08/16 10:30" />
+		<property name="initialTime" value="2021/08/29 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="10" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -517,7 +517,7 @@
 	
 	<bean id="task25" class="acme.entities.tasks.Task">
 		<property name="title" value="Crear listados" />
-		<property name="initialTime" value="2021/08/15 10:30" />
+		<property name="initialTime" value="2021/08/30 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="5" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -528,7 +528,7 @@
 	
 	<bean id="task26" class="acme.entities.tasks.Task">
 		<property name="title" value="Revisar documentos" />
-		<property name="initialTime" value="2021/08/14 10:30" />
+		<property name="initialTime" value="2021/08/31 10:30" />
 		<property name="finalTime" value="2021/12/20 10:30" />
 		<property name="workload" value="15" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -539,7 +539,7 @@
 	
 	<bean id="task27" class="acme.entities.tasks.Task">
 		<property name="title" value="Repartir futuros eventos" />
-		<property name="initialTime" value="2021/08/13 10:30" />
+		<property name="initialTime" value="2021/09/01 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="5" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -550,7 +550,7 @@
 	
 	<bean id="task28" class="acme.entities.tasks.Task">
 		<property name="title" value="Entrevista con clientes" />
-		<property name="initialTime" value="2021/08/12 10:30" />
+		<property name="initialTime" value="2021/09/02 10:30" />
 		<property name="finalTime" value="2021/12/20 10:30" />
 		<property name="workload" value="20" />
 		<property name="description" value="Esta tarea esta finalizada" />
@@ -562,7 +562,7 @@
 	
 	<bean id="task29" class="acme.entities.tasks.Task">
 		<property name="title" value="Entrevista con clientes" />
-		<property name="initialTime" value="2021/08/11 10:30" />
+		<property name="initialTime" value="2021/08/25 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="20" />
 		<property name="description" value="Description text" />
@@ -574,7 +574,7 @@
 	
 	<bean id="task30" class="acme.entities.tasks.Task">
 		<property name="title" value="Revisar documentos" />
-		<property name="initialTime" value="2021/08/10 10:30" />
+		<property name="initialTime" value="2021/08/26 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
@@ -585,7 +585,7 @@
 	
 	<bean id="task31" class="acme.entities.tasks.Task">
 		<property name="title" value="Gestión de proyectos" />
-		<property name="initialTime" value="2021/08/11 10:30" />
+		<property name="initialTime" value="2021/08/27 10:30" />
 		<property name="finalTime" value="2021/12/15 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
@@ -596,7 +596,7 @@
 	
 	<bean id="task32" class="acme.entities.tasks.Task">
 		<property name="title" value="Reuniones" />
-		<property name="initialTime" value="2021/08/01 10:30" />
+		<property name="initialTime" value="2021/08/28 10:30" />
 		<property name="finalTime" value="2021/08/19 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
@@ -731,7 +731,7 @@
 	</bean>
 	
 	<bean id="workPlan01" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/07/01 10:30" />
+		<property name="initialTime" value="2021/09/01 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -740,7 +740,7 @@
 	</bean>
 	
 	<bean id="workPlan02" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/07/02 10:30" />
+		<property name="initialTime" value="2021/09/02 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="false" />
@@ -749,7 +749,7 @@
 	</bean>
 	
 	<bean id="workPlan03" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/07/03 10:30" />
+		<property name="initialTime" value="2021/09/03 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -758,7 +758,7 @@
 	</bean>
 	
 	<bean id="workPlan04" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/07/04 10:30" />
+		<property name="initialTime" value="2021/09/04 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -767,7 +767,7 @@
 	</bean>
 	
 	<bean id="workPlan05" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/05 10:30" />
+		<property name="initialTime" value="2021/08/29 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -776,7 +776,7 @@
 	</bean>
 	
 	<bean id="workPlan06" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/06 10:30" />
+		<property name="initialTime" value="2021/08/26 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="false" />
@@ -785,7 +785,7 @@
 	</bean>
 	
 	<bean id="workPlan07" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/07 10:30" />
+		<property name="initialTime" value="2021/08/27 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -794,7 +794,7 @@
 	</bean>
 	
 	<bean id="workPlan08" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/08 10:30" />
+		<property name="initialTime" value="2021/08/28 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -803,7 +803,7 @@
 	</bean>
 	
 	<bean id="workPlan09" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/09 10:30" />
+		<property name="initialTime" value="2021/08/30 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="false" />
@@ -812,7 +812,7 @@
 	</bean>
 	
 	<bean id="workPlan10" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/10 10:30" />
+		<property name="initialTime" value="2021/08/31 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -821,7 +821,7 @@
 	</bean>
 	
 	<bean id="workPlan11" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/11 10:30" />
+		<property name="initialTime" value="2021/08/25 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -830,7 +830,7 @@
 	</bean>
 	
 	<bean id="workPlan12" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/12 10:30" />
+		<property name="initialTime" value="2021/09/01 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -839,7 +839,7 @@
 	</bean>
 	
 	<bean id="workPlan13" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/13 10:30" />
+		<property name="initialTime" value="2021/08/24 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -848,7 +848,7 @@
 	</bean>
 	
 	<bean id="workPlan14" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/14 10:30" />
+		<property name="initialTime" value="2021/08/23 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -857,7 +857,7 @@
 	</bean>
 	
 	<bean id="workPlan15" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/15 10:30" />
+		<property name="initialTime" value="2021/08/22 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -866,7 +866,7 @@
 	</bean>
 	
 	<bean id="workPlan16" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/16 10:30" />
+		<property name="initialTime" value="2021/08/21 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -875,7 +875,7 @@
 	</bean>
 	
 	<bean id="workPlan17" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/17 10:30" />
+		<property name="initialTime" value="2021/08/20 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
@@ -884,7 +884,7 @@
 	</bean>
 	
 	<bean id="workPlan18" class="acme.entities.workPlans.WorkPlan">
-		<property name="initialTime" value="2021/08/15 10:30" />
+		<property name="initialTime" value="2021/09/3 10:30" />
 		<property name="finalTime" value="2021/12/31 10:30" />
 		<property name="manager" ref="manager1Manager"/>
 		<property name="publicWorkPlan" value="true" />
