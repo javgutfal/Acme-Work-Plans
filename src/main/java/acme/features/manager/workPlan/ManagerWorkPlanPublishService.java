@@ -102,12 +102,14 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 		assert model != null;
 		final Calendar newInitialTime = Calendar.getInstance();
 		final Calendar newFinalTime = Calendar.getInstance();
+		final Calendar actualDate = Calendar.getInstance();
 		Date initialTime;
 		Date finalTime;
 		
 		request.unbind(entity, model, "initialTime", "finalTime","publicWorkPlan");
 		
 		initialTime = this.repository.findInitialTimeManyConsistsOfById(entity.getId());
+		
 		if(initialTime != null) {
 		
 			
@@ -116,6 +118,10 @@ public class ManagerWorkPlanPublishService implements AbstractUpdateService<Mana
 			newInitialTime.set(Calendar.HOUR, 8);
 			newInitialTime.set(Calendar.MINUTE, 0);
 			newInitialTime.add(Calendar.DATE, -1);
+			
+			if(newInitialTime.before(actualDate)) {
+				newInitialTime.setTime(initialTime);
+			}
 			
 			
 			finalTime = this.repository.findFinalTimeManyConsistsOfById(entity.getId());
