@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
 
-public class ManagerWorkPlanUpdateTest extends AcmePlannerTest {
+public class ManagerWorkPlanUpdateTest extends AcmeWorkPlansTest {
 	
 	// Comprueba el correcto funcionamiento de la actualización de workplans y comprueba que los valores en la lista y en el detalle de dicho workplan se muestran actualizados
 	@ParameterizedTest

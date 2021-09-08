@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerWorkPlanPublishTest extends AcmePlannerTest {
+public class ManagerWorkPlanPublishTest extends AcmeWorkPlansTest {
 
 	// Test que comprueba el correcto funcionamiento del método publicar de los workplans y comprueba posteriormente su actualización en la lista
 	@ParameterizedTest

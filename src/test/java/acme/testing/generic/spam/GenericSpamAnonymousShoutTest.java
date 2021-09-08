@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class GenericSpamAnonymousShoutTest extends AcmePlannerTest{
+public class GenericSpamAnonymousShoutTest extends AcmeWorkPlansTest{
 
 	/*
 	 Este test crea un shout, se espera un resultado positivo.

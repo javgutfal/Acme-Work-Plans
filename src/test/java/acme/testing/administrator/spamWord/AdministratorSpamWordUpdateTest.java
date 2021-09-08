@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AdministratorSpamWordUpdateTest extends AcmePlannerTest{
+public class AdministratorSpamWordUpdateTest extends AcmeWorkPlansTest{
 	
 	/*
 	 Este test actualiza una palabra previamente comprobada y luego comprueba la nueva palabra,

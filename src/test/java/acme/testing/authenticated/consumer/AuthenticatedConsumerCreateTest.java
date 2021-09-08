@@ -2,9 +2,9 @@ package acme.testing.authenticated.consumer;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedConsumerCreateTest extends AcmePlannerTest{
+public class AuthenticatedConsumerCreateTest extends AcmeWorkPlansTest{
 	
 	/*
 	 Este test intenta crear un consumer sin añadir company ni sector, 

@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 import acme.framework.testing.AbstractTest;
 
-public abstract class AcmePlannerTest extends AcmeTest{
+public abstract class AcmeWorkPlansTest extends AcmeTest{
 
 	// Internal state ---------------------------------------------------------
 

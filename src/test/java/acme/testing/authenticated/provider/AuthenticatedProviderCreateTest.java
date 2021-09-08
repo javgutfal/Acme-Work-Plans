@@ -2,9 +2,9 @@ package acme.testing.authenticated.provider;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedProviderCreateTest extends AcmePlannerTest{
+public class AuthenticatedProviderCreateTest extends AcmeWorkPlansTest{
 	
 	
 	/* Test que comprueba que se produce error si intentamos convertirnos en Provider sin rellenar los campos company y sector */

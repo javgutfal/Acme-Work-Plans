@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class GenericSpamManagerTaskUpdateTest extends AcmePlannerTest{
+public class GenericSpamManagerTaskUpdateTest extends AcmeWorkPlansTest{
 
 	/*
 	Este test actualiza un task. Comprueba que las task que se quiere actualizar

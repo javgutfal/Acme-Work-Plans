@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AnonymousTaskListTest extends AcmePlannerTest {
+public class AnonymousTaskListTest extends AcmeWorkPlansTest {
 	
 	/* 
 	 Test que comprueba que todos los campos del listado de tasks en anonymous son los esperados, al igual que los

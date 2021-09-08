@@ -17,7 +17,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 
-public class SignUpTest extends AcmePlannerTest{
+public class SignUpTest extends AcmeWorkPlansTest{
 	
 	//Caso exitoso de intento de registro en el sistema como usaurio autenticado.
 	//Se comprueba que se tiene acceso a las opciones de cuenta en el menú.

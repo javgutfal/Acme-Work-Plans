@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AdministratorTaskDashboardTest extends AcmePlannerTest {
+public class AdministratorTaskDashboardTest extends AcmeWorkPlansTest {
 	
 	/*
 	 Este test comprueba todas las filas del dashboard enlazado a task, se espera un resultado positivo

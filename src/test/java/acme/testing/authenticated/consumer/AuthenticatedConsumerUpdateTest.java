@@ -2,9 +2,9 @@ package acme.testing.authenticated.consumer;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedConsumerUpdateTest extends AcmePlannerTest{
+public class AuthenticatedConsumerUpdateTest extends AcmeWorkPlansTest{
 	
 	/*
 	 Este test intenta actualizar los datos de un consumer dejando los parámetros vacios,

@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerWorkPlanListTest extends AcmePlannerTest {
+public class ManagerWorkPlanListTest extends AcmeWorkPlansTest {
 	
 	
 	// Test para comprobar que todos los registros del listado mostrado de workplans para manager es totalmente correcto

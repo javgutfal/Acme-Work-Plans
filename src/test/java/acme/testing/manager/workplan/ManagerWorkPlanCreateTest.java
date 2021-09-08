@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
 
-public class ManagerWorkPlanCreateTest extends AcmePlannerTest {
+public class ManagerWorkPlanCreateTest extends AcmeWorkPlansTest {
 	
 	// Comprueba el correcto funcionamiento de la creación de varios workplans con diferentes parámetros y comprueba que se añaden a la lista de forma progresiva
 	@ParameterizedTest

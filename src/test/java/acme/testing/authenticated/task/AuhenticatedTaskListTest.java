@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
 
-public class AuhenticatedTaskListTest extends AcmePlannerTest {
+public class AuhenticatedTaskListTest extends AcmeWorkPlansTest {
 	
 	/* Test que comprueba que todos los campos del listado de tasks entrando como authenticated son los esperados, al igual que los
 	   que aparecen al entrar en el show*/ 

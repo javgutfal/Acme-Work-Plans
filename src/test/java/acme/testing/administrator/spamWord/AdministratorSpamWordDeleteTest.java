@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AdministratorSpamWordDeleteTest extends AcmePlannerTest{
+public class AdministratorSpamWordDeleteTest extends AcmeWorkPlansTest{
 
 	/*
 	 Este test borra una spamWord y posteriormente comprueba que no esta en el listado,

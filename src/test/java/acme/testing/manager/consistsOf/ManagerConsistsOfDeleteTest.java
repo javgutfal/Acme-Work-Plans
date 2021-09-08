@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class ManagerConsistsOfDeleteTest  extends AcmePlannerTest{
+public class ManagerConsistsOfDeleteTest  extends AcmeWorkPlansTest{
 
 	//Caso exitoso de intento de eliminar una tarea de un plan de trabajo
 	//Se comprueba que en el listado de tareas del plan de trabajo en la

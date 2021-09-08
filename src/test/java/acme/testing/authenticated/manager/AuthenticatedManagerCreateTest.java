@@ -2,9 +2,9 @@ package acme.testing.authenticated.manager;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedManagerCreateTest extends AcmePlannerTest{
+public class AuthenticatedManagerCreateTest extends AcmeWorkPlansTest{
 
 	//Intento de acceder al formulario para convertirse en mánager sin estar autenticado
 	//Se comprueba que se genera una visa de error

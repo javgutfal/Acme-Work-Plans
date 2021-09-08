@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AdministratorPercentListTest extends AcmePlannerTest{
+public class AdministratorPercentListTest extends AcmeWorkPlansTest{
 	
 	/* Este test comprueba que tanto el listado como el sohw de percent son accesibles logeado como administrator y dan el valor
 	   esperado en el csv que el cargado por el sample-data  */

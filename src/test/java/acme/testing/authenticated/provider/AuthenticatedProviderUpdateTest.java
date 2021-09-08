@@ -2,9 +2,9 @@ package acme.testing.authenticated.provider;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedProviderUpdateTest extends AcmePlannerTest{
+public class AuthenticatedProviderUpdateTest extends AcmeWorkPlansTest{
 	
 	/* Test que comprueba que se produce error si intentamos actualizar nuestros datos de Provider vaciando los campos company y sector */
 	

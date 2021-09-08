@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AdministratorPercentUpdateTest extends AcmePlannerTest{
+public class AdministratorPercentUpdateTest extends AcmeWorkPlansTest{
 	
 	/* Con este test comprobamos que si estamos logeados como administrator podemos modificar correctamente a un valor de porcentaje
 	   válido comprobando nuevamente tras actualizar el valor que se encuentra tanto en el listado como en el show*/

@@ -2,9 +2,9 @@ package acme.testing.authenticated.manager;
 
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmePlannerTest;
+import acme.testing.AcmeWorkPlansTest;
 
-public class AuthenticatedManagerUpdateTest extends AcmePlannerTest{
+public class AuthenticatedManagerUpdateTest extends AcmeWorkPlansTest{
 
 	//Caso exitoso de intento de actualizar privilegios de mánager siendo usuario autenticado
 	//Se comprueba que se tiene acceso a las opciones de mánager en el menú
