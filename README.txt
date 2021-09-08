@@ -10,5 +10,8 @@
 
 This is the Acme-Work-Plans.
 
-Link GitHub Repository: https://github.com/gonlalle/Acme-Work-Plans
+Link GitHub June Repository: https://github.com/gonlalle/Acme-Work-Plans
 Link GitHub Release: 1.2.0
+
+Link GitHub September Repository: https://github.com/javgutfal/Acme-Work-Plans.git
+Link GitHub Release: 1.0.0
