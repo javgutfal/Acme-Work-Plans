@@ -597,7 +597,7 @@
 	<bean id="task32" class="acme.entities.tasks.Task">
 		<property name="title" value="Reuniones" />
 		<property name="initialTime" value="2021/08/28 10:30" />
-		<property name="finalTime" value="2021/08/19 10:30" />
+		<property name="finalTime" value="2021/09/08 10:30" />
 		<property name="workload" value="90" />
 		<property name="description" value="Description text" />
 		<property name="manager" ref="manager1Manager"/>
